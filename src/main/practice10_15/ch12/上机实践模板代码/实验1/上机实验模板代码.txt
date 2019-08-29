@@ -1,0 +1,88 @@
+3．程序模板
+请认真阅读模板代码，然后根据模板完成练习。
+GymnasticGame.java
+---------------------
+public class GymnasticGame {
+  public static void main(String args[]){
+       StreamLine line=new  StreamLine();
+       double []a=new double[1]; 
+       line.giveResult(a);
+  }
+}
+----------------
+DoThing.java
+-----------------
+public abstract class DoThing {
+   public abstract void doThing(double [] a);
+   public abstract void setNext(DoThing next);
+}
+--------------------
+DoInput.java
+--------------------
+import java.util.*;
+public class DoInput extends DoThing {
+   DoThing nextDoThing ;
+   public void setNext(DoThing next) {
+      nextDoThing = next;
+   }
+   public void doThing(double [] a) {
+      System.out.println("请输入裁判数");
+      Scanner read=new Scanner(System.in);
+      int count = read.nextInt();
+      System.out.println("请输入各个裁判的分数");
+      a = new double[count];
+      for(int i=0;i<count;i++) {
+           a[i]=read.nextDouble();
+      }
+      nextDoThing.doThing(a);
+   }
+}
+-------------------
+DelMaxAndMin.java
+--------------------
+import java.util.*;
+public class DelMaxAndMin extends DoThing {
+   DoThing nextDoThing ;
+   public void setNext(DoThing next) {
+      nextDoThing = next;
+   }
+   public void doThing(double [] a) {
+      Arrays.sort(a);
+      double [] b = Arrays.copyOfRange(a,1,a.length);
+      System.out.print("去掉一个最高分:"+b[b.length-1]+",");
+      System.out.println("去掉一个最低分"+b[0]);
+      nextDoThing.doThing(b);
+   }
+}
+------------------
+ComputerAver.java
+------------------
+public class ComputerAver extends DoThing {
+   DoThing nextDoThing ;
+   public void setNext(DoThing next) {
+      nextDoThing = next;
+   }
+   public void doThing(double [] a) {
+      double sum = 0;
+      for(int i=0;i<a.length;i++)
+          sum = sum+a[i];
+      double aver = sum/a.length; 
+      System.out.print("选手最后得分"+aver);
+   }
+}
+-----------------
+StreamLine.java
+---------------------
+public class StreamLine {
+    private DoThing one,two,three;  
+    StreamLine(){
+       one=new DoInput();
+       two=new DelMaxAndMin();
+       three=new ComputerAver();
+       one.setNext(two);
+       two.setNext(three);
+    }
+    public void giveResult(double a[]){ 
+       one.doThing(a);
+    }
+}

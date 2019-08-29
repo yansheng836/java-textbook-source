@@ -1,0 +1,37 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+MainClass.java
+-------------------------------
+    public class MainClass {
+        public static void main (String args[ ]) {
+          【代码1】    //命令行窗口输出"你好，只需编译我"
+           A a = new A();
+           a.fA();
+           B b = new B();
+           b.fB();
+       }
+    }
+----------------
+A.java
+----------------
+    public class A {
+       void fA() {
+         【代码2】    //命令行窗口输出"I am A"
+       }
+    }
+----------------------
+B.java
+-----------------------
+    public class B {
+       void fB() {
+        【代码3】    //命令行窗口输出"I am B"
+       }
+    }
+--------------------------
+C.java
+-------------------------
+public class C {
+       void fC() {
+        【代码4】    //命令行窗口输出"I am C"
+       }
+}

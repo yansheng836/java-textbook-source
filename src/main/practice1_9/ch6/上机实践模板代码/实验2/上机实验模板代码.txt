@@ -1,0 +1,36 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+CheckDogState.java
+----------------------------------
+interface DogState {
+    public void showState();
+}
+class SoftlyState implements DogState {
+    【代码1】 //重写public void showState()
+}
+class MeetEnemyState implements DogState {
+    【代码2】 //重写public void showState()
+}  
+class MeetFriendState implements DogState {
+    【代码3】 //重写public void showState()
+}
+class Dog {
+   DogState  state;
+   public void cry() {
+      state.showState();
+   }
+   public void setState(DogState s) {
+      state = s;
+   }
+}
+public class CheckDogState {
+   public static void main(String args[]) {
+      Dog yellowDog =new Dog();
+      yellowDog.setState(new SoftlyState());
+      yellowDog.cry();
+      yellowDog.setState(new MeetEnemyState());
+      yellowDog.cry();
+      yellowDog.setState(new MeetFriendState());
+      yellowDog.cry(); 
+   }
+}  

@@ -1,0 +1,84 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+
+Commander.java
+---------------
+public interface Commander {
+    public void battle(String mess);
+}
+------------------
+LeaderHeader.java
+------------------
+public class LeaderHeader {
+    String battleContent;
+    public void giveCommand(Commander com){
+       【代码】 //com回调接口方法，并将battleContent传递给接口方法的参数
+    }
+    public void setBattleContent(String s) {
+       battleContent = s;
+    }
+}
+-------------
+ShiZhang.java
+---------------
+class ShiZhang implements Commander {
+   final int MAXSoldierNumber=1000;
+   int soldierNumber=1;
+   String name;
+   ShiZhang(String s){
+      name=s;
+   }
+   public void battle(String mess) {
+      System.out.println(name+"接到作战命令:"+mess);
+      System.out.println(name+"指派"+soldierNumber+"人参与作战");
+      System.out.println(name+"保证完成任务");
+   }
+   void setSoldierNumber(int m) {
+      if(m>MAXSoldierNumber) {
+          soldierNumber=MAXSoldierNumber;
+      }
+      else if(m<MAXSoldierNumber&&m>0) {
+          soldierNumber = m;
+      }
+   }
+}
+--------------
+LvZhang.java
+--------------
+class LvZhang implements Commander {
+   final int MAXSoldierNumber=800;
+   int soldierNumber=1;
+   String name;
+   LvZhang(String s){
+      name=s;
+   }
+   public void battle(String mess) {
+      System.out.println(name+"接到作战命令:"+mess);
+      System.out.println(name+"指派"+soldierNumber+"人参与作战");
+      System.out.println(name+"保证完成任务");
+   }
+   void setSoldierNumber(int m) {
+      if(m>MAXSoldierNumber) {
+          soldierNumber=MAXSoldierNumber;
+      }
+      else if(m<MAXSoldierNumber&&m>0) {
+          soldierNumber = m;
+      }
+   }
+}
+--------------
+MainClass.java
+--------------
+public class MainClass{
+   public static void main(String args[]) {
+      LeaderHeader leader =new LeaderHeader();
+      ShiZhang oneShi=new ShiZhang("第1师");
+      oneShi.setSoldierNumber(986);
+      leader.setBattleContent("进攻北城");
+      leader.giveCommand(oneShi);
+      LvZhang oneLv=new LvZhang("第1旅");
+      oneLv.setSoldierNumber(567);  
+      leader.setBattleContent("在2号公路阻击敌人");
+      leader.giveCommand(oneLv);
+   }
+}

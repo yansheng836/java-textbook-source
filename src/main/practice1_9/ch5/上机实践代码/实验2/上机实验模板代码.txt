@@ -1,0 +1,52 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+Geometry.java
+-----------------
+public abstract class Geometry  {
+     public abstract double getArea();
+} 
+
+------------
+Rect.java
+----------
+public class Rect extends Geometry {
+    double a,b;
+    Rect(double a,double b) {
+        this.a = a; 
+        this.b = b; 
+    }
+   【代码1】 //重写 getArea()方法,返回矩形面积
+}
+-------------
+Circle.java
+-------------
+public class Circle extends Geometry {
+    double r;
+    Circle(double r) {
+        this.r = r;
+    }
+    【代码2】 //重写 getArea()方法,返回圆面积
+} 
+--------------
+Student.java
+-------------
+public class Student {
+    public double area(Geometry ...p) {
+       double sum=0;
+       for(int i=0;i<p.length;i++) {
+           sum=sum+p[i].getArea(); 
+       }
+       return sum; 
+    }
+}
+---------------
+MainClass.java
+-----------------
+public class MainClass{
+   public static void main(String args[]) {
+      Student zhang = new Student();
+      double area = 
+      zhang.area(new Rect(2,3),new Circle(5.2),new Circle(12));
+      System.out.printf("2个圆和1个矩形图形的面积和：\n%10.3f",area); 
+   }
+}  

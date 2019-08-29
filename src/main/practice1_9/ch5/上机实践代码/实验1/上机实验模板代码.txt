@@ -1,0 +1,55 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+Animal.java
+--------------
+class Animal {
+   protected String name;
+   public void showName() {
+      System.out.println(name);
+   }
+   public void cry() {
+      System.out.println("不同动物的叫声是有区别的");
+   }
+}
+----------
+Dog.java
+----------
+class Dog extends Animal {
+    Dog(String s) {
+       name = s;
+    }
+   【代码1】 //重写父类的cry方法，在命令行输出模拟狗叫的文字
+    public void swimming() {
+       【代码2】//在命令行输出类似“狗会游泳...”的文字
+    }
+}
+-----------
+Cat.java
+-------------
+class Cat extends Animal {
+    Cat() {
+       name = "猫";
+    }
+    Cat(String s) {
+       name = s;
+    }
+    【代码3】 //重写父类的cry方法，在命令行输出模拟狗叫的文字
+    public void climbUpTree(){
+       System.out.println(name+"会爬树");
+    }
+}
+---------------
+MainClass.java
+-----------------
+public class MainClass {
+   public static void main(String args[]) {
+      Dog dog = new Dog("小黄狗"); 
+      Cat cat = new Cat("小花猫");
+      dog.showName();
+      dog.cry();
+      dog.swimming();
+      cat.showName();
+      cat.cry();
+      cat.climbUpTree();
+   }
+}

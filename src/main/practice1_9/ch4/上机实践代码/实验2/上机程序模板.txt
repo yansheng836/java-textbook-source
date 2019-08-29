@@ -1,0 +1,46 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+Teacher.java
+------------------------------
+public class Teacher {
+   int teacherType;
+   public void speak() {
+      if(teacherType ==1 ) {
+        System.out.println("课程的内容是二次方程");
+      }
+      else if(teacherType ==2 ) {
+        System.out.println("课程的内容是学唱五线谱");
+      }
+   }
+} 
+School.java
+public class School {
+    Teacher mathTeacher,musicTeacher;
+    void setTeacher(Teacher t1,Teacher t2) {
+       mathTeacher = t1;
+       musicTeacher = t2;
+    }
+    void startMathLesson() {
+       mathTeacher.speak();  
+    }
+    void startMusicLesson() {
+       musicTeacher.speak();  
+    }
+} 
+------------------
+MainClass.java
+-------------------
+public class MainClass {
+   public static void main(String args[]) {
+     【代码1】//用Teacher类声明名字是zhang和wang的对象
+     【代码2】 //创建 zhang
+      wang = new Teacher();
+      zhang.teacherType=1;
+      wang.teacherType=2;
+      School 实验中学 = new School();
+     【代码3】//实验中学调用setTeacher(Teacher t1,Teacher t2)方法将zhang和wang值传
+递给参数t1和t2。
+      实验中学.startMathLesson();
+      实验中学.startMusicLesson();
+   }
+}  

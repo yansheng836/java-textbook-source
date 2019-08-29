@@ -1,0 +1,157 @@
+3．程序模板
+请按模板要求，将【代码】替换为Java程序代码。
+客户端模板：ClientGuess.java
+--------------------------------------------
+import java.io.*;
+import java.net.*;
+import java.util.*;
+public class ClientGuess  {
+   public static void main(String args[]) {
+      Scanner scanner = new Scanner(System.in);
+      Socket mysocket=null;
+      DataInputStream inData=null;
+      DataOutputStream outData=null;
+      Thread thread ; 
+      ReadNumber readNumber=null;
+      try{  mysocket=new Socket();
+            readNumber = new ReadNumber();   
+            thread = new Thread(readNumber);   //负责读取信息的线程
+            System.out.print("输入服务器的IP:");
+            String IP = scanner.nextLine();
+            System.out.print("输入端口号:");
+            int port = scanner.nextInt();
+            if(mysocket.isConnected()){}
+            else{
+              InetAddress  address=InetAddress.getByName(IP);
+              InetSocketAddress socketAddress=new InetSocketAddress(address,port);
+              mysocket.connect(socketAddress); 
+              InputStream in=【代码1】  //mysocket调用getInputStream()返回输入流
+              OutputStream out=【代码2】//mysocket调用getOutputStream()返回输出流
+              inData =new DataInputStream(in); 
+              outData = new DataOutputStream(out);
+              readNumber.setDataInputStream(inData);
+              readNumber.setDataOutputStream(outData);
+              thread.start();  //启动负责读取随机数的线程
+            }
+       }
+       catch(Exception e) {
+            System.out.println("服务器已断开"+e);
+       }
+   }
+}
+class ReadNumber implements Runnable {
+   Scanner scanner = new Scanner(System.in);
+   DataInputStream in;
+   DataOutputStream out;
+   public void setDataInputStream(DataInputStream in) {
+      this.in = in;
+   }
+   public void setDataOutputStream(DataOutputStream out) {
+      this.out = out;
+   }
+   public void run() {
+      try {
+         out.writeUTF("Y"); 
+         while(true) {
+             String str = in.readUTF();
+             System.out.println(str);
+             if(!str.startsWith("询问")) {
+                if(str.startsWith("猜对了"))
+                    continue;
+                System.out.print("好的，我输入猜测:"); 
+                int myGuess = scanner.nextInt();
+                String enter = scanner.nextLine(); //消耗多余的回车
+                out.writeInt(myGuess);
+             } 
+             else {
+               System.out.print("好的，我输入Y或N:"); 
+               String myAnswer = scanner.nextLine();
+               out.writeUTF(myAnswer);
+             }
+         }
+     }
+     catch(Exception e) { 
+          System.out.println("与服务器已断开"+e);
+          return;
+     }   
+   }
+}
+---------------------------------
+服务器端模板：ServerNumber.java
+--------------------------------
+import java.io.*;
+import java.net.*;
+import java.util.*;
+public class ServerNumber {
+   public static void main(String args[]) {
+      ServerSocket server=null;
+      ServerThread thread;
+      Socket you=null;
+      while(true) { 
+          try{  server= 【代码3】//创建在端口4331上负责监听的 ServerSocket对象
+          }
+          catch(IOException e1) {
+             System.out.println("正在监听");   
+          } 
+          try{  you=  【代码4】 // server调用accept()返回和客户端相连接的Socket对象
+                System.out.println("客户的地址:"+you.getInetAddress());
+          }
+          catch (IOException e) {
+                System.out.println("正在等待客户");
+          }
+          if(you!=null) {
+                new ServerThread(you).start();  
+          }
+      }
+   }
+}
+class ServerThread extends Thread {
+   Socket socket;
+   DataInputStream in=null; 
+   DataOutputStream out=null;
+   ServerThread(Socket t) {
+      socket=t;
+      try  { out=new DataOutputStream(socket.getOutputStream()); 
+             in=new DataInputStream(socket.getInputStream());
+      }
+      catch (IOException e) {}
+   }  
+   public void run() { 
+      try{
+           while(true) {
+              String str = in.readUTF(); 
+              boolean boo =str.startsWith("Y")||str.startsWith("y"); 
+              if(boo) {
+                 out.writeUTF("给你一个1至100之间的随机数,请猜它是多少呀!");
+                 Random random=new Random();  
+                 int realNumber = random.nextInt(100)+1;
+                 handleClientGuess(realNumber);
+                 out.writeUTF("询问:想继续玩输入Y，否则输入N:");
+              }
+              else {
+                 return;
+              }
+           } 
+      }
+      catch(Exception exp){}
+   } 
+   public void handleClientGuess(int realNumber){
+       while(true) {
+          try{  int clientGuess = in.readInt(); 
+                System.out.println(clientGuess);
+                if(clientGuess>realNumber)
+                    out.writeUTF("猜大了");
+                else if(clientGuess<realNumber)
+                    out.writeUTF("猜小了");
+                else if(clientGuess==realNumber) {
+                    out.writeUTF("猜对了！");
+                    break;
+                }
+          }
+          catch (IOException e) {
+                System.out.println("客户离开");
+                return;
+          }
+      }
+   }
+}

@@ -1,0 +1,2 @@
+mountain 山  water  水  canvas  画
+fish 鱼 dog 狗 vehicle 车辆 decay 腐败

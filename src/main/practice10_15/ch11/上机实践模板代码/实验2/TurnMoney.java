@@ -1,0 +1,61 @@
+package ch11.上机实践模板代码.实验2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TurnMoney {
+	public static void main(String args[]) {
+		Connection con = null;
+		Statement sta = null;
+		ResultSet rs;
+		try {
+			Class.forName("org.apache.derby.jdbc.ClientDriver");
+			con = DriverManager.getConnection("jdbc:derby://127.0.0.1:1527//bank;create=true");
+			sta = con.createStatement();
+			String card1 = "create table card1(number char(20) primary key ,amount double)";
+			String card2 = "create table card2(number char(20) primary key ,amount double)";
+			sta.execute(card1);// 创建表salary,如果表已存在，不再重新创建，并发生SQLException
+			sta.execute(card2);
+		} catch (Exception e) {
+			System.out.println("" + e);
+		} finally {
+			try {
+				sta.executeUpdate("insert into card1 values('zhangsan', 900)");  // 插入记录
+				sta.executeUpdate("insert into card2 values('xixiShop', 100)");
+			} catch (SQLException ee) {
+			}
+		}
+		try {
+			double n = 100;
+			// 【代码1】关闭自动提交模式
+			rs = sta.executeQuery("SELECT * FROM card1 WHERE number='zhangsan'");
+			rs.next();
+			double amountOne = rs.getDouble("amount");
+			System.out.println("转账操作之前zhangsan的钱款数额:" + amountOne);
+			rs = sta.executeQuery("SELECT * FROM card2 WHERE number='xixiShop'");
+			rs.next();
+			double amountTwo = rs.getDouble("amount");
+			System.out.println("转账操作之前xixiShop的钱款数额:" + amountTwo);
+			amountOne = amountOne - n;
+			amountTwo = amountTwo + n;
+			sta.executeUpdate("UPDATE card1 SET amount =" + amountOne + " WHERE number ='zhangsan'");
+			sta.executeUpdate("UPDATE card2 SET amount =" + amountTwo + " WHERE number ='xixiShop'");
+			con.commit(); // 开始事务处理,如果发生异常直接执行catch块
+			// 【代码2】恢复自动提交模式
+			rs = sta.executeQuery("SELECT * FROM card1 WHERE number='zhangsan'");
+			rs.next();
+			amountOne = rs.getDouble("amount");
+			System.out.println("转账操作之后zhangsan的钱款数额:" + amountOne);
+			rs = sta.executeQuery("SELECT * FROM card2 WHERE number='xixiShop'");
+			rs.next();
+			amountTwo = rs.getDouble("amount");
+			System.out.println("转账操作之后xixiShop的钱款数额:" + amountTwo);
+			con.close();
+		} catch (SQLException e) {
+			System.out.println(e.toString());
+		}
+	}
+}
