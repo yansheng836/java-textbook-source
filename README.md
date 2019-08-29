@@ -1,5 +1,7 @@
 # java-textbook-source
 
+![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/java-textbook-source.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/java-textbook-source.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/java-textbook-source.svg) [![MIT license](https://img.shields.io/github/license/yansheng836/java-textbook-source.svg)](https://github.com/yansheng836/java-textbook-source/blob/master/LICENSE.txt)
+
 ## 项目介绍
 
 该项目整理了人民邮电出版社出版的、由耿祥义、张跃平编著的《Java程序设计实用教程》（第2版）（ISBN:978-7-115-38417-1）的书籍的源代码。
