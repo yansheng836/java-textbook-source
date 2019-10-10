@@ -1,13 +1,13 @@
-package ch6.渚嬪瓙5;
+package ch6.例子5;
 
 public class BlackLandCorp implements Advertisement {
 	public void showAdvertisement() {
 		System.out.println("**************");
-		System.out.printf("鍔冲姩鏄埞\n鍦熷湴鏄\n鎯崇鍟ユ潵\n灏卞線澶栨帴\n");
+		System.out.printf("劳动是爹\n土地是妈\n想种啥来\n就往外接\n");
 		System.out.println("**************");
 	}
 
 	public String getCorpName() {
-		return "榛戝湡闆嗗洟";
+		return "黑土集团";
 	}
 }

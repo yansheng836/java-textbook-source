@@ -1,16 +1,16 @@
-package ch2.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch2.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class GreekAlphabet {
 	public static void main(String args[]) {
 		int startPosition = 0, endPosition = 0;
-		char cStart = 'Î±', cEnd = 'Ï‰';
-		// ã€ä»£ç 1ã€‘//cStartåšintå‹è½¬æ¢æ®è¿ç®—ï¼Œå¹¶å°†ç»“æœèµ‹å€¼ç»™startPosition
-		// ã€ä»£ç 2ã€‘//cEndåšintå‹è½¬æ¢è¿ç®—ï¼Œå¹¶å°†ç»“æœèµ‹å€¼ç»™endPosition
-		System.out.println("å¸Œè…Šå­—æ¯\'Î±\'åœ¨unicodeè¡¨ä¸­çš„é¡ºåºä½ç½®:" + startPosition);
-		System.out.println("å¸Œè…Šå­—æ¯è¡¨ï¼š");
+		char cStart = '¦Á', cEnd = '¦Ø';
+		// ¡¾´úÂë1¡¿//cStart×öintĞÍ×ª»»¾İÔËËã£¬²¢½«½á¹û¸³Öµ¸østartPosition
+		// ¡¾´úÂë2¡¿//cEnd×öintĞÍ×ª»»ÔËËã£¬²¢½«½á¹û¸³Öµ¸øendPosition
+		System.out.println("Ï£À°×ÖÄ¸\'¦Á\'ÔÚunicode±íÖĞµÄË³ĞòÎ»ÖÃ:" + startPosition);
+		System.out.println("Ï£À°×ÖÄ¸±í£º");
 		for (int i = startPosition; i <= endPosition; i++) {
 			char c = '\0';
-			// ã€ä»£ç 3ã€‘ //iåšcharå‹è½¬æ¢è¿ç®—ï¼Œå¹¶å°†ç»“æœèµ‹å€¼ç»™c
+			// ¡¾´úÂë3¡¿ //i×öcharĞÍ×ª»»ÔËËã£¬²¢½«½á¹û¸³Öµ¸øc
 			System.out.print(" " + c);
 			if ((i - startPosition + 1) % 10 == 0)
 				System.out.println("");

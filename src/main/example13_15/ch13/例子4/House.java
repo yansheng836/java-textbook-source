@@ -1,7 +1,7 @@
-package ch13.ä¾‹å­4;
+package ch13.Àı×Ó4;
 
 public class House implements Runnable {
-	int cake = 10;       // ç”¨intå˜é‡æ¨¡æ‹Ÿè›‹ç³•çš„å¤§å°
+	int cake = 10;       // ÓÃint±äÁ¿Ä£Äâµ°¸âµÄ´óĞ¡
 	Thread attachThread;
 
 	public void setCake(int c) {
@@ -16,15 +16,15 @@ public class House implements Runnable {
 		int m = 2;
 		while (true) {
 			if (cake <= 0) {
-				System.out.println(Thread.currentThread().getName() + "è¿›å…¥æ­»äº¡çŠ¶æ€");
+				System.out.println(Thread.currentThread().getName() + "½øÈëËÀÍö×´Ì¬");
 				return;
 			}
 			cake = cake - m;
-			System.out.println(Thread.currentThread().getName() + "åƒ" + m + "å…‹è›‹ç³•.");
-			System.out.println(Thread.currentThread().getName() + "å‘ç°è›‹ç³•è¿˜å‰©" + cake + "å…‹");
+			System.out.println(Thread.currentThread().getName() + "³Ô" + m + "¿Ëµ°¸â.");
+			System.out.println(Thread.currentThread().getName() + "·¢ÏÖµ°¸â»¹Ê£" + cake + "¿Ë");
 			if (cake <= 4) {
 				try {
-					attachThread.start(); // å¯åŠ¨é»‘èš‚èšï¼Œé»‘èš‚èšç­‰å¾…CPU
+					attachThread.start(); // Æô¶¯ºÚÂìÒÏ£¬ºÚÂìÒÏµÈ´ıCPU
 				} catch (Exception exp) {
 				}
 			}

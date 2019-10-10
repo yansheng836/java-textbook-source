@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­12;
+package ch12.Àı×Ó12;
 
 import java.util.ArrayList;
 
@@ -6,10 +6,10 @@ public class Example12_12 {
 	public static void main(String args[]) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for (int i = 0; i < 10; i++) {
-			list.add(i);  // è‡ªåŠ¨è£…ç®±,å®é™…æ·»åŠ åˆ°listä¸­çš„æ˜¯new Integer(i)ã€‚
+			list.add(i);  // ×Ô¶¯×°Ïä,Êµ¼ÊÌí¼Óµ½listÖĞµÄÊÇnew Integer(i)¡£
 		}
 		for (int k = list.size() - 1; k >= 0; k--) {
-			int m = list.get(k);  // è‡ªåŠ¨æ‹†ç®±,è·å–Integerå¯¹è±¡ä¸­çš„intå‹æ•°æ®
+			int m = list.get(k);  // ×Ô¶¯²ğÏä,»ñÈ¡Integer¶ÔÏóÖĞµÄintĞÍÊı¾İ
 			System.out.printf("%3d", m);
 		}
 	}

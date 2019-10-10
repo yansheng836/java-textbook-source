@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­2;
+package ch15.Àı×Ó2;
 
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -29,18 +29,18 @@ public class WindowMenu extends JFrame {
 	void init(String s) {
 		setTitle(s);
 		menubar = new JMenuBar();
-		menu = new JMenu("èœå•");
-		subMenu = new JMenu("è½¯ä»¶é¡¹ç›®");
-		item1 = new JMenuItem("Javaè¯é¢˜", new ImageIcon("a.gif"));
-		item2 = new JMenuItem("åŠ¨ç”»è¯é¢˜", new ImageIcon("b.gif"));
+		menu = new JMenu("²Ëµ¥");
+		subMenu = new JMenu("Èí¼şÏîÄ¿");
+		item1 = new JMenuItem("Java»°Ìâ", new ImageIcon("a.gif"));
+		item2 = new JMenuItem("¶¯»­»°Ìâ", new ImageIcon("b.gif"));
 		item1.setAccelerator(KeyStroke.getKeyStroke('A'));
 		item2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
 		menu.add(item1);
 		menu.addSeparator();
 		menu.add(item2);
 		menu.add(subMenu);
-		subMenu.add(new JMenuItem("æ±½è½¦é”€å”®ç³»ç»Ÿ", new ImageIcon("c.gif")));
-		subMenu.add(new JMenuItem("å†œåœºä¿¡æ¯ç³»ç»Ÿ", new ImageIcon("d.gif")));
+		subMenu.add(new JMenuItem("Æû³µÏúÊÛÏµÍ³", new ImageIcon("c.gif")));
+		subMenu.add(new JMenuItem("Å©³¡ĞÅÏ¢ÏµÍ³", new ImageIcon("d.gif")));
 		menubar.add(menu);
 		setJMenuBar(menubar);
 	}

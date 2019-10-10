@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­10;
+package ch5.Àı×Ó10;
 
 public class American extends People10 {
 	void showBodyMess() {

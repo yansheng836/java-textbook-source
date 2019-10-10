@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­13;
+package ch9.Àı×Ó13;
 
 import java.util.StringTokenizer;
 
@@ -11,6 +11,6 @@ public class Example9_13 {
 			String str = fenxi.nextToken();
 			System.out.print(str + " ");
 		}
-		System.out.println("å…±æœ‰å•è¯ï¼š" + number + "ä¸ª");
+		System.out.println("¹²ÓĞµ¥´Ê£º" + number + "¸ö");
 	}
 }

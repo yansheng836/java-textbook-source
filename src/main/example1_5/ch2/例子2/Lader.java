@@ -1,7 +1,7 @@
-package ch2.ä¾‹å­2;
+package ch2.Àı×Ó2;
 
 public class Lader {
-	double above;  // æ¢¯å½¢çš„ä¸Šåº•
+	double above;  // ÌİĞÎµÄÉÏµ×
 	double bottom;
 	double height;
 

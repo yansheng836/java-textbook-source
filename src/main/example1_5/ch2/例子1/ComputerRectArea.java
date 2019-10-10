@@ -1,13 +1,13 @@
-package ch2.ä¾‹å­1;
+package ch2.Àı×Ó1;
 
 public class ComputerRectArea {
 	public static void main(String args[]) {
-		double length; // é•¿
-		double width;  // å®½
-		double area;   // é¢ç§¯
+		double length; // ³¤
+		double width;  // ¿í
+		double area;   // Ãæ»ı
 		length = 23.89;
 		width = 108.87;
-		area = length * width; // è®¡ç®—é¢ç§¯
+		area = length * width; // ¼ÆËãÃæ»ı
 		System.out.println(area);
 	}
 }

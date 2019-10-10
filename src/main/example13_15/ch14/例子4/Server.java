@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­4;
+package ch14.Àı×Ó4;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -15,17 +15,17 @@ public class Server {
 			try {
 				server = new ServerSocket(2010);
 			} catch (IOException e1) {
-				System.out.println("æ­£åœ¨ç›‘å¬"); // ServerSocketå¯¹è±¡ä¸èƒ½é‡å¤åˆ›å»º
+				System.out.println("ÕıÔÚ¼àÌı"); // ServerSocket¶ÔÏó²»ÄÜÖØ¸´´´½¨
 			}
 			try {
-				System.out.println(" ç­‰å¾…å®¢æˆ·å‘¼å«");
+				System.out.println(" µÈ´ı¿Í»§ºô½Ğ");
 				you = server.accept();
-				System.out.println("å®¢æˆ·çš„åœ°å€:" + you.getInetAddress());
+				System.out.println("¿Í»§µÄµØÖ·:" + you.getInetAddress());
 			} catch (IOException e) {
-				System.out.println("æ­£åœ¨ç­‰å¾…å®¢æˆ·");
+				System.out.println("ÕıÔÚµÈ´ı¿Í»§");
 			}
 			if (you != null) {
-				new ServerThread(you).start(); // ä¸ºæ¯ä¸ªå®¢æˆ·å¯åŠ¨ä¸€ä¸ªä¸“é—¨çš„çº¿ç¨‹
+				new ServerThread(you).start(); // ÎªÃ¿¸ö¿Í»§Æô¶¯Ò»¸ö×¨ÃÅµÄÏß³Ì
 			}
 		}
 	}
@@ -49,11 +49,11 @@ class ServerThread extends Thread {
 	public void run() {
 		while (true) {
 			try {
-				double r = in.readDouble();// å µå¡çŠ¶æ€ï¼Œé™¤éè¯»å–åˆ°ä¿¡æ¯
+				double r = in.readDouble();// ¶ÂÈû×´Ì¬£¬³ı·Ç¶ÁÈ¡µ½ĞÅÏ¢
 				double area = Math.PI * r * r;
 				out.writeDouble(area);
 			} catch (IOException e) {
-				System.out.println("å®¢æˆ·ç¦»å¼€");
+				System.out.println("¿Í»§Àë¿ª");
 				return;
 			}
 		}

@@ -1,8 +1,8 @@
-package ch5.渚嬪瓙13;
+package ch5.例子13;
 
 public class Simulator {
 	public void playSound(Animal animal) {
-		System.out.print("鐜板湪鎾斁" + animal.getAnimalName() + "绫荤殑澹伴煶:");
+		System.out.print("现在播放" + animal.getAnimalName() + "类的声音:");
 		animal.cry();
 	}
 }

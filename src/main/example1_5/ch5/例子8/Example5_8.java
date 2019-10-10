@@ -1,9 +1,9 @@
-package ch5.ä¾‹å­8;
+package ch5.Àı×Ó8;
 
 public class Example5_8 {
 	public static void main(String args[]) {
 		String title = "Happy New Year To You";
-		String content = "\tç‰›å¹´è€•è€˜\n\tè°·ç©—æ»¡ä»“\n\tå‡ºç”Ÿç‰›çŠŠ\n\tå–œè¿è™å¹´\n";
+		String content = "\tÅ£Äê¸ûÔÅ\n\t¹ÈËëÂú²Ö\n\t³öÉúÅ£¶¿\n\tÏ²Ó­»¢Äê\n";
 		ChristmasCard card = new ChristmasCard(title, content);
 		card.showCard();
 	}

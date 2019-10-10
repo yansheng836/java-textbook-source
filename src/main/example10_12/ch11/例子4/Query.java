@@ -1,4 +1,4 @@
-package ch11.渚嬪瓙4;
+package ch11.例子4;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 public class Query {
-   String datasourceName="";        //鏁版嵁婧愬悕
-   String tableName="";            //琛ㄥ悕
-   String SQL;                     //SQL璇彞
+   String datasourceName="";        //数据源名
+   String tableName="";            //表名
+   String SQL;                     //SQL语句
    public Query() {
       try{  Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
       }
@@ -37,14 +37,14 @@ public class Query {
            con=DriverManager.getConnection(uri,id,password);
            DatabaseMetaData metadata=con.getMetaData();
            ResultSet rs1=metadata.getColumns(null,null,tableName,null);
-           int 瀛楁涓暟=0;
+           int 字段个数=0;
            while(rs1.next()) {
-              瀛楁涓暟++;
+              字段个数++;
            }
            sql=con.createStatement();
            rs=sql.executeQuery(SQL);
            while(rs.next()) {
-             for(int k=1;k<=瀛楁涓暟;k++) {
+             for(int k=1;k<=字段个数;k++) {
                  System.out.print(" "+rs.getString(k)+" ");
              }
              System.out.println("");
@@ -52,7 +52,7 @@ public class Query {
            con.close();
        }
        catch(SQLException e) {
-           System.out.println("璇疯緭鍏ユ纭殑琛ㄥ悕"+e);
+           System.out.println("请输入正确的表名"+e);
        }
    }    
 }

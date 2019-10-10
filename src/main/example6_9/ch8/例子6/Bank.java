@@ -1,14 +1,14 @@
-package ch8.ä¾‹å­6;
+package ch8.Àı×Ó6;
 
 public class Bank {
 	int money;
 
 	public void income(int in, int out) throws BankException {
 		if (in <= 0 || out >= 0 || in + out <= 0) {
-			throw new BankException(in, out); // æ–¹æ³•æŠ›å‡ºå¼‚å¸¸ï¼Œå¯¼è‡´æ–¹æ³•ç»“æŸ
+			throw new BankException(in, out); // ·½·¨Å×³öÒì³££¬µ¼ÖÂ·½·¨½áÊø
 		}
 		int netIncome = in + out;
-		System.out.printf("æœ¬æ¬¡è®¡ç®—å‡ºçš„çº¯æ”¶å…¥æ˜¯:%då…ƒ\n", netIncome);
+		System.out.printf("±¾´Î¼ÆËã³öµÄ´¿ÊÕÈëÊÇ:%dÔª\n", netIncome);
 		money = money + netIncome;
 	}
 

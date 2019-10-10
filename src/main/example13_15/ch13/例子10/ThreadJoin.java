@@ -1,4 +1,4 @@
-package ch13.ä¾‹å­10;
+package ch13.Àı×Ó10;
 
 public class ThreadJoin implements Runnable {
 	Cake cake;
@@ -9,26 +9,26 @@ public class ThreadJoin implements Runnable {
 	}
 
 	public void run() {
-		if (Thread.currentThread().getName().equals("é¡¾å®¢")) {
-			System.out.println(Thread.currentThread().getName() + "ç­‰å¾…" + joinThread.getName() + "åˆ¶ä½œç”Ÿæ—¥è›‹ç³•");
+		if (Thread.currentThread().getName().equals("¹Ë¿Í")) {
+			System.out.println(Thread.currentThread().getName() + "µÈ´ı" + joinThread.getName() + "ÖÆ×÷ÉúÈÕµ°¸â");
 			try {
 				joinThread.start();
-				joinThread.join();             // å½“å‰çº¿ç¨‹å¼€å§‹ç­‰å¾…joinThreadç»“æŸ
+				joinThread.join();             // µ±Ç°Ïß³Ì¿ªÊ¼µÈ´ıjoinThread½áÊø
 			} catch (InterruptedException e) {
 			}
-			System.out.println(Thread.currentThread().getName() + "ä¹°äº†" + cake.name + " ä»·é’±:" + cake.price);
+			System.out.println(Thread.currentThread().getName() + "ÂòÁË" + cake.name + " ¼ÛÇ®:" + cake.price);
 		} else if (Thread.currentThread() == joinThread) {
-			System.out.println(joinThread.getName() + "å¼€å§‹åˆ¶ä½œç”Ÿæ—¥è›‹ç³•,è¯·ç­‰...");
+			System.out.println(joinThread.getName() + "¿ªÊ¼ÖÆ×÷ÉúÈÕµ°¸â,ÇëµÈ...");
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 			}
-			cake = new Cake("ç”Ÿæ—¥è›‹ç³•", 158);
-			System.out.println(joinThread.getName() + "åˆ¶ä½œå®Œæ¯•");
+			cake = new Cake("ÉúÈÕµ°¸â", 158);
+			System.out.println(joinThread.getName() + "ÖÆ×÷Íê±Ï");
 		}
 	}
 
-	class Cake {  // å†…éƒ¨ç±»
+	class Cake {  // ÄÚ²¿Àà
 		int price;
 		String name;
 

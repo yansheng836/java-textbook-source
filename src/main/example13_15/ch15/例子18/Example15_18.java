@@ -1,9 +1,9 @@
-package ch15.ä¾‹å­18;
+package ch15.Àı×Ó18;
 
 public class Example15_18 {
 	public static void main(String args[]) {
 		WindowReader win = new WindowReader();
-		win.setTitle("ä½¿ç”¨æ–‡ä»¶å¯¹è¯æ¡†è¯»å†™æ–‡ä»¶");
+		win.setTitle("Ê¹ÓÃÎÄ¼ş¶Ô»°¿ò¶ÁĞ´ÎÄ¼ş");
 		win.setBounds(80, 90, 200, 300);
 	}
 }

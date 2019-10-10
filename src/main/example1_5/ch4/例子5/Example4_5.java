@@ -1,19 +1,19 @@
-package ch4.ä¾‹å­5;
+package ch4.Àı×Ó5;
 
 public class Example4_5 {
 	public static void main(String args[]) {
 		TV haierTV = new TV();
 		haierTV.setChannel(5);
-		System.out.println("å–ç»™ç”¨æˆ·çš„haierTVç›®å‰çš„é¢‘é“æ˜¯" + haierTV.getChannel());
+		System.out.println("Âô¸øÓÃ»§µÄhaierTVÄ¿Ç°µÄÆµµÀÊÇ" + haierTV.getChannel());
 		Chineses zhangsan = new Chineses();
 		zhangsan.buyTV(haierTV);
-		System.out.println("zhangsanå¼€å§‹çœ‹ç”µè§†èŠ‚ç›®");
+		System.out.println("zhangsan¿ªÊ¼¿´µçÊÓ½ÚÄ¿");
 		zhangsan.seeTV();
 		int m = 2;
-		System.out.println("zhangsanç”¨é¥æ§å™¨å°†ä¹°å›çš„ç”µè§†æ›´æ”¹åˆ°" + m + "é¢‘é“");
+		System.out.println("zhangsanÓÃÒ£¿ØÆ÷½«Âò»ØµÄµçÊÓ¸ü¸Äµ½" + m + "ÆµµÀ");
 		zhangsan.remoteControl(m);
-		System.out.println("ç°åœ¨å–ç»™ç”¨æˆ·çš„haierTVç›®å‰çš„é¢‘é“æ˜¯" + haierTV.getChannel());
-		System.out.println("zhangsanå†çœ‹ç”µè§†èŠ‚ç›®");
+		System.out.println("ÏÖÔÚÂô¸øÓÃ»§µÄhaierTVÄ¿Ç°µÄÆµµÀÊÇ" + haierTV.getChannel());
+		System.out.println("zhangsanÔÙ¿´µçÊÓ½ÚÄ¿");
 		zhangsan.seeTV();
 	}
 }

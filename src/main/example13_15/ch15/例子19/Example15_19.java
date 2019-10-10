@@ -1,9 +1,9 @@
-package ch15.渚嬪瓙19;
+package ch15.例子19;
 
 public class Example15_19 {
 	public static void main(String args[]) {
 		MyWindow win = new MyWindow();
-		win.setTitle("甯﹁嚜瀹氫箟瀵硅瘽妗嗙殑绐楀彛");
+		win.setTitle("带自定义对话框的窗口");
 		win.setSize(200, 300);
 	}
 }

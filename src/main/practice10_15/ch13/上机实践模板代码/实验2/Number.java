@@ -1,4 +1,4 @@
-package ch13.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch13.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 public class Number implements Runnable {
 	final int SMALLER = -1, LARGER = 1, SUCCESS = 8;
@@ -7,8 +7,8 @@ public class Number implements Runnable {
 	Thread giveNumberThread, guessNumberThread;
 
 	Number() {
-		// ã€ä»£ç 1ã€‘åˆ›å»ºgiveNumberThread,å½“å‰Numberç±»çš„å®ä¾‹æ˜¯giveNumberThreadçš„ç›®æ ‡å¯¹è±¡
-		// ã€ä»£ç 2ã€‘åˆ›å»ºguessNumberThread,å½“å‰Numberç±»çš„å®ä¾‹æ˜¯guessNumberThreadçš„ç›®æ ‡å¯¹è±¡
+		// ¡¾´úÂë1¡¿´´½¨giveNumberThread,µ±Ç°NumberÀàµÄÊµÀıÊÇgiveNumberThreadµÄÄ¿±ê¶ÔÏó
+		// ¡¾´úÂë2¡¿´´½¨guessNumberThread,µ±Ç°NumberÀàµÄÊµÀıÊÇguessNumberThreadµÄÄ¿±ê¶ÔÏó
 	}
 
 	public void run() {
@@ -22,42 +22,42 @@ public class Number implements Runnable {
 	public synchronized void setMessage(int count) {
 		if (Thread.currentThread() == giveNumberThread && isGiveNumber == false) {
 			realNumber = (int) (Math.random() * 100) + 1;
-			System.out.println("éšæœºç»™ä½ ä¸€ä¸ª1è‡³100ä¹‹é—´çš„æ•°ï¼ŒçŒœçŒœæ˜¯å¤šå°‘ï¼Ÿ");
+			System.out.println("Ëæ»ú¸øÄãÒ»¸ö1ÖÁ100Ö®¼äµÄÊı£¬²Â²ÂÊÇ¶àÉÙ£¿");
 			isGiveNumber = true;
 			pleaseGuess = true;
 		}
 		if (Thread.currentThread() == giveNumberThread) {
 			while (pleaseGuess == true)
 				try {
-					wait();  // è®©å‡ºCPUä½¿ç”¨æƒï¼Œè®©å¦ä¸€ä¸ªçº¿ç¨‹å¼€å§‹çŒœæ•°
+					wait();  // ÈÃ³öCPUÊ¹ÓÃÈ¨£¬ÈÃÁíÒ»¸öÏß³Ì¿ªÊ¼²ÂÊı
 				} catch (InterruptedException e) {
 				}
-			if (realNumber > guessNumber) { // ç»“æŸç­‰å¾…åï¼Œæ ¹æ®å¦ä¸€ä¸ªçº¿ç¨‹çš„çŒœæµ‹ç»™å‡ºæç¤º
+			if (realNumber > guessNumber) { // ½áÊøµÈ´ıºó£¬¸ù¾İÁíÒ»¸öÏß³ÌµÄ²Â²â¸ø³öÌáÊ¾
 				message = SMALLER;
-				System.out.println("ä½ çŒœå°äº†");
+				System.out.println("Äã²ÂĞ¡ÁË");
 			} else if (realNumber < guessNumber) {
 				message = LARGER;
-				System.out.println("ä½ çŒœå¤§äº†");
+				System.out.println("Äã²Â´óÁË");
 			} else {
 				message = SUCCESS;
-				System.out.println("æ­å–œï¼Œä½ çŒœå¯¹äº†");
+				System.out.println("¹§Ï²£¬Äã²Â¶ÔÁË");
 			}
 			pleaseGuess = true;
 		}
 		if (Thread.currentThread() == guessNumberThread && isGiveNumber == true) {
 			while (pleaseGuess == false)
 				try {
-					wait();  // è®©å‡ºCPUä½¿ç”¨æƒï¼Œè®©å¦ä¸€ä¸ªçº¿ç¨‹ç»™å‡ºæç¤º
+					wait();  // ÈÃ³öCPUÊ¹ÓÃÈ¨£¬ÈÃÁíÒ»¸öÏß³Ì¸ø³öÌáÊ¾
 				} catch (InterruptedException e) {
 				}
 			if (message == SMALLER) {
 				min = guessNumber;
 				guessNumber = (min + max) / 2;
-				System.out.println("æˆ‘ç¬¬" + count + "æ¬¡çŒœè¿™ä¸ªæ•°æ˜¯:" + guessNumber);
+				System.out.println("ÎÒµÚ" + count + "´Î²ÂÕâ¸öÊıÊÇ:" + guessNumber);
 			} else if (message == LARGER) {
 				max = guessNumber;
 				guessNumber = (min + max) / 2;
-				System.out.println("æˆ‘ç¬¬" + count + "æ¬¡çŒœè¿™ä¸ªæ•°æ˜¯:" + guessNumber);
+				System.out.println("ÎÒµÚ" + count + "´Î²ÂÕâ¸öÊıÊÇ:" + guessNumber);
 			}
 			pleaseGuess = false;
 		}

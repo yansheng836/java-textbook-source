@@ -1,14 +1,14 @@
-package ch4.ä¾‹å­3;
+package ch4.Àı×Ó3;
 
 public class Vehicle {
-	double speed;             // å˜é‡å£°æ˜éƒ¨åˆ†,åˆ»ç”»é€Ÿåº¦
-	int power;                // å˜é‡å£°æ˜éƒ¨åˆ†,åˆ»ç”»åŠŸç‡
+	double speed;             // ±äÁ¿ÉùÃ÷²¿·Ö,¿Ì»­ËÙ¶È
+	int power;                // ±äÁ¿ÉùÃ÷²¿·Ö,¿Ì»­¹¦ÂÊ
 
-	void speedUp(int s) {      // æ–¹æ³•å®šä¹‰,åˆ»ç”»åŠ é€ŸåŠŸèƒ½
+	void speedUp(int s) {      // ·½·¨¶¨Òå,¿Ì»­¼ÓËÙ¹¦ÄÜ
 		speed = speed + s;
 	}
 
-	void speedDown(int d) {   // æ–¹æ³•å®šä¹‰,åˆ»ç”»å‡é€ŸåŠŸèƒ½
+	void speedDown(int d) {   // ·½·¨¶¨Òå,¿Ì»­¼õËÙ¹¦ÄÜ
 		speed = speed - d;
 	}
 

@@ -1,34 +1,34 @@
-package ch13.ä¾‹å­9;
+package ch13.Àı×Ó9;
 
 public class TicketHouse implements Runnable {
 	int fiveAmount = 2, tenAmount = 0, twentyAmount = 0;
 
 	public void run() {
-		if (Thread.currentThread().getName().equals("å¼ é£")) {
+		if (Thread.currentThread().getName().equals("ÕÅ·É")) {
 			saleTicket(20);
-		} else if (Thread.currentThread().getName().equals("æé€µ")) {
+		} else if (Thread.currentThread().getName().equals("ÀîåÓ")) {
 			saleTicket(5);
 		}
 	}
 
 	private synchronized void saleTicket(int money) {
-		if (money == 5) {  // å¦‚æœä½¿ç”¨è¯¥æ–¹æ³•çš„çº¿ç¨‹ä¼ é€’çš„å‚æ•°æ˜¯5,å°±ä¸ç”¨ç­‰å¾…
+		if (money == 5) {  // Èç¹ûÊ¹ÓÃ¸Ã·½·¨µÄÏß³Ì´«µİµÄ²ÎÊıÊÇ5,¾Í²»ÓÃµÈ´ı
 			fiveAmount = fiveAmount + 1;
-			System.out.println("ç»™" + Thread.currentThread().getName() + "å…¥åœºå·,"
-					+ Thread.currentThread().getName() + "çš„é’±æ­£å¥½");
+			System.out.println("¸ø" + Thread.currentThread().getName() + "Èë³¡¾í,"
+					+ Thread.currentThread().getName() + "µÄÇ®ÕıºÃ");
 		} else if (money == 20) {
 			while (fiveAmount < 3) {
 				try {
-					System.out.println("\n" + Thread.currentThread().getName() + "é è¾¹ç­‰...");
-					wait();       // å¦‚æœä½¿ç”¨è¯¥æ–¹æ³•çš„çº¿ç¨‹ä¼ é€’çš„å‚æ•°æ˜¯20é¡»ç­‰å¾…
-					System.out.println("\n" + Thread.currentThread().getName() + "ç»§ç»­ä¹°ç¥¨");
+					System.out.println("\n" + Thread.currentThread().getName() + "¿¿±ßµÈ...");
+					wait();       // Èç¹ûÊ¹ÓÃ¸Ã·½·¨µÄÏß³Ì´«µİµÄ²ÎÊıÊÇ20ĞëµÈ´ı
+					System.out.println("\n" + Thread.currentThread().getName() + "¼ÌĞøÂòÆ±");
 				} catch (InterruptedException e) {
 				}
 			}
 			fiveAmount = fiveAmount - 3;
 			twentyAmount = twentyAmount + 1;
-			System.out.println("ç»™" + Thread.currentThread().getName() + "å…¥åœºå·,"
-					+ Thread.currentThread().getName() + "ç»™20ï¼Œæ‰¾èµ15å…ƒ");
+			System.out.println("¸ø" + Thread.currentThread().getName() + "Èë³¡¾í,"
+					+ Thread.currentThread().getName() + "¸ø20£¬ÕÒÊê15Ôª");
 		}
 		notifyAll();
 	}

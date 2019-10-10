@@ -1,19 +1,19 @@
-package ch2.ä¾‹å­5;
+package ch2.Àı×Ó5;
 
 public class Example2_5 {
 	public static void main(String args[]) {
-		People å¼ ä¸‰, æå››;
-		Machine ä½“æ£€å™¨;
-		ä½“æ£€å™¨ = new Machine();
-		å¼ ä¸‰ = new People();
-		å¼ ä¸‰.weight = 82.5F;
-		å¼ ä¸‰.height = 176;
-		å¼ ä¸‰.speak();
-		ä½“æ£€å™¨.estimate(å¼ ä¸‰.height, å¼ ä¸‰.weight);
-		æå›› = new People();
-		æå››.weight = 77.2f;
-		æå››.height = 186;
-		æå››.speak();
-		ä½“æ£€å™¨.estimate(æå››.height, æå››.weight);
+		People ÕÅÈı, ÀîËÄ;
+		Machine Ìå¼ìÆ÷;
+		Ìå¼ìÆ÷ = new Machine();
+		ÕÅÈı = new People();
+		ÕÅÈı.weight = 82.5F;
+		ÕÅÈı.height = 176;
+		ÕÅÈı.speak();
+		Ìå¼ìÆ÷.estimate(ÕÅÈı.height, ÕÅÈı.weight);
+		ÀîËÄ = new People();
+		ÀîËÄ.weight = 77.2f;
+		ÀîËÄ.height = 186;
+		ÀîËÄ.speak();
+		Ìå¼ìÆ÷.estimate(ÀîËÄ.height, ÀîËÄ.weight);
 	}
 }

@@ -1,11 +1,11 @@
-package ch4.ä¾‹å­13;
+package ch4.Àı×Ó13;
 
 import java.util.Date;
 
 public class Example4_13 {
 	public static void main(String args[]) {
 		Date date = new Date();
-		System.out.println("æœ¬åœ°æœºå™¨çš„æ—¶é—´:");
+		System.out.println("±¾µØ»úÆ÷µÄÊ±¼ä:");
 		System.out.println(date);
 	}
 }

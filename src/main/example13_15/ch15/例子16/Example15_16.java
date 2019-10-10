@@ -1,9 +1,9 @@
-package ch15.ä¾‹å­16;
+package ch15.Àı×Ó16;
 
 public class Example15_16 {
 	public static void main(String args[]) {
 		WindowEnter win = new WindowEnter();
-		win.setTitle("å¸¦ç¡®è®¤å¯¹è¯æ¡†çš„çª—å£");
+		win.setTitle("´øÈ·ÈÏ¶Ô»°¿òµÄ´°¿Ú");
 		win.setBounds(80, 90, 200, 300);
 	}
 }

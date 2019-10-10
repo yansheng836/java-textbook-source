@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­11;
+package ch11.Àı×Ó11;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,7 +19,7 @@ public class Example11_11 {
 		try {
 			float n = 500;
 			con = DriverManager.getConnection("jdbc:derby:shop;create=true");
-			con.setAutoCommit(false);       // å…³é—­è‡ªåŠ¨æäº¤æ¨¡å¼
+			con.setAutoCommit(false);       // ¹Ø±Õ×Ô¶¯Ìá½»Ä£Ê½
 			sql = con.createStatement();
 			rs = sql.executeQuery("SELECT * FROM goods WHERE number='001'");
 			rs.next();
@@ -31,11 +31,11 @@ public class Example11_11 {
 			priceTwo = priceTwo + n;
 			sql.executeUpdate("UPDATE goods SET price =" + priceOne + " WHERE number='001'");
 			sql.executeUpdate("UPDATE goods SET price=" + priceTwo + " WHERE number='002'");
-			con.commit(); // å¼€å§‹äº‹åŠ¡å¤„ç†
+			con.commit(); // ¿ªÊ¼ÊÂÎñ´¦Àí
 			con.close();
 		} catch (SQLException e) {
 			try {
-				con.rollback();          // æ’¤é”€äº‹åŠ¡æ‰€åšçš„æ“ä½œ
+				con.rollback();          // ³·ÏúÊÂÎñËù×öµÄ²Ù×÷
 			} catch (SQLException exp) {
 			}
 			System.out.println(e);

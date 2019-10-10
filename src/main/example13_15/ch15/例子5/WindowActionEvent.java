@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙5;
+package ch15.例子5;
 
 import java.awt.FlowLayout;
 
@@ -19,7 +19,7 @@ public class WindowActionEvent extends JFrame {
 		setLayout(new FlowLayout());
 		text = new JTextField(10);
 		listener = new ReaderListen();
-		text.addActionListener(listener);   // text鏄簨浠舵簮,listener鏄洃瑙嗗櫒
+		text.addActionListener(listener);   // text是事件源,listener是监视器
 		add(text);
 	}
 }

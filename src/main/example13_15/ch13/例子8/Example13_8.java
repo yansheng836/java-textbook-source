@@ -1,4 +1,4 @@
-package ch13.ä¾‹å­8;
+package ch13.Àı×Ó8;
 
 public class Example13_8 {
 	public static void main(String args[]) {
@@ -6,9 +6,9 @@ public class Example13_8 {
 		house.setCake(10);
 		Thread antOne, antTwo;
 		antOne = new Thread(house);
-		antOne.setName("çº¢èš‚èš");
+		antOne.setName("ºìÂìÒÏ");
 		antTwo = new Thread(house);
-		antTwo.setName("é»‘èš‚èš");
+		antTwo.setName("ºÚÂìÒÏ");
 		antOne.start();
 		antTwo.start();
 	}

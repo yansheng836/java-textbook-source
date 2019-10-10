@@ -1,18 +1,18 @@
-package ch9.ä¾‹å­11;
+package ch9.Àı×Ó11;
 
 import java.util.Scanner;
 
 public class Example9_11 {
 	public static void main(String args[]) {
-		System.out.println("ä¸€è¡Œæ–‡æœ¬:");
+		System.out.println("Ò»ĞĞÎÄ±¾:");
 		Scanner reader = new Scanner(System.in);
 		String str = reader.nextLine();
-		// ç©ºæ ¼ã€æ•°å­—å’Œç¬¦å·(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)ç»„æˆçš„æ­£åˆ™è¡¨è¾¾å¼:
+		// ¿Õ¸ñ¡¢Êı×ÖºÍ·ûºÅ(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)×é³ÉµÄÕıÔò±í´ïÊ½:
 		String regex = "[\\s\\d\\p{Punct}]+";
 		String words[] = str.split(regex);
 		for (int i = 0; i < words.length; i++) {
 			int m = i + 1;
-			System.out.println("å•è¯" + m + ":" + words[i]);
+			System.out.println("µ¥´Ê" + m + ":" + words[i]);
 		}
 	}
 }

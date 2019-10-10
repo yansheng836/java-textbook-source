@@ -1,4 +1,4 @@
-package ch7.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch7.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 abstract class Employee {
 	public abstract double earnings();
@@ -17,28 +17,28 @@ class MonthWorker extends Employee {
 }
 
 class Company {
-//	   ã€ä»£ç 1ã€‘//å£°æ˜ä¸€ä¸ªåå­—æ˜¯employeeç±»å‹æ˜¯Employeeçš„æ•°ç»„
+//	   ¡¾´úÂë1¡¿//ÉùÃ÷Ò»¸öÃû×ÖÊÇemployeeÀàĞÍÊÇEmployeeµÄÊı×é
 	   double salaries=0;
 	   Company(Employee[] employee) {
 	      this.employee=employee;
 	   }
 	   public double salariesPay() {
 	       salaries=0;
-	       //ã€ä»£ç 2ã€‘ //è®¡ç®—salariesã€‚
+	       //¡¾´úÂë2¡¿ //¼ÆËãsalaries¡£
 	       return salaries;
 	   }    
 	}
 
 public class CompanySalary {
 	public static void main(String args[]) {
-		Employee[] employee = new Employee[129]; // å…¬å¸æœ‰129åé›‡å‘˜
-		for (int i = 0; i < employee.length; i++) {   // é›‡å‘˜ç®€å•åœ°åˆ†æˆ2ç±»
+		Employee[] employee = new Employee[129]; // ¹«Ë¾ÓĞ129Ãû¹ÍÔ±
+		for (int i = 0; i < employee.length; i++) {   // ¹ÍÔ±¼òµ¥µØ·Ö³É2Àà
 			if (i % 2 == 0)
 				employee[i] = new YearWorker();
 			else if (i % 2 == 1)
 				employee[i] = new MonthWorker();
 		}
 		Company company = new Company(employee);
-		System.out.println("å…¬å¸è–ªæ°´æ€»é¢:" + company.salariesPay() + "å…ƒ");
+		System.out.println("¹«Ë¾Ğ½Ë®×Ü¶î:" + company.salariesPay() + "Ôª");
 	}
 }

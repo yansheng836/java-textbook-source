@@ -1,4 +1,4 @@
-package ch2.ä¾‹å­6;
+package ch2.Àı×Ó6;
 
 import java.util.Scanner;
 
@@ -6,11 +6,11 @@ public class Example2_6 {
 	public static void main(String args[]) {
 		Rect rectangle = new Rect();
 		Scanner reader = new Scanner(System.in);
-		System.out.println("è¾“å…¥çŸ©å½¢çš„å®½ï¼Œå¹¶å›è½¦ç¡®è®¤");
+		System.out.println("ÊäÈë¾ØĞÎµÄ¿í£¬²¢»Ø³µÈ·ÈÏ");
 		rectangle.width = reader.nextDouble();
-		System.out.println("è¾“å…¥çŸ©å½¢çš„é«˜ï¼Œå¹¶å›è½¦ç¡®è®¤");
+		System.out.println("ÊäÈë¾ØĞÎµÄ¸ß£¬²¢»Ø³µÈ·ÈÏ");
 		rectangle.height = reader.nextDouble();
 		double area = rectangle.getArea();
-		System.out.println("rectangleçš„é¢ç§¯:" + area);
+		System.out.println("rectangleµÄÃæ»ı:" + area);
 	}
 }

@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­13;
+package ch5.Àı×Ó13;
 
 public class Application {
 	public static void main(String args[]) {

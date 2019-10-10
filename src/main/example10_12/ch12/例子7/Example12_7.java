@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­7;
+package ch12.Àı×Ó7;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -9,30 +9,30 @@ public class Example12_7 {
 	public static void main(String args[]) {
 		int m = 5;
 		LinkedList<String> list = new LinkedList<String>();
-		System.out.printf("è¾“å…¥å›´åœˆçš„äººå(å…±%däºº)\n", m);
+		System.out.printf("ÊäÈëÎ§È¦µÄÈËÃû(¹²%dÈË)\n", m);
 		Scanner scanner = new Scanner(System.in);
 		for (int i = 1; i <= m; i++) {
 			String name = scanner.nextLine();
 			list.add(name);
 		}
-		System.out.printf("\nå½“å‰åœˆä¸­çš„äºº:");
+		System.out.printf("\nµ±Ç°È¦ÖĞµÄÈË:");
 		Iterator<String> iter = list.iterator();
 		while (iter.hasNext()) {
 			String str = iter.next();
 			System.out.print(str + " ");
 		}
-		System.out.printf("\né¡ºæ—¶é’ˆæ•°åˆ°ç¬¬3ä¸ªäººï¼Œè¯¥äººä»åœˆä¸­é€€å‡º:");
+		System.out.printf("\nË³Ê±ÕëÊıµ½µÚ3¸öÈË£¬¸ÃÈË´ÓÈ¦ÖĞÍË³ö:");
 		while (list.size() > 1) {
-			Collections.rotate(list, -2);   // å‘å·¦æ—‹è½¬2æ­¥
+			Collections.rotate(list, -2);   // Ïò×óĞı×ª2²½
 			String removedPeople = list.removeFirst();
-			System.out.printf("\n" + removedPeople + "ä»åœˆä¸­é€€å‡º.");
-			System.out.print(" å½“å‰åœˆä¸­çš„äºº:");
+			System.out.printf("\n" + removedPeople + "´ÓÈ¦ÖĞÍË³ö.");
+			System.out.print(" µ±Ç°È¦ÖĞµÄÈË:");
 			iter = list.iterator();
 			while (iter.hasNext()) {
 				String str = iter.next();
 				System.out.print(str + " ");
 			}
 		}
-		System.out.printf("\nåœˆä¸­æœ€åå‰©ä¸‹çš„æ˜¯:%s", list.get(0));
+		System.out.printf("\nÈ¦ÖĞ×îºóÊ£ÏÂµÄÊÇ:%s", list.get(0));
 	}
 }

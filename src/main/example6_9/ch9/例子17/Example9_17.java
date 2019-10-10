@@ -1,6 +1,6 @@
-package ch9.ä¾‹å­17;
+package ch9.Àı×Ó17;
 
-//é™æ€å¯¼å…¥Calendarç±»çš„é™æ€å¸¸é‡:
+//¾²Ì¬µ¼ÈëCalendarÀàµÄ¾²Ì¬³£Á¿:
 import static java.util.Calendar.DAY_OF_MONTH;
 import static java.util.Calendar.HOUR_OF_DAY;
 import static java.util.Calendar.MINUTE;
@@ -15,22 +15,22 @@ public class Example9_17 {
 	public static void main(String args[]) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(new Date());
-		String å¹´ = String.valueOf(calendar.get(YEAR)), æœˆ = String.valueOf(calendar.get(MONTH) + 1),
-				æ—¥ = String.valueOf(calendar.get(DAY_OF_MONTH));
+		String Äê = String.valueOf(calendar.get(YEAR)), ÔÂ = String.valueOf(calendar.get(MONTH) + 1),
+				ÈÕ = String.valueOf(calendar.get(DAY_OF_MONTH));
 		int hour = calendar.get(HOUR_OF_DAY), minute = calendar.get(MINUTE), second = calendar.get(SECOND);
-		System.out.println("ç°åœ¨çš„æ—¶é—´æ˜¯ï¼š");
-		System.out.print("" + å¹´ + "å¹´" + æœˆ + "æœˆ" + æ—¥ + "æ—¥");
-		System.out.println(" " + hour + "æ—¶" + minute + "åˆ†" + second + "ç§’");
+		System.out.println("ÏÖÔÚµÄÊ±¼äÊÇ£º");
+		System.out.print("" + Äê + "Äê" + ÔÂ + "ÔÂ" + ÈÕ + "ÈÕ");
+		System.out.println(" " + hour + "Ê±" + minute + "·Ö" + second + "Ãë");
 		int year1 = 1949, month1 = 9, day1 = 1;
-		calendar.set(year1, month1 - 1, day1);  // å°†æ—¥å†ç¿»åˆ°1949å¹´10æœˆ1æ—¥,æ³¨æ„9è¡¨ç¤ºåæœˆ
+		calendar.set(year1, month1 - 1, day1);  // ½«ÈÕÀú·­µ½1949Äê10ÔÂ1ÈÕ,×¢Òâ9±íÊ¾Ê®ÔÂ
 		long time1 = calendar.getTimeInMillis();
 		int year2 = 2015;
 		int month2 = 9;
 		int day2 = 1;
-		calendar.set(year2, month2 - 1, day2);  // å°†æ—¥å†ç¿»åˆ°2015å¹´10æœˆ1æ—¥
+		calendar.set(year2, month2 - 1, day2);  // ½«ÈÕÀú·­µ½2015Äê10ÔÂ1ÈÕ
 		long time2 = calendar.getTimeInMillis();
 		long days = (time2 - time1) / (1000 * 60 * 60 * 24);
-		System.out.printf("%d-%d-%då’Œ%d-%d-%d\nç›¸éš”%då¤©\n", year2, month2 + 1, day2, year1, month1 + 1, day1,
+		System.out.printf("%d-%d-%dºÍ%d-%d-%d\nÏà¸ô%dÌì\n", year2, month2 + 1, day2, year1, month1 + 1, day1,
 				days);
 	}
 }

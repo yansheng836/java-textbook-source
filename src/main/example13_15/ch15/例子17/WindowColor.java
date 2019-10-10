@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­17;
+package ch15.Àı×Ó17;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -13,7 +13,7 @@ public class WindowColor extends JFrame implements ActionListener {
 	JButton button;
 
 	WindowColor() {
-		button = new JButton("æ‰“å¼€é¢œè‰²å¯¹è¯æ¡†");
+		button = new JButton("´ò¿ªÑÕÉ«¶Ô»°¿ò");
 		button.addActionListener(this);
 		setLayout(new FlowLayout());
 		add(button);
@@ -22,7 +22,7 @@ public class WindowColor extends JFrame implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		Color newColor = JColorChooser.showDialog(this, "è°ƒè‰²æ¿", getContentPane().getBackground());
+		Color newColor = JColorChooser.showDialog(this, "µ÷É«°å", getContentPane().getBackground());
 		if (newColor != null) {
 			getContentPane().setBackground(newColor);
 		}

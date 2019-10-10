@@ -1,26 +1,26 @@
-package ch13.ä¾‹å­2;
+package ch13.Àı×Ó2;
 
 public class Ant extends Thread {
 	Cake cake;
 
 	Ant(String name, Cake c) {
-		setName(name); // è°ƒç”¨ä»Threadç±»ç»§æ‰¿çš„setNameæ–¹æ³•ä¸ºçº¿ç¨‹èµ·åå­—
+		setName(name); // µ÷ÓÃ´ÓThreadÀà¼Ì³ĞµÄsetName·½·¨ÎªÏß³ÌÆğÃû×Ö
 		cake = c;
 	}
 
 	public void run() {
 		while (true) {
 			int n = 2;
-			System.out.print(getName() + "åƒ" + n + "å…‹è›‹ç³•.");
-			cake.lost(n);  // å°†è›‹ç³•åƒæ‰nå…‹
-			System.out.println(getName() + "å‘ç°è›‹ç³•è¿˜å‰©" + cake.getSize() + "å…‹");
+			System.out.print(getName() + "³Ô" + n + "¿Ëµ°¸â.");
+			cake.lost(n);  // ½«µ°¸â³Ôµôn¿Ë
+			System.out.println(getName() + "·¢ÏÖµ°¸â»¹Ê£" + cake.getSize() + "¿Ë");
 			try {
-				sleep(1000);  // ä¸­æ–­1000è±ªç§’
+				sleep(1000);  // ÖĞ¶Ï1000ºÀÃë
 			} catch (InterruptedException e) {
 			}
 			if (cake.getSize() <= 0) {
-				System.out.println(getName() + "è¿›å…¥æ­»äº¡çŠ¶æ€");
-				return;  // ç»“æŸrunæ–¹æ³•
+				System.out.println(getName() + "½øÈëËÀÍö×´Ì¬");
+				return;  // ½áÊørun·½·¨
 			}
 		}
 	}

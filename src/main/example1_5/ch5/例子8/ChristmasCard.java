@@ -1,10 +1,10 @@
-package ch5.渚嬪瓙8;
+package ch5.例子8;
 
 public class ChristmasCard extends Card {
-	String content;   // 瀛愮被鏂板鐨刢ontent
+	String content;   // 子类新增的content
 
 	ChristmasCard(String title, String content) {
-		super(title);  // 璋冪敤鐖剁被鐨勬瀯閫犳柟娉曪紝鍗虫墽琛孋ard(title)
+		super(title);  // 调用父类的构造方法，即执行Card(title)
 		this.content = content;
 	}
 

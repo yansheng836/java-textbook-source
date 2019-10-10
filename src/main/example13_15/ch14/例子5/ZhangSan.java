@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­5;
+package ch14.Àı×Ó5;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -12,12 +12,12 @@ public class ZhangSan {
 		ReceiveLetterForZhang receiver = new ReceiveLetterForZhang();
 		try {
 			readData = new Thread(receiver);
-			readData.start();           // è´Ÿè´£æ¥æ”¶ä¿¡æ¯çš„çº¿ç¨‹
+			readData.start();           // ¸ºÔğ½ÓÊÕĞÅÏ¢µÄÏß³Ì
 			byte[] buffer = new byte[1];
 			InetAddress address = InetAddress.getByName("127.0.0.1");
 			DatagramPacket dataPack = new DatagramPacket(buffer, buffer.length, address, 666);
 			DatagramSocket postman = new DatagramSocket();
-			System.out.print("è¾“å…¥å‘é€ç»™æå››çš„ä¿¡æ¯:");
+			System.out.print("ÊäÈë·¢ËÍ¸øÀîËÄµÄĞÅÏ¢:");
 			while (scanner.hasNext()) {
 				String mess = scanner.nextLine();
 				buffer = mess.getBytes();
@@ -26,7 +26,7 @@ public class ZhangSan {
 				buffer = mess.getBytes();
 				dataPack.setData(buffer);
 				postman.send(dataPack);
-				System.out.print("ç»§ç»­è¾“å…¥å‘é€ç»™æå››çš„ä¿¡æ¯:");
+				System.out.print("¼ÌĞøÊäÈë·¢ËÍ¸øÀîËÄµÄĞÅÏ¢:");
 			}
 		} catch (Exception e) {
 			System.out.println(e);

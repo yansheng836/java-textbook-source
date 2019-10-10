@@ -1,4 +1,4 @@
-package ch8.ä¾‹å­2;
+package ch8.Àı×Ó2;
 
 abstract class InputAlphabet {
 	public abstract void input();

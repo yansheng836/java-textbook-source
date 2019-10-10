@@ -1,4 +1,4 @@
-package ch13.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch13.上机实践模板代码.实验1;
 
 import java.util.Scanner;
 
@@ -21,9 +21,9 @@ public class InuptLetterThread extends Thread {
 			char c = str.charAt(0);
 			if (c == letter.getChar()) {
 				score++;
-				System.out.printf("\t\t杈撳叆瀵逛簡,鐩墠鍒嗘暟%d\n", score);
+				System.out.printf("\t\t输入对了,目前分数%d\n", score);
 			} else {
-				System.out.printf("\t\t杈撳叆閿欎簡,鐩墠鍒嗘暟%d\n", score);
+				System.out.printf("\t\t输入错了,目前分数%d\n", score);
 			}
 			if (c == '#')
 				System.exit(0);

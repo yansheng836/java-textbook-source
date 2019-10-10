@@ -1,27 +1,27 @@
-package ch3.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch3.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class GuessNumber {
 	public static void main (String args[]) {
 	      Scanner reader = new Scanner(System.in);
 	      Random random = new Random();
-	      System.out.println("ç»™ä½ ä¸€ä¸ª1è‡³100ä¹‹é—´çš„æ•´æ•°,è¯·çŒœæµ‹è¿™ä¸ªæ•°");
-	      int realNumber = random.nextInt(100)+1;//random.nextInt(100)æ˜¯[0,100)ä¸­éšæœºæ•´æ•°
+	      System.out.println("¸øÄãÒ»¸ö1ÖÁ100Ö®¼äµÄÕûÊı,Çë²Â²âÕâ¸öÊı");
+	      int realNumber = random.nextInt(100)+1;//random.nextInt(100)ÊÇ[0,100)ÖĞËæ»úÕûÊı
 	      int yourGuess = 0;
-	      System.out.print("è¾“å…¥æ‚¨çš„çŒœæµ‹:");  
+	      System.out.print("ÊäÈëÄúµÄ²Â²â:");  
 	      yourGuess = reader.nextInt();
-	      while(ã€ä»£ç 1ã€‘) //å¾ªç¯æ¡ä»¶
+	      while(¡¾´úÂë1¡¿) //Ñ­»·Ìõ¼ş
 	      {
-	         if(ã€ä»£ç 2ã€‘)   //çŒœå¤§äº†çš„æ¡ä»¶ä»£ç 
+	         if(¡¾´úÂë2¡¿)   //²Â´óÁËµÄÌõ¼ş´úÂë
 	         {
-	             System.out.print("çŒœå¤§äº†,å†è¾“å…¥ä½ çš„çŒœæµ‹:");
+	             System.out.print("²Â´óÁË,ÔÙÊäÈëÄãµÄ²Â²â:");
 	             yourGuess = reader.nextInt();
 	         }
-	         else if(ã€ä»£ç 3ã€‘) //çŒœå°äº†çš„æ¡ä»¶ä»£ç 
+	         else if(¡¾´úÂë3¡¿) //²ÂĞ¡ÁËµÄÌõ¼ş´úÂë
 	         {
-	             System.out.print("çŒœå°äº†,å†è¾“å…¥ä½ çš„çŒœæµ‹:");
+	             System.out.print("²ÂĞ¡ÁË,ÔÙÊäÈëÄãµÄ²Â²â:");
 	             yourGuess = reader.nextInt();
 	         }
 	      }
-	      System.out.println("çŒœå¯¹äº†!");
+	      System.out.println("²Â¶ÔÁË!");
 	   }
 }

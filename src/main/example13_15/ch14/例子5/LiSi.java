@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­5;
+package ch14.Àı×Ó5;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -12,12 +12,12 @@ public class LiSi {
 		ReceiveLetterForLi receiver = new ReceiveLetterForLi();
 		try {
 			readData = new Thread(receiver);
-			readData.start();           // è´Ÿè´£æ¥æ”¶ä¿¡æ¯çš„çº¿ç¨‹
+			readData.start();           // ¸ºÔğ½ÓÊÕĞÅÏ¢µÄÏß³Ì
 			byte[] buffer = new byte[1];
 			InetAddress address = InetAddress.getByName("127.0.0.1");
 			DatagramPacket dataPack = new DatagramPacket(buffer, buffer.length, address, 888);
 			DatagramSocket postman = new DatagramSocket();
-			System.out.print("è¾“å…¥å‘é€ç»™å¼ ä¸‰çš„ä¿¡æ¯:");
+			System.out.print("ÊäÈë·¢ËÍ¸øÕÅÈıµÄĞÅÏ¢:");
 			while (scanner.hasNext()) {
 				String mess = scanner.nextLine();
 				buffer = mess.getBytes();
@@ -26,7 +26,7 @@ public class LiSi {
 				buffer = mess.getBytes();
 				dataPack.setData(buffer);
 				postman.send(dataPack);
-				System.out.print("ç»§ç»­è¾“å…¥å‘é€ç»™å¼ ä¸‰çš„ä¿¡æ¯:");
+				System.out.print("¼ÌĞøÊäÈë·¢ËÍ¸øÕÅÈıµÄĞÅÏ¢:");
 			}
 		} catch (Exception e) {
 			System.out.println(e);

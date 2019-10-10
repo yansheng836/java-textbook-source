@@ -1,17 +1,17 @@
-package ch13.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch13.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 public class TypeKey {
 	public static void main(String args[]) {
-		System.out.println("é”®ç›˜ç»ƒä¹ (è¾“å…¥#ç»“æŸç¨‹åº)");
-		System.out.printf("è¾“å…¥æ˜¾ç¤ºçš„å­—æ¯(å›è½¦)\n");
+		System.out.println("¼üÅÌÁ·Ï°(ÊäÈë#½áÊø³ÌĞò)");
+		System.out.printf("ÊäÈëÏÔÊ¾µÄ×ÖÄ¸(»Ø³µ)\n");
 		Letter letter;
 		letter = new Letter();
 		GiveLetterThread giveChar;
 		InuptLetterThread typeChar;
-		// ã€ä»£ç 1ã€‘åˆ›å»ºçº¿ç¨‹giveChar
+		// ¡¾´úÂë1¡¿´´½¨Ïß³ÌgiveChar
 		giveChar.setLetter(letter);
 		giveChar.setSleepLength(3200);
-		// ã€ä»£ç 2ã€‘åˆ›å»ºçº¿ç¨‹typeChar
+		// ¡¾´úÂë2¡¿´´½¨Ïß³ÌtypeChar
 		typeChar.setLetter(letter);
 		giveChar.start();
 		typeChar.start();

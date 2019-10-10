@@ -1,4 +1,4 @@
-package ch14.渚嬪瓙1;
+package ch14.例子1;
 
 import java.net.URL;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class Example14_1 {
 		URL url;
 		Thread readURL;
 		Look look = new Look();
-		System.out.println("杈撳叆URL璧勬簮,渚嬪:http://www.yahoo.com");
+		System.out.println("输入URL资源,例如:http://www.yahoo.com");
 		scanner = new Scanner(System.in);
 		String source = scanner.nextLine();
 		try {

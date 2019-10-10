@@ -1,4 +1,4 @@
-package ch8.ä¾‹å­2;
+package ch8.Àı×Ó2;
 
 public class ShowBoard {
 	void showMess(InputAlphabet show) {

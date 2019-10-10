@@ -1,8 +1,8 @@
-package ch8.ä¾‹å­1;
+package ch8.Àı×Ó1;
 
 public class RedCowForm {
 	String formName;
-	RedCow cow;  // å†…éƒ¨ç±»å£°æ˜å¯¹è±¡
+	RedCow cow;  // ÄÚ²¿ÀàÉùÃ÷¶ÔÏó
 
 	RedCowForm() {
 	}
@@ -16,8 +16,8 @@ public class RedCowForm {
 		cow.speak();
 	}
 
-	class RedCow {     // å†…éƒ¨ç±»çš„å£°æ˜
-		String cowName = "çº¢ç‰›";
+	class RedCow {     // ÄÚ²¿ÀàµÄÉùÃ÷
+		String cowName = "ºìÅ£";
 		int height, weight, price;
 
 		RedCow(int h, int w, int p) {
@@ -27,7 +27,7 @@ public class RedCowForm {
 		}
 
 		void speak() {
-			System.out.println("å¶æ˜¯" + cowName + ",èº«é«˜:" + height + "cm ä½“é‡:" + weight + "kg,ç”Ÿæ´»åœ¨" + formName);
+			System.out.println("Å¼ÊÇ" + cowName + ",Éí¸ß:" + height + "cm ÌåÖØ:" + weight + "kg,Éú»îÔÚ" + formName);
 		}
 	}
 }

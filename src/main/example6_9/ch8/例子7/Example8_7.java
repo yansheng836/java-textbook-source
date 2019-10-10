@@ -1,13 +1,13 @@
-package ch8.ä¾‹å­7;
+package ch8.Àı×Ó7;
 
 public class Example8_7 {
 	public static void main(String args[]) {
 		int[] score = { -120, 98, 89, 120, 99 };
 		int sum = 0;
 		for (int number : score) {
-			assert number > 0 : "è´Ÿæ•°ä¸èƒ½æ˜¯æˆç»©";
+			assert number > 0 : "¸ºÊı²»ÄÜÊÇ³É¼¨";
 			sum = sum + number;
 		}
-		System.out.println("æ€»æˆç»©:" + sum);
+		System.out.println("×Ü³É¼¨:" + sum);
 	}
 }

@@ -1,4 +1,4 @@
-package ch8.ä¾‹å­5;
+package ch8.Àı×Ó5;
 
 public class Example8_5 {
 	public static void main(String args[]) {
@@ -15,9 +15,9 @@ public class Example8_5 {
 			ship.loading(m);
 		} catch (DangerException e) {
 			System.out.println(e.warnMess());
-			System.out.println("æ— æ³•å†è£…è½½é‡é‡æ˜¯" + m + "å¨çš„é›†è£…ç®±");
+			System.out.println("ÎŞ·¨ÔÙ×°ÔØÖØÁ¿ÊÇ" + m + "¶ÖµÄ¼¯×°Ïä");
 		} finally {
-			System.out.printf("è´§èˆ¹å°†æ­£ç‚¹å¯èˆª");
+			System.out.printf("»õ´¬½«ÕıµãÆôº½");
 		}
 	}
 }

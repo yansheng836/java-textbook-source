@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­5;
+package ch9.Àı×Ó5;
 
 public class TV {
 	String name;
@@ -12,6 +12,6 @@ public class TV {
 
 	public String toString() {
 		String oldStr = super.toString();
-		return oldStr + "\nè¿™æ˜¯ç”µè§†æœºï¼Œå“ç‰Œæ˜¯:" + name;
+		return oldStr + "\nÕâÊÇµçÊÓ»ú£¬Æ·ÅÆÊÇ:" + name;
 	}
 }

@@ -1,7 +1,7 @@
-package ch5.ä¾‹å­6;
+package ch5.Àı×Ó6;
 
 public class Television extends HomeEletricity {
 	public void showMess() {
-		System.out.println("æˆ‘æ˜¯ç”µè§†æœº,é‡é‡æ˜¯" + weight + "kg");
+		System.out.println("ÎÒÊÇµçÊÓ»ú,ÖØÁ¿ÊÇ" + weight + "kg");
 	}
 }

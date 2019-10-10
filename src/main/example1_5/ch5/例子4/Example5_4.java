@@ -1,14 +1,14 @@
-package ch5.ä¾‹å­4;
+package ch5.Àı×Ó4;
 
 public class Example5_4 {
 	public static void main(String args[]) {
 		double math = 64, english = 76.5, chinese = 66;
 		ImportantUniversity univer = new ImportantUniversity();
-		univer.enterRule(math, english, chinese); // è°ƒç”¨é‡å†™çš„æ–¹æ³•
+		univer.enterRule(math, english, chinese); // µ÷ÓÃÖØĞ´µÄ·½·¨
 		math = 89;
 		english = 80;
 		chinese = 86;
 		univer = new ImportantUniversity();
-		univer.enterRule(math, english, chinese); // è°ƒç”¨é‡å†™çš„æ–¹æ³•
+		univer.enterRule(math, english, chinese); // µ÷ÓÃÖØĞ´µÄ·½·¨
 	}
 }

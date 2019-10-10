@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­11;
+package ch5.Àı×Ó11;
 
 class EspecialCar {
 	void cautionSound() {
@@ -25,11 +25,11 @@ class FireCar extends EspecialCar {
 
 public class Example5_11 {
 	public static void main(String args[]) {
-		EspecialCar car = new PoliceCar(); // caræ˜¯è­¦è½¦çš„ä¸Šè½¬å‹å¯¹è±¡
+		EspecialCar car = new PoliceCar(); // carÊÇ¾¯³µµÄÉÏ×ªĞÍ¶ÔÏó
 		car.cautionSound();
-		car = new AmbulanceCar(); // caræ˜¯æ•‘æŠ¤è½¦çš„ä¸Šè½¬å‹å¯¹è±¡
+		car = new AmbulanceCar(); // carÊÇ¾È»¤³µµÄÉÏ×ªĞÍ¶ÔÏó
 		car.cautionSound();
-		car = new FireCar();      // caræ˜¯æ¶ˆé˜²è½¦çš„ä¸Šè½¬å‹å¯¹è±¡
+		car = new FireCar();      // carÊÇÏû·À³µµÄÉÏ×ªĞÍ¶ÔÏó
 		car.cautionSound();
 	}
 }

@@ -1,4 +1,4 @@
-package ch10.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch10.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,16 +8,16 @@ import java.util.Vector;
 public class WordStatistic {
 	Vector<String> allWord, noSameWord;
 	File file = new File("english.txt");
-	Scanner sc = null; // å£°æ˜Scanner scï¼Œåœ¨åé¢çš„ã€ä»£ç 1ã€‘ä¸­åˆ›å»ºè¯¥å¯¹è±¡
+	Scanner sc = null; // ÉùÃ÷Scanner sc£¬ÔÚºóÃæµÄ¡¾´úÂë1¡¿ÖĞ´´½¨¸Ã¶ÔÏó
 	String regex;
 
 	WordStatistic() {
 	      allWord = new Vector<String>();
 	      noSameWord = new Vector<String>();
-	      //regexæ˜¯ç”±ç©ºæ ¼ã€æ•°å­—å’Œç¬¦å·(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)ç»„æˆçš„æ­£åˆ™è¡¨è¾¾å¼
+	      //regexÊÇÓÉ¿Õ¸ñ¡¢Êı×ÖºÍ·ûºÅ(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)×é³ÉµÄÕıÔò±í´ïÊ½
 	      regex= "[\\s\\d\\p{Punct}]+"; 
-//	      try{  sc = ã€ä»£ç 1ã€‘ //åˆ›å»ºæŒ‡å‘fileçš„sc 
-//	         ã€ä»£ç 2ã€‘//scè°ƒç”¨useDelimiter(String regex)æ–¹æ³•,å‘å‚æ•°ä¼ é€’regex
+//	      try{  sc = ¡¾´úÂë1¡¿ //´´½¨Ö¸ÏòfileµÄsc 
+//	         ¡¾´úÂë2¡¿//scµ÷ÓÃuseDelimiter(String regex)·½·¨,Ïò²ÎÊı´«µİregex
 	      }
 	      catch(IOException exp) {
 	         System.out.println(exp.toString());

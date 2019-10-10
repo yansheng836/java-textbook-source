@@ -1,21 +1,21 @@
-package ch9.ä¾‹å­21;
+package ch9.Àı×Ó21;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Example9_21 {
    public static void main(String args[ ]) { 
-     Pattern p;          //æ¨¡å¼å¯¹è±¡
-     Matcher m;         //åŒ¹é…å¯¹è±¡
+     Pattern p;          //Ä£Ê½¶ÔÏó
+     Matcher m;         //Æ¥Åä¶ÔÏó
      String regex="(http://|www)\56?\\w+\56{1}\\w+\56{1}\\p{Alpha}+";
-     p=Pattern.compile(regex);  //åˆè¯•åŒ–æ¨¡å¼å¯¹è±¡
+     p=Pattern.compile(regex);  //³õÊÔ»¯Ä£Ê½¶ÔÏó
      String s=
-"æ¸…åå¤§å­¦ç½‘å€:www.tsinghua.edu.cn,é‚®ç”µå‡ºç‰ˆç¤¾çš„ç½‘å€:http://www.ptpress. com";
-     m=p.matcher(s);  //ç”¨å¾…åŒ¹é…å­—ç¬¦åºåˆ—åˆå§‹åŒ–åŒ¹é…å¯¹è±¡
+"Çå»ª´óÑ§ÍøÖ·:www.tsinghua.edu.cn,ÓÊµç³ö°æÉçµÄÍøÖ·:http://www.ptpress. com";
+     m=p.matcher(s);  //ÓÃ´ıÆ¥Åä×Ö·ûĞòÁĞ³õÊ¼»¯Æ¥Åä¶ÔÏó
      while(m.find()) {
         String str=m.group();
         System.out.println(str);
      } 
-     System.out.println("å‰”é™¤å­—ç¬¦ä¸²ä¸­çš„ç½‘ç«™åœ°å€åå¾—åˆ°çš„å­—ç¬¦ä¸²:");
+     System.out.println("ÌŞ³ı×Ö·û´®ÖĞµÄÍøÕ¾µØÖ·ºóµÃµ½µÄ×Ö·û´®:");
      String result=m.replaceAll("");
      System.out.println(result);
    }

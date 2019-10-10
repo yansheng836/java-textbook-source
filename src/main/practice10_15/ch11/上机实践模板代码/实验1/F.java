@@ -1,4 +1,4 @@
-package ch11.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch11.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ import java.util.Vector;
 
 public class F {
 	public static void main(String args[]) {
-		int wantRecordAmount = 10;  // éšæœºæŠ½å–çš„è®°å½•æ•°ç›®
+		int wantRecordAmount = 10;  // Ëæ»ú³éÈ¡µÄ¼ÇÂ¼ÊıÄ¿
 		Random random = new Random();
 		try {
 			Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
@@ -24,19 +24,19 @@ public class F {
 			con = DriverManager.getConnection("jdbc:derby:employee;create=false");
 			sql = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			rs = sql.executeQuery("select * from salary ");
-			rs.last();      // å°†rsçš„æ¸¸æ ‡ç§»åˆ°rsçš„æœ€åä¸€è¡Œ
+			rs.last();      // ½«rsµÄÓÎ±êÒÆµ½rsµÄ×îºóÒ»ĞĞ
 			int count = rs.getRow();
 			Vector<Integer> vector = new Vector<Integer>();
 			for (int i = 1; i <= count; i++) {
 				vector.add(new Integer(i));
 			}
-			int itemAmount = Math.min(wantRecordAmount, count);// éšæœºæŠ½å–çš„è®°å½•æ•°
+			int itemAmount = Math.min(wantRecordAmount, count);// Ëæ»ú³éÈ¡µÄ¼ÇÂ¼Êı
 			double sum = 0;
 			int n = itemAmount;
 			while (itemAmount > 0) {
 				int randomIndex = random.nextInt(vector.size());
 				int index = (vector.elementAt(randomIndex)).intValue();
-				// ã€ä»£ç 3ã€‘//å°†rsçš„æ¸¸æ ‡æ¸¸æ ‡ç§»åˆ°index
+				// ¡¾´úÂë3¡¿//½«rsµÄÓÎ±êÓÎ±êÒÆµ½index
 				double price = rs.getDouble(2);
 				sum = sum + price;
 				itemAmount--;
@@ -44,8 +44,8 @@ public class F {
 			}
 			con.close();
 			double aver = sum / n;
-			System.out.println("éšæœºæŠ½å–" + n + "æ¡è®°å½•çš„");
-			System.out.println("å…¶å¹³å‡å·¥èµ„ï¼š" + aver);
+			System.out.println("Ëæ»ú³éÈ¡" + n + "Ìõ¼ÇÂ¼µÄ");
+			System.out.println("ÆäÆ½¾ù¹¤×Ê£º" + aver);
 		} catch (SQLException e) {
 			System.out.println("" + e);
 		}

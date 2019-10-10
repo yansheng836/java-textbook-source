@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­4;
+package ch11.Àı×Ó4;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,9 +22,9 @@ public class Example11_4 {
           rs=sql.executeQuery("SELECT * FROM goods ");
           rs.last();
           int rows = rs.getRow();
-          System.out.println("goodsè¡¨å…±æœ‰"+rows+"æ¡è®°å½•");
+          System.out.println("goods±í¹²ÓĞ"+rows+"Ìõ¼ÇÂ¼");
           rs.afterLast();
-          System.out.println("å€’åºè¾“å‡ºgoodsè¡¨ä¸­çš„è®°å½•:");
+          System.out.println("µ¹ĞòÊä³ögoods±íÖĞµÄ¼ÇÂ¼:");
           while(rs.previous()) {
              System.out.print(rs.getString(1)+"|");
              System.out.print(rs.getString(2)+"|");

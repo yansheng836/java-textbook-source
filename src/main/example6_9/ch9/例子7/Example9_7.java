@@ -1,12 +1,12 @@
-package ch9.ä¾‹å­7;
+package ch9.Àı×Ó7;
 
 public class Example9_7 {
 	public static void main(String args[]) {
-		byte d[] = "Javaä½ å¥½".getBytes();
-		System.out.println("æ•°ç»„dçš„é•¿åº¦æ˜¯:" + d.length);
-		String s = new String(d, 6, 2); // è¾“å‡ºï¼šå¥½
+		byte d[] = "JavaÄãºÃ".getBytes();
+		System.out.println("Êı×édµÄ³¤¶ÈÊÇ:" + d.length);
+		String s = new String(d, 6, 2); // Êä³ö£ººÃ
 		System.out.println(s);
 		s = new String(d, 0, 6);
-		System.out.println(s);   // è¾“å‡ºï¼šJavaä½ 
+		System.out.println(s);   // Êä³ö£ºJavaÄã
 	}
 }

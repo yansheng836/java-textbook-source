@@ -1,6 +1,6 @@
-package ch15.ä¾‹å­1;
+package ch15.Àı×Ó1;
 
-//å¼•å…¥JFrameçš„é™æ€å¸¸é‡
+//ÒıÈëJFrameµÄ¾²Ì¬³£Á¿
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
@@ -8,8 +8,8 @@ import javax.swing.JFrame;
 
 public class Example15_1 {
 	public static void main(String args[]) {
-		JFrame window1 = new JFrame("æ’¤é”€çª—å£");
-		JFrame window2 = new JFrame("é€€å‡ºç¨‹åº");
+		JFrame window1 = new JFrame("³·Ïú´°¿Ú");
+		JFrame window2 = new JFrame("ÍË³ö³ÌĞò");
 		window1.setBounds(60, 100, 188, 108);
 		window2.setBounds(260, 100, 188, 108);
 		window1.setVisible(true);

@@ -1,26 +1,26 @@
-package ch9.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ3;
+package ch9.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé3;
 
 public class E {
 	public static void main(String args[]) {
-		String[] student = { "å¼ ä¸‰:æ•°å­¦72ï¼Œç‰©ç†67ï¼Œè‹±è¯­70", "æå››:æ•°å­¦92ï¼Œç‰©ç†98ï¼Œè‹±è¯­88", "å‘¨æ˜:æ•°å­¦68ï¼Œç‰©ç†80ï¼Œè‹±è¯­77" };
+		String[] student = { "ÕÅÈı:ÊıÑ§72£¬ÎïÀí67£¬Ó¢Óï70", "ÀîËÄ:ÊıÑ§92£¬ÎïÀí98£¬Ó¢Óï88", "ÖÜÃ÷:ÊıÑ§68£¬ÎïÀí80£¬Ó¢Óï77" };
 		ComputeScore jisuan = new ComputeScore();
 		for (String s : student) {
 			double totalScore = jisuan.compute(s);
 			String name = s.substring(0, s.indexOf(":"));
-			System.out.println(name + "æ€»æˆç»©:" + totalScore);
+			System.out.println(name + "×Ü³É¼¨:" + totalScore);
 		}
 	}
 }
 
 class ComputeScore {
 	double compute(String chengjiForm) {
-	       Scanner scanner = ã€ä»£ç 1ã€‘//åˆ›å»ºscanner,å°†chengjiFormä¼ é€’ç»™æ„é€ æ–¹æ³•çš„å‚æ•° 
+	       Scanner scanner = ¡¾´úÂë1¡¿//´´½¨scanner,½«chengjiForm´«µİ¸ø¹¹Ôì·½·¨µÄ²ÎÊı 
 	       String regex = "[^0123456789.]+";
-	      ã€ä»£ç 2ã€‘ //scannerè°ƒç”¨useDelimiter(String regex)ï¼Œå°†regexä¼ é€’ç»™è¯¥æ–¹æ³•çš„å‚æ•°
+	      ¡¾´úÂë2¡¿ //scannerµ÷ÓÃuseDelimiter(String regex)£¬½«regex´«µİ¸ø¸Ã·½·¨µÄ²ÎÊı
 	       double sum=0;
 	       while(scanner.hasNext()){
 	         try{ 
-	              double price = ã€ä»£ç 3ã€‘ //scannerè°ƒç”¨nextDouble()è¿”å›æ•°å­—å•è¯
+	              double price = ¡¾´úÂë3¡¿ //scannerµ÷ÓÃnextDouble()·µ»ØÊı×Öµ¥´Ê
 	              sum = sum+price;
 	         } 
 	         catch(InputMismatchException exp){

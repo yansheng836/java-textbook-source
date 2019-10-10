@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­8;
+package ch11.Àı×Ó8;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class Example11_8 {
       Statement sta = null;
       try { 
         Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-        //è¿æ¥æ•°æ®åº“student:
+        //Á¬½ÓÊı¾İ¿âstudent:
         conn=DriverManager.getConnection("jdbc:derby:student;create=true");
         sta = conn.createStatement();
       }
@@ -21,18 +21,18 @@ public class Example11_8 {
       }
       try {
          String s="create table biao(name varchar(40) primary key,score real)";
-         sta.executeUpdate(s);//åˆ›å»ºè¡¨biao
+         sta.executeUpdate(s);//´´½¨±íbiao
       }
       catch(SQLException e) {
-         System.out.println("è¯¥è¡¨å·²ç»å­˜åœ¨ï¼Œä¸å†é‡æ–°åˆ›å»ºï¼"); 
-         //å¦‚æœéœ€è¦åˆ é™¤è¡¨,å¯ä»¥æ‰§è¡Œsta.execute("drop table biao");åˆ é™¤æ›¾å»ºç«‹çš„biaoè¡¨
+         System.out.println("¸Ã±íÒÑ¾­´æÔÚ£¬²»ÔÙÖØĞÂ´´½¨£¡"); 
+         //Èç¹ûĞèÒªÉ¾³ı±í,¿ÉÒÔÖ´ĞĞsta.execute("drop table biao");É¾³ıÔø½¨Á¢µÄbiao±í
       }
       try {
-         sta.executeUpdate("insert into biao values('å¼ å°ä¸‰', 90.8)");  //æ’å…¥è®°å½•
-         sta.executeUpdate("insert into biao values('æä»¨', 88.87)");
+         sta.executeUpdate("insert into biao values('ÕÅĞ¡Èı', 90.8)");  //²åÈë¼ÇÂ¼
+         sta.executeUpdate("insert into biao values('ÀîØí', 88.87)");
          sta.executeUpdate("insert into biao values('liuming',78.3)");
-         sta.executeUpdate("update biao set name ='åˆ˜é“­' where name='liuming'");
-         ResultSet rs = sta.executeQuery("SELECT * FROM biao "); // æŸ¥è¯¢è¡¨ä¸­çš„è®°å½•
+         sta.executeUpdate("update biao set name ='ÁõÃú' where name='liuming'");
+         ResultSet rs = sta.executeQuery("SELECT * FROM biao "); // ²éÑ¯±íÖĞµÄ¼ÇÂ¼
          while(rs.next()) {
             String name=rs.getString(1);
             System.out.print(name+"\t");

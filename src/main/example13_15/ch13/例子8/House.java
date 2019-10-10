@@ -1,7 +1,7 @@
-package ch13.ä¾‹å­8;
+package ch13.Àı×Ó8;
 
 public class House implements Runnable {
-	int cake = 10;       // ç”¨intå˜é‡æ¨¡æ‹Ÿè›‹ç³•çš„å¤§å°
+	int cake = 10;       // ÓÃint±äÁ¿Ä£Äâµ°¸âµÄ´óĞ¡
 
 	public void setCake(int c) {
 		cake = c;
@@ -11,7 +11,7 @@ public class House implements Runnable {
 		while (true) {
 			antDoing();
 			if (cake <= 0) {
-				System.out.println(Thread.currentThread().getName() + "è¿›å…¥æ­»äº¡çŠ¶æ€");
+				System.out.println(Thread.currentThread().getName() + "½øÈëËÀÍö×´Ì¬");
 				return;
 			}
 			try {
@@ -23,12 +23,12 @@ public class House implements Runnable {
 
 	private synchronized void antDoing() {
 		int m = 2;
-		System.out.println(Thread.currentThread().getName() + "æƒ³åƒ" + m + "å…‹è›‹ç³•.");
+		System.out.println(Thread.currentThread().getName() + "Ïë³Ô" + m + "¿Ëµ°¸â.");
 		cake = cake - m;
 		if (cake >= 0)
-			System.out.println(Thread.currentThread().getName() + "å‘ç°è›‹ç³•è¿˜å‰©" + cake + "å…‹");
+			System.out.println(Thread.currentThread().getName() + "·¢ÏÖµ°¸â»¹Ê£" + cake + "¿Ë");
 		else {
-			System.out.println(Thread.currentThread().getName() + "å‘ç°è›‹ç³•æ²¡äº†");
+			System.out.println(Thread.currentThread().getName() + "·¢ÏÖµ°¸âÃ»ÁË");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­6;
+package ch12.Àı×Ó6;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -13,27 +13,27 @@ public class Example12_6 {
 		list1.add("D");
 		list1.add("E");
 		LinkedList<String> list2 = (LinkedList<String>) list1.clone();
-		System.out.print("é“¾è¡¨ä¸­çš„æ•°æ®:");
+		System.out.print("Á´±íÖĞµÄÊı¾İ:");
 		Iterator<String> iter = list1.iterator();
 		while (iter.hasNext()) {
 			String str = iter.next();
 			System.out.print(str + " ");
 		}
-		Collections.shuffle(list1);   // æ´—ç‰Œ
-		System.out.printf("\næ´—ç‰Œåé“¾è¡¨ä¸­çš„æ•°æ®:");
+		Collections.shuffle(list1);   // Ï´ÅÆ
+		System.out.printf("\nÏ´ÅÆºóÁ´±íÖĞµÄÊı¾İ:");
 		iter = list1.iterator();
 		while (iter.hasNext()) {
 			String str = iter.next();
 			System.out.print(str + " ");
 		}
-		System.out.printf("\né“¾è¡¨ä¸­çš„æ•°æ®:");
+		System.out.printf("\nÁ´±íÖĞµÄÊı¾İ:");
 		iter = list2.iterator();
 		while (iter.hasNext()) {
 			String str = iter.next();
 			System.out.print(str + " ");
 		}
-		Collections.rotate(list2, 2);   // å‘å³æ—‹è½¬2æ­¥
-		System.out.printf("\nå‘å³æ—‹è½¬2æ­¥åé“¾è¡¨ä¸­çš„æ•°æ®:");
+		Collections.rotate(list2, 2);   // ÏòÓÒĞı×ª2²½
+		System.out.printf("\nÏòÓÒĞı×ª2²½ºóÁ´±íÖĞµÄÊı¾İ:");
 		iter = list2.iterator();
 		while (iter.hasNext()) {
 			String str = iter.next();

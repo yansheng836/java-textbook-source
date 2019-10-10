@@ -1,9 +1,9 @@
-package ch6.ä¾‹å­1;
+package ch6.Àı×Ó1;
 
-public class China implements Computable {  // Chinaç±»å®ç°Computableæ¥å£
+public class China implements Computable {  // ChinaÀàÊµÏÖComputable½Ó¿Ú
 	int number;
 
-	public int f(int x) { // ä¸è¦å¿˜è®°publicå…³é”®å­—
+	public int f(int x) { // ²»ÒªÍü¼Çpublic¹Ø¼ü×Ö
 		int sum = 0;
 		for (int i = 1; i <= x; i++) {
 			sum = sum + i;

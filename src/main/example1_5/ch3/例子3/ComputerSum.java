@@ -1,4 +1,4 @@
-package ch3.渚嬪瓙3;
+package ch3.例子3;
 
 public class ComputerSum {
 	void giveSum(int number, int length) {
@@ -10,7 +10,7 @@ public class ComputerSum {
 			}
 			System.out.println(sum);
 		} else {
-			System.out.println("璇风粰鍑烘纭殑鏁板瓧");
+			System.out.println("请给出正确的数字");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package ch7.ä¾‹å­3;
+package ch7.Àı×Ó3;
 
 import java.util.Arrays;
 
@@ -8,13 +8,13 @@ public class Example7_3 {
 		int[] c = { -1, -2, -3, -4, -5, -6 }, d = { 10, 20, 30, 40, 50, 60 };
 		System.arraycopy(a, 0, b, 0, a.length);
 		System.arraycopy(c, 2, d, 2, c.length - 3);
-		System.out.println("æ•°ç»„ a çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é a µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(a));
-		System.out.println("æ•°ç»„ b çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é b µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(b));
-		System.out.println("æ•°ç»„ c çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é c µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(c));
-		System.out.println("æ•°ç»„ d çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é d µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(d));
 	}
 }

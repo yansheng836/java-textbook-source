@@ -1,4 +1,4 @@
-package ch11.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch11.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,12 +15,12 @@ public class E {
 	      } 
 	      Connection con=null;
 	      Statement sta = null;
-	      PreparedStatement sql=null;   //é¢„å¤„ç†è¯­å¥
+	      PreparedStatement sql=null;   //Ô¤´¦ÀíÓï¾ä
 	      try {
-//	        con =ã€ä»£ç 1ã€‘//è¿æ¥åˆ°æ•°æ®åº“employee
+//	        con =¡¾´úÂë1¡¿//Á¬½Óµ½Êı¾İ¿âemployee
 	        sta = con.createStatement(); 
 	        String s="create table salary(number int primary key not null,money double)";
-	        sta.execute(s);//åˆ›å»ºè¡¨salary,å¦‚æœè¡¨å·²å­˜åœ¨ï¼Œä¸å†é‡æ–°åˆ›å»ºï¼Œå¹¶å‘ç”ŸSQLException
+	        sta.execute(s);//´´½¨±ísalary,Èç¹û±íÒÑ´æÔÚ£¬²»ÔÙÖØĞÂ´´½¨£¬²¢·¢ÉúSQLException
 	        sql=con.prepareStatement("INSERT INTO salary VALUES (?,?)");
 	      }
 	      catch(SQLException exp){
@@ -36,9 +36,9 @@ public class E {
 	      Scanner scanner = new Scanner(System.in);
 	      int condition=1;
 	      while(condition==1) {
-	          System.out.print("è¾“å…¥å·¥èµ„å·ï¼ˆæ•´æ•°ï¼‰ï¼š"); 
+	          System.out.print("ÊäÈë¹¤×ÊºÅ£¨ÕûÊı£©£º"); 
 	          number = scanner.nextInt(); 
-	          System.out.print("è¾“å…¥å·¥èµ„ï¼ˆæµ®ç‚¹æ•°ï¼‰ï¼š"); 
+	          System.out.print("ÊäÈë¹¤×Ê£¨¸¡µãÊı£©£º"); 
 	          money = scanner.nextDouble(); 
 	          try {
 	           sql.setInt(1,number);
@@ -46,9 +46,9 @@ public class E {
 	           sql.execute();
 	          }
 	          catch(Exception ex){
-	              System.out.print("æ·»åŠ è®°å½•å¤±è´¥ï¼"+ex);
+	              System.out.print("Ìí¼Ó¼ÇÂ¼Ê§°Ü£¡"+ex);
 	          }
-	          System.out.print("è¾“å…¥1ç»§ç»­ï¼Œé1ç»“æŸ");
+	          System.out.print("ÊäÈë1¼ÌĞø£¬·Ç1½áÊø");
 	          condition = scanner.nextInt();
 	      }
 	   }

@@ -1,11 +1,11 @@
-package ch7.ä¾‹å­6;
+package ch7.Àı×Ó6;
 
 public class Example7_6 {
 	public static void main(String args[]) {
-		Weekday x = Weekday.æ˜ŸæœŸæ—¥;
-		if (x == Weekday.æ˜ŸæœŸæ—¥) {
+		Weekday x = Weekday.ĞÇÆÚÈÕ;
+		if (x == Weekday.ĞÇÆÚÈÕ) {
 			System.out.println(x);
-			System.out.println("ä»Šå¤©æˆ‘ä¼‘æ¯");
+			System.out.println("½ñÌìÎÒĞİÏ¢");
 		}
 	}
 }

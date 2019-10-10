@@ -1,26 +1,26 @@
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ3;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé3;
 
 public class MainClass {
 	public static void main(String args[]) {
 		Village zhaoZhuang, maJiaHeZhi;
-		zhaoZhuang = new Village("èµµåº„");
-		maJiaHeZhi = new Village("é©¬å®¶æ²³å­");
+		zhaoZhuang = new Village("ÕÔ×¯");
+		maJiaHeZhi = new Village("Âí¼ÒºÓ×Ó");
 		zhaoZhuang.peopleNumber = 100;
 		maJiaHeZhi.peopleNumber = 150;
-		// ã€ä»£ç 1ã€‘ //ç”¨ç±»åVillageè®¿é—®treeAmount,å¹¶èµ‹å€¼200
+		// ¡¾´úÂë1¡¿ //ÓÃÀàÃûVillage·ÃÎÊtreeAmount,²¢¸³Öµ200
 		int leftTree = Village.treeAmount;
-		System.out.println("æ£®æ—ä¸­æœ‰ " + leftTree + " é¢—æ ‘");
-		// ã€ä»£ç 2ã€‘//zhaoZhuangè°ƒç”¨treePlanting(int n),å¹¶å‘å‚æ•°ä¼ å€¼50
-		// leftTree =ã€ä»£ç 3ã€‘//maJiaHeZhiè°ƒç”¨lookTreeAmount()æ–¹æ³•å¾—åˆ°æ ‘æœ¨çš„æ•°é‡
-		System.out.println("æ£®æ—ä¸­æœ‰ " + leftTree + " é¢—æ ‘");
-		// ã€ä»£ç 4ã€‘maJiaHeZhiè°ƒç”¨fellTree(int n),å¹¶å‘å‚æ•°ä¼ å€¼70
+		System.out.println("É­ÁÖÖĞÓĞ " + leftTree + " ¿ÅÊ÷");
+		// ¡¾´úÂë2¡¿//zhaoZhuangµ÷ÓÃtreePlanting(int n),²¢Ïò²ÎÊı´«Öµ50
+		// leftTree =¡¾´úÂë3¡¿//maJiaHeZhiµ÷ÓÃlookTreeAmount()·½·¨µÃµ½Ê÷Ä¾µÄÊıÁ¿
+		System.out.println("É­ÁÖÖĞÓĞ " + leftTree + " ¿ÅÊ÷");
+		// ¡¾´úÂë4¡¿maJiaHeZhiµ÷ÓÃfellTree(int n),²¢Ïò²ÎÊı´«Öµ70
 		leftTree = Village.lookTreeAmount();
-		System.out.println("æ£®æ—ä¸­æœ‰ " + leftTree + " é¢—æ ‘");
-		System.out.println("èµµåº„çš„äººå£:" + zhaoZhuang.peopleNumber);
+		System.out.println("É­ÁÖÖĞÓĞ " + leftTree + " ¿ÅÊ÷");
+		System.out.println("ÕÔ×¯µÄÈË¿Ú:" + zhaoZhuang.peopleNumber);
 		zhaoZhuang.addPeopleNumber(12);
-		System.out.println("èµµåº„çš„äººå£:" + zhaoZhuang.peopleNumber);
-		System.out.println("é©¬å®¶æ²³å­çš„äººå£:" + maJiaHeZhi.peopleNumber);
+		System.out.println("ÕÔ×¯µÄÈË¿Ú:" + zhaoZhuang.peopleNumber);
+		System.out.println("Âí¼ÒºÓ×ÓµÄÈË¿Ú:" + maJiaHeZhi.peopleNumber);
 		maJiaHeZhi.addPeopleNumber(10);
-		System.out.println("é©¬å®¶æ²³å­çš„äººå£:" + maJiaHeZhi.peopleNumber);
+		System.out.println("Âí¼ÒºÓ×ÓµÄÈË¿Ú:" + maJiaHeZhi.peopleNumber);
 	}
 }

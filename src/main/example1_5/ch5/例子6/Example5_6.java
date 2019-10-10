@@ -1,14 +1,14 @@
-package ch5.ä¾‹å­6;
+package ch5.Àı×Ó6;
 
 class Factory {
-	public HomeEletricity make() { // æ–¹æ³•çš„ç±»å‹æ˜¯HomeEletricityç±»
+	public HomeEletricity make() { // ·½·¨µÄÀàĞÍÊÇHomeEletricityÀà
 		HomeEletricity machine = new HomeEletricity();
 		return machine;
 	}
 }
 
 class TVFactory extends Factory {
-	public Television make() {  // é‡å†™æ–¹æ³•çš„ç±»å‹æ˜¯HomeEletricityç±»çš„å­ç±»:Television
+	public Television make() {  // ÖØĞ´·½·¨µÄÀàĞÍÊÇHomeEletricityÀàµÄ×ÓÀà:Television
 		Television tv = new Television();
 		tv.setWeight(21);
 		return tv;
@@ -16,7 +16,7 @@ class TVFactory extends Factory {
 }
 
 class IceboxFactory extends Factory {
-	public Icebox make() {  // é‡å†™æ–¹æ³•çš„ç±»å‹æ˜¯HomeEletricityç±»çš„å­ç±»:Icebox
+	public Icebox make() {  // ÖØĞ´·½·¨µÄÀàĞÍÊÇHomeEletricityÀàµÄ×ÓÀà:Icebox
 		Icebox icebox = new Icebox();
 		icebox.setWeight(67);
 		return icebox;
@@ -26,10 +26,10 @@ class IceboxFactory extends Factory {
 public class Example5_6 {
 	public static void main(String args[]) {
 		TVFactory factory1 = new TVFactory();
-		Television tv = factory1.make();   // factory1è°ƒç”¨é‡å†™çš„æ–¹æ³•
+		Television tv = factory1.make();   // factory1µ÷ÓÃÖØĞ´µÄ·½·¨
 		tv.showMess();
 		IceboxFactory factory2 = new IceboxFactory();
-		Icebox icebox = factory2.make();   // factory2è°ƒç”¨é‡å†™çš„æ–¹æ³•
+		Icebox icebox = factory2.make();   // factory2µ÷ÓÃÖØĞ´µÄ·½·¨
 		icebox.showMess();
 	}
 }

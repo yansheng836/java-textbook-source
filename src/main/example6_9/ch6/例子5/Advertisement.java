@@ -1,6 +1,6 @@
-package ch6.ä¾‹å­5;
+package ch6.Àı×Ó5;
 
-public interface Advertisement { // æ¥å£
+public interface Advertisement { // ½Ó¿Ú
 	public void showAdvertisement();
 
 	public String getCorpName();

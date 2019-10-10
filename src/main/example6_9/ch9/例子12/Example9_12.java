@@ -1,9 +1,9 @@
-package ch9.ä¾‹å­12;
+package ch9.Àı×Ó12;
 
 public class Example9_12 {
 	public static void main(String args[]) {
 		StringBuffer str = new StringBuffer();
-		str.append("å¤§å®¶å¥½");
+		str.append("´ó¼ÒºÃ");
 		System.out.println("str:" + str);
 		System.out.println("length:" + str.length());
 		System.out.println("capacity:" + str.capacity());
@@ -12,7 +12,7 @@ public class Example9_12 {
 		System.out.println(str);
 		str.insert(2, " are all");
 		System.out.println(str);
-		int index = str.indexOf("å¥½");
+		int index = str.indexOf("ºÃ");
 		str.replace(index, str.length(), " right");
 		System.out.println(str);
 	}

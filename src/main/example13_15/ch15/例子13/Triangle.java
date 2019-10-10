@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙13;
+package ch15.例子13;
 
 public class Triangle {
 	double sideA, sideB, sideC, area;
@@ -10,7 +10,7 @@ public class Triangle {
 			area = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
 			return String.valueOf(area);
 		} else {
-			return "鏃犳硶璁＄畻闈㈢Н";
+			return "无法计算面积";
 		}
 	}
 

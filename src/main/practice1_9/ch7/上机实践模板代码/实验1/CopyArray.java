@@ -1,4 +1,4 @@
-package ch7.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch7.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.util.Arrays;
 
@@ -9,11 +9,11 @@ public class CopyArray {
 	      System.out.println(Arrays.toString(a));
 	      b = Arrays.copyOf(a,a.length);
 	      System.out.println(Arrays.toString(b)); 
-	      c =ã€ä»£ç 1ã€‘//Arraysè°ƒç”¨copyOfæ–¹æ³•å¤åˆ¶æ•°ç»„açš„å‰4ä¸ªå…ƒç´  
-	      System.out.println(ã€ä»£ç 2ã€‘);//Arraysè°ƒç”¨toStringæ–¹æ³•è¿”å›æ•°ç»„cçš„å…ƒç´ å€¼çš„è¡¨ç¤ºæ ¼å¼
-	      d = ã€ä»£ç 3ã€‘//Arraysè°ƒç”¨copyOfRangeæ–¹æ³•å¤åˆ¶æ•°ç»„açš„å4ä¸ªå…ƒç´ 
+	      c =¡¾´úÂë1¡¿//Arraysµ÷ÓÃcopyOf·½·¨¸´ÖÆÊı×éaµÄÇ°4¸öÔªËØ 
+	      System.out.println(¡¾´úÂë2¡¿);//Arraysµ÷ÓÃtoString·½·¨·µ»ØÊı×écµÄÔªËØÖµµÄ±íÊ¾¸ñÊ½
+	      d = ¡¾´úÂë3¡¿//Arraysµ÷ÓÃcopyOfRange·½·¨¸´ÖÆÊı×éaµÄºó4¸öÔªËØ
 	      System.out.println(Arrays.toString(d));
-	      ã€ä»£ç 4ã€‘  //å°†-100èµ‹ç»™æ•°ç»„cçš„æœ€åä¸€ä¸ªå…ƒç´ 
+	      ¡¾´úÂë4¡¿  //½«-100¸³¸øÊı×écµÄ×îºóÒ»¸öÔªËØ
 	      d[d.length-1] = -200;
 	      System.out.println(Arrays.toString(a));
 	   }

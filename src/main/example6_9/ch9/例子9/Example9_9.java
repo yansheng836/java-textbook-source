@@ -1,4 +1,4 @@
-package ch9.渚嬪瓙9;
+package ch9.例子9;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Example9_9 {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 		if (str.matches(regex)) {
-			System.out.println(str + "涓殑瀛楃閮芥槸鑻辨枃瀛楁瘝");
+			System.out.println(str + "中的字符都是英文字母");
 		}
 	}
 }

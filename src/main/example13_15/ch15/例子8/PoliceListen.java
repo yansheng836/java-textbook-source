@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙8;
+package ch15.例子8;
 
 import java.util.Arrays;
 
@@ -19,10 +19,10 @@ public class PoliceListen implements DocumentListener {
 
 	public void changedUpdate(DocumentEvent e) {
 		String str = inputText.getText();
-		// 绌烘牸銆佹暟瀛楀拰绗﹀彿(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)缁勬垚鐨勬鍒欒〃杈惧紡:
+		// 空格、数字和符号(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)组成的正则表达式:
 		String regex = "[\\s\\d\\p{Punct}]+";
 		String words[] = str.split(regex);
-		Arrays.sort(words);      // 鎸夊瓧鍏稿簭浠庡皬鍒板ぇ鎺掑簭
+		Arrays.sort(words);      // 按字典序从小到大排序
 		showText.setText(null);
 		for (String s : words)
 			showText.append(s + ",");

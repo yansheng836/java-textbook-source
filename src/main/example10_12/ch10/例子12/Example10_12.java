@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­12;
+package ch10.Àı×Ó12;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Example10_12 {
 	public static void main(String args[]) {
-		String command = "åº¦æ±Ÿæ€»æ”»æ—¶é—´æ˜¯4æœˆ22æ—¥æ™š10ç‚¹";
+		String command = "¶È½­×Ü¹¥Ê±¼äÊÇ4ÔÂ22ÈÕÍí10µã";
 		EncryptAndDecrypt person = new EncryptAndDecrypt();
 		String password = "Tiger";
 		String secret = person.encrypt(command, password);
@@ -18,7 +18,7 @@ public class Example10_12 {
 			FileOutputStream fos = new FileOutputStream(file);
 			DataOutputStream outData = new DataOutputStream(fos);
 			outData.writeUTF(secret);
-			System.out.println("åŠ å¯†å‘½ä»¤:" + secret);
+			System.out.println("¼ÓÃÜÃüÁî:" + secret);
 		} catch (IOException e) {
 		}
 		try {
@@ -26,7 +26,7 @@ public class Example10_12 {
 			DataInputStream inData = new DataInputStream(fis);
 			String str = inData.readUTF();
 			String mingwen = person.decrypt(str, password);
-			System.out.println("è§£å¯†å‘½ä»¤:" + mingwen);
+			System.out.println("½âÃÜÃüÁî:" + mingwen);
 		} catch (IOException e) {
 		}
 	}

@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­1;
+package ch5.Àı×Ó1;
 
 public class UniverStudent extends Student {
 	int multi(int x, int y) {

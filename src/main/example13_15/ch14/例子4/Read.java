@@ -1,4 +1,4 @@
-package ch14.渚嬪瓙4;
+package ch14.例子4;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -15,10 +15,10 @@ public class Read implements Runnable {
 		while (true) {
 			try {
 				result = in.readDouble();
-				System.out.println("鍦嗙殑闈㈢Н:" + result);
-				System.out.print("杈撳叆鍥殑鍗婂緞(鏀惧純璇疯緭鍏):");
+				System.out.println("圆的面积:" + result);
+				System.out.print("输入园的半径(放弃请输入N):");
 			} catch (IOException e) {
-				System.out.println("涓庢湇鍔″櫒宸叉柇寮�" + e);
+				System.out.println("与服务器已断开" + e);
 				break;
 			}
 		}

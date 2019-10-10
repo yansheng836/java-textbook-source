@@ -1,19 +1,19 @@
-package ch7.ä¾‹å­2;
+package ch7.Àı×Ó2;
 
 public class Example7_2 {
 	public static void main(String args[]) {
 		int a[] = { 1, 2, 3, 4 };
 		char b[] = { 'a', 'b', 'c', 'd' };
-		for (int n = 0; n < a.length; n++) { // ä¼ ç»Ÿæ–¹å¼
+		for (int n = 0; n < a.length; n++) { // ´«Í³·½Ê½
 			System.out.println(a[n]);
 		}
-		for (int n = 0; n < b.length; n++) { // ä¼ ç»Ÿæ–¹å¼
+		for (int n = 0; n < b.length; n++) { // ´«Í³·½Ê½
 			System.out.println(b[n]);
 		}
-		for (int i : a) {    // å¾ªç¯å˜é‡iä¾æ¬¡å–æ•°ç»„açš„æ¯ä¸€ä¸ªå…ƒç´ çš„å€¼(éä¼ ç»Ÿæ–¹å¼)
+		for (int i : a) {    // Ñ­»·±äÁ¿iÒÀ´ÎÈ¡Êı×éaµÄÃ¿Ò»¸öÔªËØµÄÖµ(·Ç´«Í³·½Ê½)
 			System.out.println(i);
 		}
-		for (char ch : b) { // å¾ªç¯å˜é‡chä¾æ¬¡å–æ•°ç»„bçš„æ¯ä¸€ä¸ªå…ƒç´ çš„å€¼(éä¼ ç»Ÿæ–¹å¼)
+		for (char ch : b) { // Ñ­»·±äÁ¿chÒÀ´ÎÈ¡Êı×ébµÄÃ¿Ò»¸öÔªËØµÄÖµ(·Ç´«Í³·½Ê½)
 			System.out.println(ch);
 		}
 	}

@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­13;
+package ch15.Àı×Ó13;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -13,10 +13,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class WindowTriangle extends JFrame implements ActionListener {
-	Triangle triangle;              // æ•°æ®å¯¹è±¡
-	JTextField textA, textB, textC;   // æ•°æ®å¯¹è±¡çš„è§†å›¾
-	JTextArea showArea;            // æ•°æ®å¯¹è±¡çš„è§†å›¾
-	JButton controlButton;         // æ§åˆ¶å™¨å¯¹è±¡
+	Triangle triangle;              // Êı¾İ¶ÔÏó
+	JTextField textA, textB, textC;   // Êı¾İ¶ÔÏóµÄÊÓÍ¼
+	JTextArea showArea;            // Êı¾İ¶ÔÏóµÄÊÓÍ¼
+	JButton controlButton;         // ¿ØÖÆÆ÷¶ÔÏó
 
 	WindowTriangle() {
 		init();
@@ -30,13 +30,13 @@ public class WindowTriangle extends JFrame implements ActionListener {
 		textB = new JTextField(5);
 		textC = new JTextField(5);
 		showArea = new JTextArea();
-		controlButton = new JButton("è®¡ç®—é¢ç§¯");
+		controlButton = new JButton("¼ÆËãÃæ»ı");
 		JPanel pNorth = new JPanel();
-		pNorth.add(new JLabel("è¾¹A:"));
+		pNorth.add(new JLabel("±ßA:"));
 		pNorth.add(textA);
-		pNorth.add(new JLabel("è¾¹B:"));
+		pNorth.add(new JLabel("±ßB:"));
 		pNorth.add(textB);
-		pNorth.add(new JLabel("è¾¹C"));
+		pNorth.add(new JLabel("±ßC"));
 		pNorth.add(textC);
 		pNorth.add(controlButton);
 		controlButton.addActionListener(this);
@@ -49,12 +49,12 @@ public class WindowTriangle extends JFrame implements ActionListener {
 			double a = Double.parseDouble(textA.getText().trim());
 			double b = Double.parseDouble(textB.getText().trim());
 			double c = Double.parseDouble(textC.getText().trim());
-			triangle.setA(a);          // æ›´æ–°æ•°æ®
+			triangle.setA(a);          // ¸üĞÂÊı¾İ
 			triangle.setB(b);
 			triangle.setC(c);
 			String area = triangle.getArea();
-			showArea.append("ä¸‰è§’å½¢" + a + "," + b + "," + c + "çš„é¢ç§¯:");
-			showArea.append(area + "\n");  // æ›´æ–°è§†å›¾
+			showArea.append("Èı½ÇĞÎ" + a + "," + b + "," + c + "µÄÃæ»ı:");
+			showArea.append(area + "\n");  // ¸üĞÂÊÓÍ¼
 		} catch (Exception ex) {
 			showArea.append("\n" + ex + "\n");
 		}

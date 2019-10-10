@@ -1,19 +1,19 @@
-package ch9.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch9.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.util.StringTokenizer;
 
 public class E {
 	public static void main(String args[]) {
-		String s1 = "è‹¹æœï¼š56.7åœ†ï¼Œé¦™è•‰ï¼š12åœ†ï¼ŒèŠ’æœ:19.8åœ†";
-		String s2 = "é…±æ²¹ï¼š6.7åœ†ï¼Œç²¾ç›ï¼š0.8åœ†ï¼Œæ¦¨èœ:9.8åœ†";
+		String s1 = "Æ»¹û£º56.7Ô²£¬Ïã½¶£º12Ô²£¬Ã¢¹û:19.8Ô²";
+		String s2 = "½´ÓÍ£º6.7Ô²£¬¾«ÑÎ£º0.8Ô²£¬Õ¥²Ë:9.8Ô²";
 		ComputePice jisuan = new ComputePice();
-		String regex = "[^0123456789.]+";// åŒ¹é…æ‰€æœ‰éæ•°å­—å­—ç¬¦ä¸²
+		String regex = "[^0123456789.]+";// Æ¥ÅäËùÓĞ·ÇÊı×Ö×Ö·û´®
 		String s1_number = s1.replaceAll(regex, "*");
 		double priceSum = jisuan.compute(s1_number, "*");
-		System.out.printf("\"%s\"ä»·æ ¼æ€»å’Œ:\n%fåœ†\n", s1, priceSum);
+		System.out.printf("\"%s\"¼Û¸ñ×ÜºÍ:\n%fÔ²\n", s1, priceSum);
 		String s2_number = s2.replaceAll(regex, "#");
 		priceSum = jisuan.compute(s2_number, "#");
-		System.out.printf("\"%s\"ä»·æ ¼æ€»å’Œ:\n%fåœ†\n", s2, priceSum);
+		System.out.printf("\"%s\"¼Û¸ñ×ÜºÍ:\n%fÔ²\n", s2, priceSum);
 	}
 }
 

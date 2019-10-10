@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­5;
+package ch12.Àı×Ó5;
 
 public class People implements Comparable<People> {
 	int height, weight;
@@ -8,7 +8,7 @@ public class People implements Comparable<People> {
 		weight = w;
 	}
 
-	public int compareTo(People b) { // ä¸¤ä¸ªPeopleå¯¹è±¡ç›¸ç­‰å½“ä¸”ä»…å½“äºŒè€…çš„heightå€¼ç›¸ç­‰ã€‚
+	public int compareTo(People b) { // Á½¸öPeople¶ÔÏóÏàµÈµ±ÇÒ½öµ±¶şÕßµÄheightÖµÏàµÈ¡£
 		return (this.height - b.height);
 	}
 }

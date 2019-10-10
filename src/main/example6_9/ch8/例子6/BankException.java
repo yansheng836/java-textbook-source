@@ -1,10 +1,10 @@
-package ch8.ä¾‹å­6;
+package ch8.Àı×Ó6;
 
 public class BankException extends Exception {
 	String message;
 
 	public BankException(int m, int n) {
-		message = "å…¥è´¦èµ„é‡‘" + m + "æ˜¯è´Ÿæ•°æˆ–æ”¯å‡º" + n + "æ˜¯æ­£æ•°ï¼Œä¸ç¬¦åˆç³»ç»Ÿè¦æ±‚.";
+		message = "ÈëÕË×Ê½ğ" + m + "ÊÇ¸ºÊı»òÖ§³ö" + n + "ÊÇÕıÊı£¬²»·ûºÏÏµÍ³ÒªÇó.";
 	}
 
 	public String warnMess() {

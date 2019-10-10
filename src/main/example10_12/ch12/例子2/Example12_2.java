@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­2;
+package ch12.Àı×Ó2;
 
 interface Listen<E> {
 	void listen(E x);
@@ -18,23 +18,23 @@ class Teacher implements Listen<Violin> {
 
 class Piano {
 	public void play() {
-		System.out.println("é’¢ç´åå¥æ›²:é»„æ²³");
+		System.out.println("¸ÖÇÙĞ­×àÇú:»ÆºÓ");
 	}
 }
 
 class Violin {
 	public void play() {
-		System.out.println("å°æç´åå¥æ›²:æ¢ç¥");
+		System.out.println("Ğ¡ÌáÇÙĞ­×àÇú:Áº×£");
 	}
 }
 
 public class Example12_2 {
 	public static void main(String args[]) {
 		Student zhang = new Student();
-		System.out.println("å­¦ç”Ÿå¬:");
+		System.out.println("Ñ§ÉúÌı:");
 		zhang.listen(new Piano());
 		Teacher teacher = new Teacher();
-		System.out.println("è€å¸ˆå¬:");
+		System.out.println("ÀÏÊ¦Ìı:");
 		teacher.listen(new Violin());
 	}
 }

@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­10;
+package ch11.Àı×Ó10;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class AddRecord {
-	String databaseName = "";       	// æ•°æ®åº“å
-	String tableName = "";             	// è¡¨å
-	String number = "",        		// å•†å“å·
-			name = "",        			// åç§°
-			madeTime;       			// ç”Ÿäº§æ—¥æœŸ
-	double price;            			// ä»·æ ¼
+	String databaseName = "";       	// Êı¾İ¿âÃû
+	String tableName = "";             	// ±íÃû
+	String number = "",        		// ÉÌÆ·ºÅ
+			name = "",        			// Ãû³Æ
+			madeTime;       			// Éú²úÈÕÆÚ
+	double price;            			// ¼Û¸ñ
 
 	public AddRecord() {
 		try {
@@ -48,7 +48,7 @@ public class AddRecord {
 	public String addRecord() {
 		String str = "";
 		Connection con;
-		PreparedStatement sql;   // é¢„å¤„ç†è¯­å¥
+		PreparedStatement sql;   // Ô¤´¦ÀíÓï¾ä
 		try {
 			String uri = "jdbc:derby:" + databaseName + ";create=true";
 			con = DriverManager.getConnection(uri);
@@ -61,15 +61,15 @@ public class AddRecord {
 				sql.setDouble(4, price);
 				int m = sql.executeUpdate();
 				if (m != 0)
-					str = "å¯¹è¡¨ä¸­æ·»åŠ " + m + "æ¡è®°å½•æˆåŠŸ";
+					str = "¶Ô±íÖĞÌí¼Ó" + m + "Ìõ¼ÇÂ¼³É¹¦";
 				else
-					str = "æ·»åŠ è®°å½•å¤±è´¥";
+					str = "Ìí¼Ó¼ÇÂ¼Ê§°Ü";
 			} else {
-				str = "å¿…é¡»è¦æœ‰é›‡å‘˜å·";
+				str = "±ØĞëÒªÓĞ¹ÍÔ±ºÅ";
 			}
 			con.close();
 		} catch (SQLException e) {
-			str = "æ²¡æœ‰æä¾›æ·»åŠ çš„æ•°æ®æˆ–" + e;
+			str = "Ã»ÓĞÌá¹©Ìí¼ÓµÄÊı¾İ»ò" + e;
 		}
 		return str;
 	}

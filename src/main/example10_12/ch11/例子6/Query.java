@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­6;
+package ch11.Àı×Ó6;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,8 +7,8 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 public class Query {
-   String databaseName="";    	//æ•°æ®åº“å
-    String SQL;        		//SQLè¯­å¥
+   String databaseName="";    	//Êı¾İ¿âÃû
+    String SQL;        		//SQLÓï¾ä
    public Query() {
       try{  Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
       }
@@ -31,13 +31,13 @@ public class Query {
         con=DriverManager.getConnection(uri);
         sql=con.createStatement();
         rs=sql.executeQuery(SQL);
-        ResultSetMetaData metaData = rs.getMetaData();//ç»“æœé›†çš„å…ƒæ•°æ®å¯¹è±¡
-        int columnCount = metaData.getColumnCount(); //ç»“æœé›†çš„æ€»åˆ—æ•° 
+        ResultSetMetaData metaData = rs.getMetaData();//½á¹û¼¯µÄÔªÊı¾İ¶ÔÏó
+        int columnCount = metaData.getColumnCount(); //½á¹û¼¯µÄ×ÜÁĞÊı 
         for(int i=1;i<=columnCount;i++){
-            System.out.print(metaData.getColumnName(i)+"    |"); //è¾“å‡ºå­—æ®µå
+            System.out.print(metaData.getColumnName(i)+"    |"); //Êä³ö×Ö¶ÎÃû
         }  
         System.out.println();
-        while(rs.next()) {  //è¾“å‡ºç»“æœé›†ä¸­çš„è®°å½•ï¼Œå³è¡Œ
+        while(rs.next()) {  //Êä³ö½á¹û¼¯ÖĞµÄ¼ÇÂ¼£¬¼´ĞĞ
           for(int i=1;i<=columnCount;i++){
              System.out.print(rs.getString(i)+"|");
           }
@@ -45,7 +45,7 @@ public class Query {
         }
       }
       catch(SQLException e) {
-        System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„è¡¨å"+e);
+        System.out.println("ÇëÊäÈëÕıÈ·µÄ±íÃû"+e);
       }
    }    
 }

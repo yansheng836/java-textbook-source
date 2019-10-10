@@ -1,48 +1,48 @@
-package ch6.ä¾‹å­2;
+package ch6.Àı×Ó2;
 
-interface æ”¶è´¹ {
-	public void æ”¶å–è´¹ç”¨();
+interface ÊÕ·Ñ {
+	public void ÊÕÈ¡·ÑÓÃ();
 }
 
-interface è°ƒèŠ‚æ¸©åº¦ {
+interface µ÷½ÚÎÂ¶È {
 	public void controlTemperature();
 }
 
-class å…¬å…±æ±½è½¦ implements æ”¶è´¹ {
-	public void æ”¶å–è´¹ç”¨() {
-		System.out.println("å…¬å…±æ±½è½¦:ä¸€å…ƒ/å¼ ,ä¸è®¡ç®—å…¬é‡Œæ•°");
+class ¹«¹²Æû³µ implements ÊÕ·Ñ {
+	public void ÊÕÈ¡·ÑÓÃ() {
+		System.out.println("¹«¹²Æû³µ:Ò»Ôª/ÕÅ,²»¼ÆËã¹«ÀïÊı");
 	}
 }
 
-class å‡ºç§Ÿè½¦ implements æ”¶è´¹, è°ƒèŠ‚æ¸©åº¦ {
-	public void æ”¶å–è´¹ç”¨() {
-		System.out.println("å‡ºç§Ÿè½¦:3.20å…ƒ/å…¬é‡Œ,èµ·ä»·3å…¬é‡Œ");
+class ³ö×â³µ implements ÊÕ·Ñ, µ÷½ÚÎÂ¶È {
+	public void ÊÕÈ¡·ÑÓÃ() {
+		System.out.println("³ö×â³µ:3.20Ôª/¹«Àï,Æğ¼Û3¹«Àï");
 	}
 
 	public void controlTemperature() {
-		System.out.println("å®‰è£…äº†Hairç©ºè°ƒ");
+		System.out.println("°²×°ÁËHair¿Õµ÷");
 	}
 }
 
-class ç”µå½±é™¢ implements æ”¶è´¹, è°ƒèŠ‚æ¸©åº¦ {
-	public void æ”¶å–è´¹ç”¨() {
-		System.out.println("ç”µå½±é™¢:é—¨ç¥¨,åå…ƒ/å¼ ");
+class µçÓ°Ôº implements ÊÕ·Ñ, µ÷½ÚÎÂ¶È {
+	public void ÊÕÈ¡·ÑÓÃ() {
+		System.out.println("µçÓ°Ôº:ÃÅÆ±,Ê®Ôª/ÕÅ");
 	}
 
 	public void controlTemperature() {
-		System.out.println("å®‰è£…äº†ä¸­å¤®ç©ºè°ƒ");
+		System.out.println("°²×°ÁËÖĞÑë¿Õµ÷");
 	}
 }
 
 public class Example6_2 {
 	public static void main(String args[]) {
-		å…¬å…±æ±½è½¦ ä¸ƒè·¯ = new å…¬å…±æ±½è½¦();
-		å‡ºç§Ÿè½¦ å¤©å®‡ = new å‡ºç§Ÿè½¦();
-		ç”µå½±é™¢ çº¢æ˜Ÿ = new ç”µå½±é™¢();
-		ä¸ƒè·¯.æ”¶å–è´¹ç”¨();
-		å¤©å®‡.æ”¶å–è´¹ç”¨();
-		çº¢æ˜Ÿ.æ”¶å–è´¹ç”¨();
-		å¤©å®‡.controlTemperature();
-		çº¢æ˜Ÿ.controlTemperature();
+		¹«¹²Æû³µ ÆßÂ· = new ¹«¹²Æû³µ();
+		³ö×â³µ ÌìÓî = new ³ö×â³µ();
+		µçÓ°Ôº ºìĞÇ = new µçÓ°Ôº();
+		ÆßÂ·.ÊÕÈ¡·ÑÓÃ();
+		ÌìÓî.ÊÕÈ¡·ÑÓÃ();
+		ºìĞÇ.ÊÕÈ¡·ÑÓÃ();
+		ÌìÓî.controlTemperature();
+		ºìĞÇ.controlTemperature();
 	}
 }

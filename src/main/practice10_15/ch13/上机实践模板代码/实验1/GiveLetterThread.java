@@ -1,4 +1,4 @@
-package ch13.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch13.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 public class GiveLetterThread extends Thread {
 	Letter letter;
@@ -17,9 +17,9 @@ public class GiveLetterThread extends Thread {
        char c = startChar;
        while(true) {
           letter.setChar(c);
-          System.out.printf("æ˜¾ç¤ºçš„å­—ç¬¦:%c\n ",letter.getChar());
+          System.out.printf("ÏÔÊ¾µÄ×Ö·û:%c\n ",letter.getChar());
           try{  
-//        	  ã€ä»£ç 3ã€‘//è°ƒç”¨sleepæ–¹æ³•ä½¿å¾—çº¿ç¨‹ä¸­æ–­sleepLengthè±ªç§’
+//        	  ¡¾´úÂë3¡¿//µ÷ÓÃsleep·½·¨Ê¹µÃÏß³ÌÖĞ¶ÏsleepLengthºÀÃë
           }
           catch(InterruptedException e){}
 

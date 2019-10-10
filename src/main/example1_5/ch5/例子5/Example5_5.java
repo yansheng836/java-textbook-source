@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­5;
+package ch5.Àı×Ó5;
 
 class A {
 	float computer(float x, float y) {
@@ -19,9 +19,9 @@ class B extends A {
 public class Example5_5 {
 	public static void main(String args[]) {
 		B b = new B();
-		double result = b.computer(8, 9);        // bè°ƒç”¨é‡å†™çš„æ–¹æ³•
-		System.out.println("è°ƒç”¨é‡å†™æ–¹æ³•å¾—åˆ°çš„ç»“æœ:" + result);
-		int m = b.g(12, 8);        // bè°ƒç”¨ç»§æ‰¿çš„æ–¹æ³•
-		System.out.println("è°ƒç”¨ç»§æ‰¿æ–¹æ³•å¾—åˆ°çš„ç»“æœ:" + m);
+		double result = b.computer(8, 9);        // bµ÷ÓÃÖØĞ´µÄ·½·¨
+		System.out.println("µ÷ÓÃÖØĞ´·½·¨µÃµ½µÄ½á¹û:" + result);
+		int m = b.g(12, 8);        // bµ÷ÓÃ¼Ì³ĞµÄ·½·¨
+		System.out.println("µ÷ÓÃ¼Ì³Ğ·½·¨µÃµ½µÄ½á¹û:" + m);
 	}
 }

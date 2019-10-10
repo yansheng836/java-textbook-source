@@ -1,13 +1,13 @@
-package ch9.ä¾‹å­6;
+package ch9.Àı×Ó6;
 
 public class Example9_6 {
 	public static void main(String args[]) {
 		char[] a, b, c;
-		String s = "2009å¹´10æœˆ1æ—¥æ˜¯å›½åº†60å‘¨å¹´";
+		String s = "2009Äê10ÔÂ1ÈÕÊÇ¹úÇì60ÖÜÄê";
 		a = new char[2];
 		s.getChars(11, 13, a, 0);
 		System.out.println(a);
-		c = "åä¸€é•¿å‡æœŸé—´ï¼Œå­¦æ ¡éƒ½æ”¾å‡äº†".toCharArray();
+		c = "Ê®Ò»³¤¼ÙÆÚ¼ä£¬Ñ§Ğ£¶¼·Å¼ÙÁË".toCharArray();
 		for (char ch : c)
 			System.out.print(ch);
 	}

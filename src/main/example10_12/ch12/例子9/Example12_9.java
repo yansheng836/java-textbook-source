@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­9;
+package ch12.Àı×Ó9;
 
 import java.io.File;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ public class Example12_9 {
 		hashtable = new HashMap<String, String>();
 		read.putWordToHashMap(hashtable, file);
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("è¾“å…¥è¦æŸ¥è¯¢çš„è‹±æ–‡å•è¯:");
+		System.out.print("ÊäÈëÒª²éÑ¯µÄÓ¢ÎÄµ¥´Ê:");
 		while (scanner.hasNextLine()) {
 			String englishWord = scanner.nextLine();
 			if (englishWord.length() == 0)
@@ -21,9 +21,9 @@ public class Example12_9 {
 				String chineseWord = hashtable.get(englishWord);
 				System.out.println(chineseWord);
 			} else {
-				System.out.println("æ²¡æœ‰æ­¤å•è¯");
+				System.out.println("Ã»ÓĞ´Ëµ¥´Ê");
 			}
-			System.out.print("è¾“å…¥è¦æŸ¥è¯¢çš„è‹±æ–‡å•è¯:");
+			System.out.print("ÊäÈëÒª²éÑ¯µÄÓ¢ÎÄµ¥´Ê:");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package ch6.ä¾‹å­1;
+package ch6.Àı×Ó1;
 
 public class Example6_1 {
 	public static void main(String args[]) {
@@ -8,7 +8,7 @@ public class Example6_1 {
 		henlu = new Japan();
 		zhang.number = 28 + Computable.MAX;
 		henlu.number = 14 + Computable.MAX;
-		System.out.println("zhangçš„å­¦å·" + zhang.number + ",zhangæ±‚å’Œç»“æœ" + zhang.f(100));
-		System.out.println("henluçš„å­¦å·" + henlu.number + ",henluæ±‚å’Œç»“æœ" + henlu.f(100));
+		System.out.println("zhangµÄÑ§ºÅ" + zhang.number + ",zhangÇóºÍ½á¹û" + zhang.f(100));
+		System.out.println("henluµÄÑ§ºÅ" + henlu.number + ",henluÇóºÍ½á¹û" + henlu.f(100));
 	}
 }

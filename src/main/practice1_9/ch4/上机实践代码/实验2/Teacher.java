@@ -1,13 +1,13 @@
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class Teacher {
 	int teacherType;
 
 	public void speak() {
 		if (teacherType == 1) {
-			System.out.println("è¯¾ç¨‹çš„å†…å®¹æ˜¯äºŒæ¬¡æ–¹ç¨‹");
+			System.out.println("¿Î³ÌµÄÄÚÈİÊÇ¶ş´Î·½³Ì");
 		} else if (teacherType == 2) {
-			System.out.println("è¯¾ç¨‹çš„å†…å®¹æ˜¯å­¦å”±äº”çº¿è°±");
+			System.out.println("¿Î³ÌµÄÄÚÈİÊÇÑ§³ªÎåÏßÆ×");
 		}
 	}
 }

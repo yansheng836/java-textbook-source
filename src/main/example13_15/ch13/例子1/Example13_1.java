@@ -1,15 +1,15 @@
-package ch13.ä¾‹å­1;
+package ch13.Àı×Ó1;
 
 public class Example13_1 {
-	public static void main(String args[]) { // ä¸»çº¿ç¨‹
+	public static void main(String args[]) { // Ö÷Ïß³Ì
 		SpeakDog speakDog;
 		SpeakCat speakCat;
-		speakDog = new SpeakDog();      // åˆ›å»ºçº¿ç¨‹
-		speakCat = new SpeakCat();      // åˆ›å»ºçº¿ç¨‹
-		speakDog.start();               // å¯åŠ¨çº¿ç¨‹
-		speakCat.start();             // å¯åŠ¨çº¿ç¨‹
+		speakDog = new SpeakDog();      // ´´½¨Ïß³Ì
+		speakCat = new SpeakCat();      // ´´½¨Ïß³Ì
+		speakDog.start();               // Æô¶¯Ïß³Ì
+		speakCat.start();             // Æô¶¯Ïß³Ì
 		for (int i = 1; i <= 15; i++) {
-			System.out.print("åŠ¨ç‰©" + i + "  ");
+			System.out.print("¶¯Îï" + i + "  ");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package ch3.ä¾‹å­5;
+package ch3.Àı×Ó5;
 
 public class Example3_5 {
 	public static void main(String args[]) {
@@ -21,6 +21,6 @@ public class Example3_5 {
 			}
 			i++;
 		}
-		System.out.println("è¾“å‡ºæ»¡è¶³1+2+...+n<=" + max + "çš„æœ€å¤§æ•´æ•°nä¸º" + N);
+		System.out.println("Êä³öÂú×ã1+2+...+n<=" + max + "µÄ×î´óÕûÊınÎª" + N);
 	}
 }

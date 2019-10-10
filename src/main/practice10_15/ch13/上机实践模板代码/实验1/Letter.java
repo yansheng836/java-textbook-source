@@ -1,4 +1,4 @@
-package ch13.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch13.上机实践模板代码.实验1;
 
 public class Letter {
 	char c = '\0';

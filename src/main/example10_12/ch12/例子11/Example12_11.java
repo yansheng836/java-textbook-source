@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­11;
+package ch12.Àı×Ó11;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -34,7 +34,7 @@ public class Example12_11 {
 	public static void main(String args[]) {
 		final int NUMBER = 3;
 		TreeMap<StudentKey, Student> treemap = new TreeMap<StudentKey, Student>();
-		String[] str = { "èµµä¸€", "é’±äºŒ", "å­™ä¸‰" };
+		String[] str = { "ÕÔÒ»", "Ç®¶ş", "ËïÈı" };
 		double[] weight = { 78, 81, 69 };
 		double[] height = { 182, 176, 179 };
 		Student[] student = new Student[NUMBER];
@@ -46,28 +46,28 @@ public class Example12_11 {
 			key[k] = new StudentKey(student[k].weight);
 		}
 		for (int k = 0; k < student.length; k++) {
-			treemap.put(key[k], student[k]);   // æŒ‰ä½“é‡æ’åˆ—å¤§å°
+			treemap.put(key[k], student[k]);   // °´ÌåÖØÅÅÁĞ´óĞ¡
 		}
-		System.out.println("æŒ‰ä½“é‡æ’åº:");
+		System.out.println("°´ÌåÖØÅÅĞò:");
 		Collection<Student> collection = treemap.values();
 		Iterator<Student> iter = collection.iterator();
 		while (iter.hasNext()) {
 			Student stu = iter.next();
-			System.out.println("å§“å:" + stu.name + ",ä½“é‡:" + stu.weight);
+			System.out.println("ĞÕÃû:" + stu.name + ",ÌåÖØ:" + stu.weight);
 		}
 		treemap.clear();
 		for (int k = 0; k < key.length; k++) {
 			key[k] = new StudentKey(student[k].height);
 		}
 		for (int k = 0; k < student.length; k++) {
-			treemap.put(key[k], student[k]);     // æŒ‰èº«é«˜æ’åˆ—å¤§å°
+			treemap.put(key[k], student[k]);     // °´Éí¸ßÅÅÁĞ´óĞ¡
 		}
-		System.out.println("æŒ‰èº«é«˜æ’åº:");
+		System.out.println("°´Éí¸ßÅÅĞò:");
 		collection = treemap.values();
 		iter = collection.iterator();
 		while (iter.hasNext()) {
 			Student stu = (Student) iter.next();
-			System.out.println("å§“å:" + stu.name + ",èº«é«˜:" + stu.height);
+			System.out.println("ĞÕÃû:" + stu.name + ",Éí¸ß:" + stu.height);
 		}
 	}
 }

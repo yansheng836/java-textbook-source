@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙5;
+package ch15.例子5;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,7 +9,7 @@ import java.io.FileReader;
 public class ReaderListen implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		String fileName = e.getActionCommand();
-		System.out.println(fileName + "鍐呭濡備笅:");
+		System.out.println(fileName + "内容如下:");
 		try {
 			File file = new File(fileName);
 			FileReader inOne = new FileReader(file);

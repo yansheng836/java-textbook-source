@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­22;
+package ch9.Àı×Ó22;
 
 import java.util.Scanner;
 
@@ -6,15 +6,15 @@ public class ComputerSum {
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
 		int sum = 0;
-		System.out.println("è¾“å…¥ä¸€ä¸ªæ•´æ•°");
+		System.out.println("ÊäÈëÒ»¸öÕûÊı");
 		while (scanner.hasNextInt()) {
 			int item = scanner.nextInt();
 			sum = sum + item;
-			System.out.println("ç›®å‰å’Œ" + sum);
+			System.out.println("Ä¿Ç°ºÍ" + sum);
 			if (sum >= 8000)
 				System.exit(0);
-			System.out.println("è¾“å…¥ä¸€ä¸ªæ•´æ•°(è¾“å…¥éæ•´æ•°ç»“æŸè¾“å…¥)");
+			System.out.println("ÊäÈëÒ»¸öÕûÊı(ÊäÈë·ÇÕûÊı½áÊøÊäÈë)");
 		}
-		System.out.println("æ€»å’Œ" + sum);
+		System.out.println("×ÜºÍ" + sum);
 	}
 }

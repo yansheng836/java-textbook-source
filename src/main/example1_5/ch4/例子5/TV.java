@@ -1,7 +1,7 @@
-package ch4.渚嬪瓙5;
+package ch4.例子5;
 
 public class TV {
-	int channel; // 鐢佃棰戦亾
+	int channel; // 电视频道
 
 	void setChannel(int m) {
 		if (m >= 1) {
@@ -16,22 +16,22 @@ public class TV {
 	void showProgram() {
 		switch (channel) {
 		case 1:
-			System.out.println("缁煎悎棰戦亾");
+			System.out.println("综合频道");
 			break;
 		case 2:
-			System.out.println("缁忔祹棰戦亾");
+			System.out.println("经济频道");
 			break;
 		case 3:
-			System.out.println("鏂囪壓棰戦亾");
+			System.out.println("文艺频道");
 			break;
 		case 4:
-			System.out.println("鍥介檯棰戦亾");
+			System.out.println("国际频道");
 			break;
 		case 5:
-			System.out.println("浣撹偛棰戦亾");
+			System.out.println("体育频道");
 			break;
 		default:
-			System.out.println("涓嶈兘鏀剁湅" + channel + "棰戦亾");
+			System.out.println("不能收看" + channel + "频道");
 		}
 	}
 }

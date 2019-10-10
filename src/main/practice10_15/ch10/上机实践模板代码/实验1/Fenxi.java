@@ -1,4 +1,4 @@
-package ch10.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch10.上机实践模板代码.实验1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

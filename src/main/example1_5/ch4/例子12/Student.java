@@ -1,10 +1,10 @@
-package ch4.ä¾‹å­12;
+package ch4.Àı×Ó12;
 public class Student{
    int number;
    Student(int n){
       number=n;
    } 
    void speak(){
-      System.out.println("Studentç±»çš„åŒ…åæ˜¯tom.jiafei,æˆ‘çš„å­¦å·ï¼š"+number);
+      System.out.println("StudentÀàµÄ°üÃûÊÇtom.jiafei,ÎÒµÄÑ§ºÅ£º"+number);
    }
 }

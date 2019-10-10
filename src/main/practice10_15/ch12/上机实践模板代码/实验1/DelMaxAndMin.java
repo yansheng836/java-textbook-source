@@ -1,4 +1,4 @@
-package ch12.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch12.上机实践模板代码.实验1;
 
 import java.util.Arrays;
 
@@ -12,8 +12,8 @@ public class DelMaxAndMin extends DoThing {
 	public void doThing(double[] a) {
 		Arrays.sort(a);
 		double[] b = Arrays.copyOfRange(a, 1, a.length);
-		System.out.print("鍘绘帀涓�涓渶楂樺垎:" + b[b.length - 1] + ",");
-		System.out.println("鍘绘帀涓�涓渶浣庡垎" + b[0]);
+		System.out.print("去掉一个最高分:" + b[b.length - 1] + ",");
+		System.out.println("去掉一个最低分" + b[0]);
 		nextDoThing.doThing(b);
 	}
 }

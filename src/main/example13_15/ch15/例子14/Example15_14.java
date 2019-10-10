@@ -1,9 +1,9 @@
-package ch15.ä¾‹å­14;
+package ch15.Àı×Ó14;
 
 public class Example15_14 {
 	public static void main(String args[]) {
 		WindowMess win = new WindowMess();
-		win.setTitle("å¸¦æ¶ˆæ¯å¯¹è¯æ¡†çš„çª—å£");
+		win.setTitle("´øÏûÏ¢¶Ô»°¿òµÄ´°¿Ú");
 		win.setBounds(80, 90, 200, 300);
 	}
 }

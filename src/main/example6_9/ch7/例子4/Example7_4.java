@@ -1,4 +1,4 @@
-package ch7.ä¾‹å­4;
+package ch7.Àı×Ó4;
 
 import java.util.Arrays;
 
@@ -6,15 +6,15 @@ public class Example7_4 {
 	public static void main(String args[]) {
 		int[] a = { 11, 22, 33, 44, 55 }, b, c, d;
 		b = Arrays.copyOf(a, 8);
-		System.out.println("æ•°ç»„ a çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é a µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(a));
-		System.out.println("æ•°ç»„ b çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é b µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(b));
 		c = Arrays.copyOfRange(a, 3, 5);
-		System.out.println("æ•°ç»„ c çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é c µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(c));
 		d = Arrays.copyOfRange(a, 1, 7);
-		System.out.println("æ•°ç»„ d çš„å„ä¸ªå…ƒç´ ä¸­çš„å€¼:");
+		System.out.println("Êı×é d µÄ¸÷¸öÔªËØÖĞµÄÖµ:");
 		System.out.println(Arrays.toString(d));
 	}
 }

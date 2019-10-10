@@ -1,4 +1,4 @@
-package ch12.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch12.上机实践模板代码.实验1;
 
 public abstract class DoThing {
 	public abstract void doThing(double[] a);

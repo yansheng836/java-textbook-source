@@ -1,4 +1,4 @@
-package ch2.ä¾‹å­3;
+package ch2.Àı×Ó3;
 
 public class Rectangle {
 	double width;
@@ -9,7 +9,7 @@ public class Rectangle {
 	}
 }
 
-class Example2_3        // ä¸»ç±»
+class Example2_3        // Ö÷Àà
 {
 	public static void main(String args[]) {
 		Rectangle r;
@@ -17,6 +17,6 @@ class Example2_3        // ä¸»ç±»
 		r.width = 1.819;
 		r.height = 1.5;
 		double area = r.getArea();
-		System.out.println("çŸ©å½¢çš„é¢ç§¯:" + area);
+		System.out.println("¾ØĞÎµÄÃæ»ı:" + area);
 	}
 }

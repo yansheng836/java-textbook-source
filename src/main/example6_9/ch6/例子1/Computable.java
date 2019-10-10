@@ -1,4 +1,4 @@
-package ch6.ä¾‹å­1;
+package ch6.Àı×Ó1;
 
 public interface Computable {
 	int MAX = 100;

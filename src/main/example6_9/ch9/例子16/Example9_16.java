@@ -1,4 +1,4 @@
-package ch9.渚嬪瓙16;
+package ch9.例子16;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,11 +11,11 @@ public class Example9_16 {
 		SimpleDateFormat SDF = new SimpleDateFormat(pattern);
 		String timePattern = SDF.format(nowTime);
 		System.out.println(timePattern);
-		pattern = "G yyyy骞碝MMd鏃 HH鏃秏m鍒唖s绉抸";
-		SDF = new SimpleDateFormat("G yyyy骞碝MMd鏃 HH鏃秏m鍒唖s绉抸");
+		pattern = "G yyyy年MMMd日E HH时mm分ss秒z";
+		SDF = new SimpleDateFormat("G yyyy年MMMd日E HH时mm分ss秒z");
 		timePattern = SDF.format(nowTime);
 		System.out.println(timePattern);
 		long time = System.currentTimeMillis();
-		System.out.println("鐜板湪鏄叕鍏冨悗:" + time + "姣");
+		System.out.println("现在是公元后:" + time + "毫秒");
 	}
 }

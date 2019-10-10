@@ -1,13 +1,13 @@
-package ch5.ä¾‹å­3;
+package ch5.Àı×Ó3;
 
 public class Example5_3 {
 	public static void main(String args[]) {
 		CheapGoods cheapGoods = new CheapGoods();
-		// cheapGoods.weight=198.98; æ˜¯éæ³•çš„ï¼Œå› ä¸ºå­ç±»å¯¹è±¡çš„weightå·²ç»ä¸æ˜¯intå‹
+		// cheapGoods.weight=198.98; ÊÇ·Ç·¨µÄ£¬ÒòÎª×ÓÀà¶ÔÏóµÄweightÒÑ¾­²»ÊÇintĞÍ
 		cheapGoods.newSetWeight(198);
-		System.out.println("å¯¹è±¡cheapGoodsçš„weightçš„å€¼æ˜¯:" + cheapGoods.weight);
-		System.out.println("cheapGoodsç”¨å­ç±»æ–°å¢çš„ä¼˜æƒ æ–¹æ³•è®¡ç®—ä»·æ ¼ï¼š" + cheapGoods.newGetPrice());
-		cheapGoods.oldSetWeight(198.987); // å­ç±»å¯¹è±¡è°ƒç”¨ç»§æ‰¿çš„æ–¹æ³•æ“ä½œéšè—çš„doubleå‹å˜é‡weight
-		System.out.println("cheapGoodsä½¿ç”¨ç»§æ‰¿çš„æ–¹æ³•ï¼ˆæ— ä¼˜æƒ ï¼‰è®¡ç®—ä»·æ ¼ï¼š" + cheapGoods.oldGetPrice());
+		System.out.println("¶ÔÏócheapGoodsµÄweightµÄÖµÊÇ:" + cheapGoods.weight);
+		System.out.println("cheapGoodsÓÃ×ÓÀàĞÂÔöµÄÓÅ»İ·½·¨¼ÆËã¼Û¸ñ£º" + cheapGoods.newGetPrice());
+		cheapGoods.oldSetWeight(198.987); // ×ÓÀà¶ÔÏóµ÷ÓÃ¼Ì³ĞµÄ·½·¨²Ù×÷Òş²ØµÄdoubleĞÍ±äÁ¿weight
+		System.out.println("cheapGoodsÊ¹ÓÃ¼Ì³ĞµÄ·½·¨£¨ÎŞÓÅ»İ£©¼ÆËã¼Û¸ñ£º" + cheapGoods.oldGetPrice());
 	}
 }

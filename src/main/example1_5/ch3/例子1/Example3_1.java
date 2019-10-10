@@ -1,11 +1,11 @@
-package ch3.渚嬪瓙1;
+package ch3.例子1;
 
 import java.util.Scanner;
 
 public class Example3_1 {
 	public static void main(String args[]) {
 		Scanner reader = new Scanner(System.in);
-		System.out.println("杈撳叆涓変釜鏁存暟锛屾瘡杈撳叆涓�涓渶鍥炶溅纭");
+		System.out.println("输入三个整数，每输入一个需回车确认");
 		int x = reader.nextInt();
 		int y = reader.nextInt();
 		int z = reader.nextInt();

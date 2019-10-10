@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­18;
+package ch9.Àı×Ó18;
 
 import java.util.Calendar;
 
@@ -18,7 +18,7 @@ public class CalendarBean1 {
 		String[] a = new String[42];
 		Calendar rili = Calendar.getInstance();
 		rili.set(year, month - 1, 1);
-		int weekDay = rili.get(Calendar.DAY_OF_WEEK) - 1; // è®¡ç®—å‡º1å·çš„æ˜ŸæœŸ
+		int weekDay = rili.get(Calendar.DAY_OF_WEEK) - 1; // ¼ÆËã³ö1ºÅµÄĞÇÆÚ
 		int day = 0;
 		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
 			day = 31;

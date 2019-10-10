@@ -1,10 +1,10 @@
-package ch5.ä¾‹å­1;
+package ch5.Àı×Ó1;
 
 public class Student extends People {
 	int number;
 
 	void tellNumber() {
-		System.out.println("æˆ‘çš„å­¦å·æ˜¯:" + number);
+		System.out.println("ÎÒµÄÑ§ºÅÊÇ:" + number);
 	}
 
 	int add(int x, int y) {

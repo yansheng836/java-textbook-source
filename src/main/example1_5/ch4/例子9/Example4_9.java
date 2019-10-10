@@ -1,15 +1,15 @@
-package ch4.ä¾‹å­9;
+package ch4.Àı×Ó9;
 
 public class Example4_9 {
 	public static void main(String args[]) {
-		Lader.ä¸‹åº• = 100;     // Laderçš„å­—èŠ‚ç è¢«åŠ è½½åˆ°å†…å­˜,é€šè¿‡ç±»åæ“ä½œç±»å˜é‡
+		Lader.ÏÂµ× = 100;     // LaderµÄ×Ö½ÚÂë±»¼ÓÔØµ½ÄÚ´æ,Í¨¹ıÀàÃû²Ù×÷Àà±äÁ¿
 		Lader laderOne = new Lader();
 		Lader laderTwo = new Lader();
-		laderOne.è®¾ç½®ä¸Šåº•(28);
-		laderTwo.è®¾ç½®ä¸Šåº•(66);
-		System.out.println("laderOneçš„ä¸Šåº•:" + laderOne.è·å–ä¸Šåº•());
-		System.out.println("laderOneçš„ä¸‹åº•:" + laderOne.è·å–ä¸‹åº•());
-		System.out.println("laderTwoçš„ä¸Šåº•:" + laderTwo.è·å–ä¸Šåº•());
-		System.out.println("laderTwoçš„ä¸‹åº•:" + laderTwo.è·å–ä¸‹åº•());
+		laderOne.ÉèÖÃÉÏµ×(28);
+		laderTwo.ÉèÖÃÉÏµ×(66);
+		System.out.println("laderOneµÄÉÏµ×:" + laderOne.»ñÈ¡ÉÏµ×());
+		System.out.println("laderOneµÄÏÂµ×:" + laderOne.»ñÈ¡ÏÂµ×());
+		System.out.println("laderTwoµÄÉÏµ×:" + laderTwo.»ñÈ¡ÉÏµ×());
+		System.out.println("laderTwoµÄÏÂµ×:" + laderTwo.»ñÈ¡ÏÂµ×());
 	}
 }

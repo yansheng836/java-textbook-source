@@ -1,11 +1,11 @@
-package ch5.渚嬪瓙4;
+package ch5.例子4;
 
 public class University {
 	void enterRule(double math, double english, double chinese) {
 		double total = math + english + chinese;
 		if (total >= 200)
-			System.out.println("鑰冨垎" + total + "杈惧埌澶у鏈�浣庡綍鍙栫嚎");
+			System.out.println("考分" + total + "达到大学最低录取线");
 		else
-			System.out.println("鑰冨垎" + total + "鏈揪鍒板ぇ瀛︽渶浣庡綍鍙栫嚎");
+			System.out.println("考分" + total + "未达到大学最低录取线");
 	}
 }

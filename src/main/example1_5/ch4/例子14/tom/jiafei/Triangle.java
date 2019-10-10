@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­14.tom.jiafei;
+package ch4.Àı×Ó14.tom.jiafei;
 
 public class Triangle {
 	double sideA, sideB, sideC;
@@ -15,17 +15,17 @@ public class Triangle {
 		}
 	}
 
-	public void è®¡ç®—é¢ç§¯() {
+	public void ¼ÆËãÃæ»ı() {
 		if (isTriange) {
 			double p = (sideA + sideB + sideC) / 2.0;
 			double area = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
-			System.out.println("æ˜¯ä¸€ä¸ªä¸‰è§’å½¢,é¢ç§¯æ˜¯:" + area);
+			System.out.println("ÊÇÒ»¸öÈı½ÇĞÎ,Ãæ»ıÊÇ:" + area);
 		} else {
-			System.out.println("ä¸æ˜¯ä¸€ä¸ªä¸‰è§’å½¢,ä¸èƒ½è®¡ç®—é¢ç§¯");
+			System.out.println("²»ÊÇÒ»¸öÈı½ÇĞÎ,²»ÄÜ¼ÆËãÃæ»ı");
 		}
 	}
 
-	public void ä¿®æ”¹ä¸‰è¾¹(double a, double b, double c) {
+	public void ĞŞ¸ÄÈı±ß(double a, double b, double c) {
 		sideA = a;
 		sideB = b;
 		sideC = c;

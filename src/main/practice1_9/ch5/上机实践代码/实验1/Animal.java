@@ -1,4 +1,4 @@
-package ch5.涓婃満瀹炶返浠ｇ爜.瀹為獙1;
+package ch5.上机实践代码.实验1;
 
 public class Animal {
 	protected String name;
@@ -8,6 +8,6 @@ public class Animal {
 	}
 
 	public void cry() {
-		System.out.println("涓嶅悓鍔ㄧ墿鐨勫彨澹版槸鏈夊尯鍒殑");
+		System.out.println("不同动物的叫声是有区别的");
 	}
 }

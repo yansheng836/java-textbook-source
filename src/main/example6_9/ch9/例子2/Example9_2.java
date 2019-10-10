@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­2;
+package ch9.Àı×Ó2;
 
 import java.util.Arrays;
 
@@ -6,16 +6,16 @@ public class Example9_2 {
 	public static void main(String args[]) {
 		String[] a = { "melon", "apple", "pear", "banana" };
 		String[] b = Arrays.copyOf(a, a.length);
-		System.out.println("ä½¿ç”¨ç”¨æˆ·ç¼–å†™çš„SortStringç±»ï¼ŒæŒ‰å­—å…¸åºæ’åˆ—æ•°ç»„aï¼š");
+		System.out.println("Ê¹ÓÃÓÃ»§±àĞ´µÄSortStringÀà£¬°´×ÖµäĞòÅÅÁĞÊı×éa£º");
 		SortString.sort(a);
-		System.out.println("æ’åºç»“æœæ˜¯:");
+		System.out.println("ÅÅĞò½á¹ûÊÇ:");
 		for (String s : b) {
 			System.out.print("  " + s);
 		}
 		System.out.println("");
-		System.out.println("ä½¿ç”¨ç±»åº“ä¸­çš„Arraysç±»ï¼ŒæŒ‰å­—å…¸åºæ’åˆ—æ•°ç»„bï¼š");
+		System.out.println("Ê¹ÓÃÀà¿âÖĞµÄArraysÀà£¬°´×ÖµäĞòÅÅÁĞÊı×éb£º");
 		Arrays.sort(b);
-		System.out.println("æ’åºç»“æœæ˜¯:");
+		System.out.println("ÅÅĞò½á¹ûÊÇ:");
 		for (String s : b) {
 			System.out.print("  " + s);
 		}

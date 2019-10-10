@@ -1,16 +1,16 @@
-package ch5.ä¸Šæœºå®è·µä»£ç .å®éªŒ1;
+package ch5.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 class Cat extends Animal {
 	Cat() {
-		name = "çŒ«";
+		name = "Ã¨";
 	}
 
 	Cat(String s) {
 		name = s;
 	}
 
-	// ã€ä»£ç 3ã€‘ //é‡å†™çˆ¶ç±»çš„cryæ–¹æ³•ï¼Œåœ¨å‘½ä»¤è¡Œè¾“å‡ºæ¨¡æ‹Ÿç‹—å«çš„æ–‡å­—
+	// ¡¾´úÂë3¡¿ //ÖØĞ´¸¸ÀàµÄcry·½·¨£¬ÔÚÃüÁîĞĞÊä³öÄ£Äâ¹·½ĞµÄÎÄ×Ö
 	public void climbUpTree() {
-		System.out.println(name + "ä¼šçˆ¬æ ‘");
+		System.out.println(name + "»áÅÀÊ÷");
 	}
 }

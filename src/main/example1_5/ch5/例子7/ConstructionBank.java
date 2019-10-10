@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­7;
+package ch5.Àı×Ó7;
 
 public class ConstructionBank extends Bank {
 	double year;
@@ -8,7 +8,7 @@ public class ConstructionBank extends Bank {
 		double remainNumber = year - (int) year;
 		int day = (int) (remainNumber * 1000);
 		interest = super.computerInterest() + day * 0.0001 * savedMoney;
-		System.out.printf("%då…ƒå­˜åœ¨å»ºè®¾é“¶è¡Œ%då¹´é›¶%då¤©çš„åˆ©æ¯:%få…ƒ\n", savedMoney, super.year, day, interest);
+		System.out.printf("%dÔª´æÔÚ½¨ÉèÒøĞĞ%dÄêÁã%dÌìµÄÀûÏ¢:%fÔª\n", savedMoney, super.year, day, interest);
 		return interest;
 	}
 }

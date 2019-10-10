@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­2;
+package ch9.Àı×Ó2;
 
 import java.util.Arrays;
 
@@ -9,11 +9,11 @@ public class SortString {
 			for (int j = i + 1; j < a.length; j++) {
 				if (a[j].compareTo(a[i]) < 0) {
 					count++;
-					System.out.printf("äº¤æ¢%så’Œ%s:", a[i], a[j]);
+					System.out.printf("½»»»%sºÍ%s:", a[i], a[j]);
 					String temp = a[i];
 					a[i] = a[j];
 					a[j] = temp;
-					System.out.println("ç¬¬" + count + "æ¬¡æ’åºç»“æœ:");
+					System.out.println("µÚ" + count + "´ÎÅÅĞò½á¹û:");
 					System.out.println(Arrays.toString(a));
 				}
 			}

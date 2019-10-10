@@ -1,7 +1,7 @@
-package ch8.ä¾‹å­5;
+package ch8.Àı×Ó5;
 
 public class DangerException extends Exception {
-	final String message = "è¶…é‡";
+	final String message = "³¬ÖØ";
 
 	public String warnMess() {
 		return message;

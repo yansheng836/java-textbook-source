@@ -1,4 +1,4 @@
-package ch11.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch11.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,42 +17,42 @@ public class TurnMoney {
 			sta = con.createStatement();
 			String card1 = "create table card1(number char(20) primary key ,amount double)";
 			String card2 = "create table card2(number char(20) primary key ,amount double)";
-			sta.execute(card1);// åˆ›å»ºè¡¨salary,å¦‚æœè¡¨å·²å­˜åœ¨ï¼Œä¸å†é‡æ–°åˆ›å»ºï¼Œå¹¶å‘ç”ŸSQLException
+			sta.execute(card1);// ´´½¨±ísalary,Èç¹û±íÒÑ´æÔÚ£¬²»ÔÙÖØĞÂ´´½¨£¬²¢·¢ÉúSQLException
 			sta.execute(card2);
 		} catch (Exception e) {
 			System.out.println("" + e);
 		} finally {
 			try {
-				sta.executeUpdate("insert into card1 values('zhangsan', 900)");  // æ’å…¥è®°å½•
+				sta.executeUpdate("insert into card1 values('zhangsan', 900)");  // ²åÈë¼ÇÂ¼
 				sta.executeUpdate("insert into card2 values('xixiShop', 100)");
 			} catch (SQLException ee) {
 			}
 		}
 		try {
 			double n = 100;
-			// ã€ä»£ç 1ã€‘å…³é—­è‡ªåŠ¨æäº¤æ¨¡å¼
+			// ¡¾´úÂë1¡¿¹Ø±Õ×Ô¶¯Ìá½»Ä£Ê½
 			rs = sta.executeQuery("SELECT * FROM card1 WHERE number='zhangsan'");
 			rs.next();
 			double amountOne = rs.getDouble("amount");
-			System.out.println("è½¬è´¦æ“ä½œä¹‹å‰zhangsançš„é’±æ¬¾æ•°é¢:" + amountOne);
+			System.out.println("×ªÕË²Ù×÷Ö®Ç°zhangsanµÄÇ®¿îÊı¶î:" + amountOne);
 			rs = sta.executeQuery("SELECT * FROM card2 WHERE number='xixiShop'");
 			rs.next();
 			double amountTwo = rs.getDouble("amount");
-			System.out.println("è½¬è´¦æ“ä½œä¹‹å‰xixiShopçš„é’±æ¬¾æ•°é¢:" + amountTwo);
+			System.out.println("×ªÕË²Ù×÷Ö®Ç°xixiShopµÄÇ®¿îÊı¶î:" + amountTwo);
 			amountOne = amountOne - n;
 			amountTwo = amountTwo + n;
 			sta.executeUpdate("UPDATE card1 SET amount =" + amountOne + " WHERE number ='zhangsan'");
 			sta.executeUpdate("UPDATE card2 SET amount =" + amountTwo + " WHERE number ='xixiShop'");
-			con.commit(); // å¼€å§‹äº‹åŠ¡å¤„ç†,å¦‚æœå‘ç”Ÿå¼‚å¸¸ç›´æ¥æ‰§è¡Œcatchå—
-			// ã€ä»£ç 2ã€‘æ¢å¤è‡ªåŠ¨æäº¤æ¨¡å¼
+			con.commit(); // ¿ªÊ¼ÊÂÎñ´¦Àí,Èç¹û·¢ÉúÒì³£Ö±½ÓÖ´ĞĞcatch¿é
+			// ¡¾´úÂë2¡¿»Ö¸´×Ô¶¯Ìá½»Ä£Ê½
 			rs = sta.executeQuery("SELECT * FROM card1 WHERE number='zhangsan'");
 			rs.next();
 			amountOne = rs.getDouble("amount");
-			System.out.println("è½¬è´¦æ“ä½œä¹‹åzhangsançš„é’±æ¬¾æ•°é¢:" + amountOne);
+			System.out.println("×ªÕË²Ù×÷Ö®ºózhangsanµÄÇ®¿îÊı¶î:" + amountOne);
 			rs = sta.executeQuery("SELECT * FROM card2 WHERE number='xixiShop'");
 			rs.next();
 			amountTwo = rs.getDouble("amount");
-			System.out.println("è½¬è´¦æ“ä½œä¹‹åxixiShopçš„é’±æ¬¾æ•°é¢:" + amountTwo);
+			System.out.println("×ªÕË²Ù×÷Ö®ºóxixiShopµÄÇ®¿îÊı¶î:" + amountTwo);
 			con.close();
 		} catch (SQLException e) {
 			System.out.println(e.toString());

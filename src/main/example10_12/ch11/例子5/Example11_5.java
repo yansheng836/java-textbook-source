@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­5;
+package ch11.Àý×Ó5;
 
 public class Example11_5 {
    public static void main(String args[]) {
@@ -7,12 +7,12 @@ public class Example11_5 {
      String number = "003";
      String SQL = "SELECT * FROM goods WHERE number ='"+number+"'";
      query.setSQL(SQL);
-     System.out.println("goodsè¡¨ä¸­å•†å“å·æ˜¯"+number+"çš„è®°å½•");
+     System.out.println("goods±íÖÐÉÌÆ·ºÅÊÇ"+number+"µÄ¼ÇÂ¼");
      query.outQueryResult();
      double max = 4800,min=2800;
      SQL= "SELECT * FROM goods WHERE price >="+min+" AND price <="+max;
      query.setSQL(SQL);
-     System.out.println("goodsè¡¨ä¸­ä»·æ ¼åœ¨"+min+"å’Œ"+max+"ä¹‹é—´çš„è®°å½•:");
+     System.out.println("goods±íÖÐ¼Û¸ñÔÚ"+min+"ºÍ"+max+"Ö®¼äµÄ¼ÇÂ¼:");
      query.outQueryResult();
    }
 }

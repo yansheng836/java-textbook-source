@@ -1,11 +1,11 @@
-package ch5.渚嬪瓙2;
+package ch5.例子2;
 
 public class Example5_2 {
 	public static void main(String args[]) {
 		B b = new B();
 		b.setX(888);
-		System.out.println("瀛愮被瀵硅薄鏈户鎵跨殑x鐨勫�兼槸:" + b.getX());
+		System.out.println("子类对象未继承的x的值是:" + b.getX());
 		b.y = 12.678;
-		System.out.println("瀛愮被瀵硅薄鐨勫疄渚嬪彉閲弝鐨勫�兼槸:" + b.getY());
+		System.out.println("子类对象的实例变量y的值是:" + b.getY());
 	}
 }

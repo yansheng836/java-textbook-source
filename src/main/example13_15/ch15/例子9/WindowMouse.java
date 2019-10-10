@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­9;
+package ch15.Àı×Ó9;
 
 import java.awt.FlowLayout;
 
@@ -28,7 +28,7 @@ public class WindowMouse extends JFrame {
 		police = new MousePolice();
 		police.setJTextArea(textArea);
 		text.addMouseListener(police);
-		button = new JButton("æŒ‰é’®");
+		button = new JButton("°´Å¥");
 		button.addMouseListener(police);
 		addMouseListener(police);
 		add(button);

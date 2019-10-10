@@ -1,4 +1,4 @@
-package ch14.渚嬪瓙2;
+package ch14.例子2;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -11,7 +11,7 @@ public class Example14_2 {
 			InetAddress address_2 = InetAddress.getByName("166.111.222.3");
 			System.out.println(address_2.toString());
 		} catch (UnknownHostException e) {
-			System.out.println("鏃犳硶鎵惧埌 www.sina.com.cn");
+			System.out.println("无法找到 www.sina.com.cn");
 		}
 	}
 }

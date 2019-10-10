@@ -1,8 +1,8 @@
-package ch6.ä¾‹å­5;
+package ch6.Àı×Ó5;
 
-public class AdvertisementBoard { // è´Ÿè´£åˆ›å»ºå¹¿å‘Šç‰Œ
+public class AdvertisementBoard { // ¸ºÔğ´´½¨¹ã¸æÅÆ
 	public void show(Advertisement adver) {
-		System.out.println(adver.getCorpName() + "çš„å¹¿å‘Šè¯å¦‚ä¸‹:");
-		adver.showAdvertisement(); // æ¥å£å›è°ƒ
+		System.out.println(adver.getCorpName() + "µÄ¹ã¸æ´ÊÈçÏÂ:");
+		adver.showAdvertisement(); // ½Ó¿Ú»Øµ÷
 	}
 }

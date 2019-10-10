@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­3;
+package ch12.Àı×Ó3;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -7,9 +7,9 @@ import java.util.List;
 public class Example12_3 {
 	public static void main(String args[]) {
 		List<String> list = new LinkedList<String>();
-		list.add("å¤§å®¶å¥½");
-		list.add("å›½åº†60å‘¨å¹´");
-		list.add("åä¸€å¿«ä¹");
+		list.add("´ó¼ÒºÃ");
+		list.add("¹úÇì60ÖÜÄê");
+		list.add("Ê®Ò»¿ìÀÖ");
 		Iterator<String> iter = list.iterator();
 		while (iter.hasNext()) {
 			String te = iter.next();

@@ -1,4 +1,4 @@
-package ch5.渚嬪瓙6;
+package ch5.例子6;
 
 public class HomeEletricity {
 	int weight;
@@ -8,6 +8,6 @@ public class HomeEletricity {
 	}
 
 	public void showMess() {
-		System.out.println("鎴戞槸瀹剁敤鐢靛櫒");
+		System.out.println("我是家用电器");
 	}
 }

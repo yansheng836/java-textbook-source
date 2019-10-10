@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­6;
+package ch10.Àı×Ó6;
 
 import java.io.File;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Example10_6 {
 	public static void main(String args[]) {
-		String content = "broadsword å‹‡è€…æ— æ•Œ";
+		String content = "broadsword ÓÂÕßÎŞµĞ";
 		try {
 			File f = new File("hello.txt");
 			char[] a = content.toCharArray();

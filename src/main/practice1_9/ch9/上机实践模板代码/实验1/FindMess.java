@@ -1,42 +1,42 @@
-package ch9.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch9.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 public class FindMess {
 	public static void main(String args[]) {
-	      String mess = "å§“å:å¼ ä¸‰ å‡ºç”Ÿæ—¶é—´:1989.10.16ã€‚ä¸ªäººç½‘ç«™:http://www.zhang.comã€‚"+
-	"èº«é«˜:185 cm,ä½“é‡:72 kg";
-	      int index =ã€ä»£ç 1ã€‘  //messè°ƒç”¨indexOf(String s)æ–¹æ³•è¿”å›å­—ç¬¦ä¸²ä¸­é¦–æ¬¡å‡ºç°å†’å·çš„ä½ç½®
+	      String mess = "ĞÕÃû:ÕÅÈı ³öÉúÊ±¼ä:1989.10.16¡£¸öÈËÍøÕ¾:http://www.zhang.com¡£"+
+	"Éí¸ß:185 cm,ÌåÖØ:72 kg";
+	      int index =¡¾´úÂë1¡¿  //messµ÷ÓÃindexOf(String s)·½·¨·µ»Ø×Ö·û´®ÖĞÊ×´Î³öÏÖÃ°ºÅµÄÎ»ÖÃ
 	      String name = mess.substring(index+1);
-	      if(name.startsWith("å¼ ")) {
-	          System.out.println("ç®€å†ä¸­çš„å§“åå§“\"å¼ \"");
+	      if(name.startsWith("ÕÅ")) {
+	          System.out.println("¼òÀúÖĞµÄĞÕÃûĞÕ\"ÕÅ\"");
 	      }
-	      index=ã€ä»£ç 2ã€‘//messè°ƒç”¨indexOf(String s,int start)è¿”å›å­—ç¬¦ä¸²ä¸­ç¬¬2æ¬¡å‡ºç°å†’å·çš„ä½ç½®
+	      index=¡¾´úÂë2¡¿//messµ÷ÓÃindexOf(String s,int start)·µ»Ø×Ö·û´®ÖĞµÚ2´Î³öÏÖÃ°ºÅµÄÎ»ÖÃ
 	      String date = mess.substring(index+1,index+11);
 	      System.out.println(date);
 	      index = mess.indexOf(":",index+1);
-	      int heightPosition=ã€ä»£ç 3ã€‘//messè°ƒç”¨indexOf(String s)è¿”å›é¦–æ¬¡å‡ºç°"èº«é«˜"çš„ä½ç½®
+	      int heightPosition=¡¾´úÂë3¡¿//messµ÷ÓÃindexOf(String s)·µ»ØÊ×´Î³öÏÖ"Éí¸ß"µÄÎ»ÖÃ
 	      String personNet = mess.substring(index+1,heightPosition-1);
 	      System.out.println(personNet);
-	      index =ã€ä»£ç 4ã€‘//messè°ƒç”¨indexOf(String s,int start)è¿”å›å­—ç¬¦ä¸²ä¸­"èº«é«˜"åé¢çš„å†’å·ä½ç½®
+	      index =¡¾´úÂë4¡¿//messµ÷ÓÃindexOf(String s,int start)·µ»Ø×Ö·û´®ÖĞ"Éí¸ß"ºóÃæµÄÃ°ºÅÎ»ÖÃ
 	      int cmPosition = mess.indexOf("cm");
 	      String height = mess.substring(index+1,cmPosition);
 	      height = height.trim();
 	      int h = Integer.parseInt(height);
 	      if(h>=180) {
-	         System.out.println("ç®€å†ä¸­çš„èº«é«˜"+height+"å¤§äºæˆ–ç­‰äº180 cm");
+	         System.out.println("¼òÀúÖĞµÄÉí¸ß"+height+"´óÓÚ»òµÈÓÚ180 cm");
 	      }  
 	      else {
-	         System.out.println("ç®€å†ä¸­çš„èº«é«˜"+height+"å°äº180 cm");
+	         System.out.println("¼òÀúÖĞµÄÉí¸ß"+height+"Ğ¡ÓÚ180 cm");
 	      }
-	      index=ã€ä»£ç 5ã€‘//messè°ƒç”¨lastIndexOf(String s)è¿”å›å­—ç¬¦ä¸²ä¸­æœ€åä¸€ä¸ªå†’å·ä½ç½®
+	      index=¡¾´úÂë5¡¿//messµ÷ÓÃlastIndexOf(String s)·µ»Ø×Ö·û´®ÖĞ×îºóÒ»¸öÃ°ºÅÎ»ÖÃ
 	      int kgPosition = mess.indexOf("kg");
 	      String weight = mess.substring(index+1,kgPosition);
 	      weight = weight.trim();
 	      int w = Integer.parseInt(weight);
 	      if(w>=75) {
-	         System.out.println("ç®€å†ä¸­çš„ä½“é‡"+weight+"å¤§äºæˆ–ç­‰äº75 kg");
+	         System.out.println("¼òÀúÖĞµÄÌåÖØ"+weight+"´óÓÚ»òµÈÓÚ75 kg");
 	      }  
 	      else {
-	         System.out.println("ç®€å†ä¸­çš„ä½“é‡"+weight+"å°äº75 kg");
+	         System.out.println("¼òÀúÖĞµÄÌåÖØ"+weight+"Ğ¡ÓÚ75 kg");
 	      }
 	   }
 }

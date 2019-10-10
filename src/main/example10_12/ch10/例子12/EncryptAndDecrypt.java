@@ -1,27 +1,27 @@
-package ch10.渚嬪瓙12;
+package ch10.例子12;
 
 public class EncryptAndDecrypt {
-	String encrypt(String sourceString, String password) { // 鍔犲瘑绠楁硶
+	String encrypt(String sourceString, String password) { // 加密算法
 		char[] p = password.toCharArray();
 		int n = p.length;
 		char[] c = sourceString.toCharArray();
 		int m = c.length;
 		for (int k = 0; k < m; k++) {
-			int mima = c[k] + p[k % n];       // 鍔犲瘑
+			int mima = c[k] + p[k % n];       // 加密
 			c[k] = (char) mima;
 		}
-		return new String(c);    // 杩斿洖瀵嗘枃
+		return new String(c);    // 返回密文
 	}
 
-	String decrypt(String sourceString, String password) { // 瑙ｅ瘑绠楁硶
+	String decrypt(String sourceString, String password) { // 解密算法
 		char[] p = password.toCharArray();
 		int n = p.length;
 		char[] c = sourceString.toCharArray();
 		int m = c.length;
 		for (int k = 0; k < m; k++) {
-			int mima = c[k] - p[k % n];       // 瑙ｅ瘑
+			int mima = c[k] - p[k % n];       // 解密
 			c[k] = (char) mima;
 		}
-		return new String(c);    // 杩斿洖鏄庢枃
+		return new String(c);    // 返回明文
 	}
 }

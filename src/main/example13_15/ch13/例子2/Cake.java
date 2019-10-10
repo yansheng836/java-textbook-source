@@ -1,7 +1,7 @@
-package ch13.ä¾‹å­2;
+package ch13.Àı×Ó2;
 
 public class Cake {
-	int size;  // è›‹ç³•çš„å¤§å°
+	int size;  // µ°¸âµÄ´óĞ¡
 
 	public void setSize(int n) {
 		size = n;

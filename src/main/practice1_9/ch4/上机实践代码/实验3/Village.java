@@ -1,9 +1,9 @@
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ3;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé3;
 
 class Village {
-	static int treeAmount;     // æ¨¡æ‹Ÿæ£®æ—ä¸­æ ‘æœ¨çš„æ•°é‡
-	int peopleNumber;       // æ‘åº„çš„äººæ•°
-	String name;            // æ‘åº„çš„åå­—
+	static int treeAmount;     // Ä£ÄâÉ­ÁÖÖĞÊ÷Ä¾µÄÊıÁ¿
+	int peopleNumber;       // ´å×¯µÄÈËÊı
+	String name;            // ´å×¯µÄÃû×Ö
 
 	Village(String s) {
 		name = s;
@@ -11,15 +11,15 @@ class Village {
 
 	void treePlanting(int n) {
 		treeAmount = treeAmount + n;
-		System.out.println(name + "æ¤æ ‘" + n + "é¢—");
+		System.out.println(name + "Ö²Ê÷" + n + "¿Å");
 	}
 
 	void fellTree(int n) {
 		if (treeAmount - n >= 0) {
 			treeAmount = treeAmount - n;
-			System.out.println(name + "ä¼æ ‘" + n + "é¢—");
+			System.out.println(name + "·¥Ê÷" + n + "¿Å");
 		} else {
-			System.out.println("æ— æ ‘æœ¨å¯ä¼");
+			System.out.println("ÎŞÊ÷Ä¾¿É·¥");
 		}
 	}
 
@@ -29,6 +29,6 @@ class Village {
 
 	void addPeopleNumber(int n) {
 		peopleNumber = peopleNumber + n;
-		System.out.println(name + "å¢åŠ äº†" + n + "äºº");
+		System.out.println(name + "Ôö¼ÓÁË" + n + "ÈË");
 	}
 }

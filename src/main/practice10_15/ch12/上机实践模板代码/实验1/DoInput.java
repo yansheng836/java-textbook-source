@@ -1,4 +1,4 @@
-package ch12.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙1;
+package ch12.上机实践模板代码.实验1;
 
 import java.util.Scanner;
 
@@ -10,10 +10,10 @@ public class DoInput extends DoThing {
 	}
 
 	public void doThing(double[] a) {
-		System.out.println("璇疯緭鍏ヨ鍒ゆ暟");
+		System.out.println("请输入裁判数");
 		Scanner read = new Scanner(System.in);
 		int count = read.nextInt();
-		System.out.println("璇疯緭鍏ュ悇涓鍒ょ殑鍒嗘暟");
+		System.out.println("请输入各个裁判的分数");
 		a = new double[count];
 		for (int i = 0; i < count; i++) {
 			a[i] = read.nextDouble();

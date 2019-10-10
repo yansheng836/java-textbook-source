@@ -1,16 +1,16 @@
-package ch2.ä¾‹å­2;
+package ch2.Àı×Ó2;
 
 public class MainClass {
 	public static void main(String args[]) {
 		Circle circle = new Circle();
 		circle.radius = 100;
 		double area = circle.getArea();
-		System.out.println("åœ†çš„é¢ç§¯:" + area);
+		System.out.println("Ô²µÄÃæ»ı:" + area);
 		Lader lader = new Lader();
 		lader.above = 10;
 		lader.bottom = 56;
 		lader.height = 8.9;
 		area = lader.getArea();
-		System.out.println("æ¢¯å½¢çš„é¢ç§¯:" + area);
+		System.out.println("ÌİĞÎµÄÃæ»ı:" + area);
 	}
 }

@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­13;
+package ch10.Àı×Ó13;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 public class Example10_13 {
 	public static void main(String args[]) {
 		TV changhong = new TV();
-		changhong.setName("é•¿è™¹ç”µè§†");
+		changhong.setName("³¤ºçµçÊÓ");
 		changhong.setPrice(5678);
 		File file = new File("television.txt");
 		try {
@@ -22,14 +22,14 @@ public class Example10_13 {
 			ObjectInputStream objectIn = new ObjectInputStream(fileIn);
 			TV xinfei = (TV) objectIn.readObject();
 			objectIn.close();
-			xinfei.setName("æ–°é£ç”µè§†");
+			xinfei.setName("ĞÂ·ÉµçÊÓ");
 			xinfei.setPrice(6666);
-			System.out.println("changhongçš„åå­—:" + changhong.getName());
-			System.out.println("changhongçš„ä»·æ ¼:" + changhong.getPrice());
-			System.out.println("xinfeiçš„åå­—:" + xinfei.getName());
-			System.out.println("xinfeiçš„ä»·æ ¼:" + xinfei.getPrice());
+			System.out.println("changhongµÄÃû×Ö:" + changhong.getName());
+			System.out.println("changhongµÄ¼Û¸ñ:" + changhong.getPrice());
+			System.out.println("xinfeiµÄÃû×Ö:" + xinfei.getName());
+			System.out.println("xinfeiµÄ¼Û¸ñ:" + xinfei.getPrice());
 		} catch (ClassNotFoundException event) {
-			System.out.println("ä¸èƒ½è¯»å‡ºå¯¹è±¡");
+			System.out.println("²»ÄÜ¶Á³ö¶ÔÏó");
 		} catch (IOException event) {
 			System.out.println(event);
 		}

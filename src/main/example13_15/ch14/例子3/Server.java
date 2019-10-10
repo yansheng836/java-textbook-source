@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­3;
+package ch14.Àı×Ó3;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class Server {
 	public static void main(String args[]) {
-		String[] answer = { "åœ¨ç®—é”™çš„æƒ…å†µä¸‹", "ç‹—å°±èƒ½ç”Ÿç‹—", "ç”µè§†ã€é¢åŒ…ã€æ²™å‘" };
+		String[] answer = { "ÔÚËã´íµÄÇé¿öÏÂ", "¹·¾ÍÄÜÉú¹·", "µçÊÓ¡¢Ãæ°ü¡¢É³·¢" };
 		ServerSocket serverForClient = null;
 		Socket socketOnServer = null;
 		DataOutputStream out = null;
@@ -19,18 +19,18 @@ public class Server {
 			System.out.println(e1);
 		}
 		try {
-			System.out.println("ç­‰å¾…å®¢æˆ·å‘¼å«");
-			socketOnServer = serverForClient.accept(); // å µå¡çŠ¶æ€ï¼Œé™¤éæœ‰å®¢æˆ·å‘¼å«
+			System.out.println("µÈ´ı¿Í»§ºô½Ğ");
+			socketOnServer = serverForClient.accept(); // ¶ÂÈû×´Ì¬£¬³ı·ÇÓĞ¿Í»§ºô½Ğ
 			out = new DataOutputStream(socketOnServer.getOutputStream());
 			in = new DataInputStream(socketOnServer.getInputStream());
 			for (int i = 0; i < answer.length; i++) {
-				String s = in.readUTF(); // inè¯»å–ä¿¡æ¯ï¼Œå µå¡çŠ¶æ€
-				System.out.println("æœåŠ¡å™¨æ”¶åˆ°å®¢æˆ·çš„æé—®:" + s);
+				String s = in.readUTF(); // in¶ÁÈ¡ĞÅÏ¢£¬¶ÂÈû×´Ì¬
+				System.out.println("·şÎñÆ÷ÊÕµ½¿Í»§µÄÌáÎÊ:" + s);
 				out.writeUTF(answer[i]);
 				Thread.sleep(500);
 			}
 		} catch (Exception e) {
-			System.out.println("å®¢æˆ·å·²æ–­å¼€" + e);
+			System.out.println("¿Í»§ÒÑ¶Ï¿ª" + e);
 		}
 	}
 }

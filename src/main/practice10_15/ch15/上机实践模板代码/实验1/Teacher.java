@@ -1,4 +1,4 @@
-package ch15.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch15.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,8 +11,8 @@ public class Teacher implements ActionListener {
 	int numberOne, numberTwo;
 	String operator = "";
 	boolean isRight;
-	Random random;  // ç”¨äºç»™å‡ºéšæœºæ•°
-	int maxInteger;  // é¢˜ç›®ä¸­æœ€å¤§çš„æ•´æ•°
+	Random random;  // ÓÃÓÚ¸ø³öËæ»úÊı
+	int maxInteger;  // ÌâÄ¿ÖĞ×î´óµÄÕûÊı
 	JTextField textOne, textTwo, textResult;
 	JLabel operatorLabel, message;
 
@@ -27,9 +27,9 @@ public class Teacher implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		String str = e.getActionCommand();
 		if (str.equals("getProblem")) {
-			numberOne = random.nextInt(maxInteger) + 1;// 1è‡³maxIntegerä¹‹é—´çš„éšæœºæ•°;
+			numberOne = random.nextInt(maxInteger) + 1;// 1ÖÁmaxIntegerÖ®¼äµÄËæ»úÊı;
 			numberTwo = random.nextInt(maxInteger) + 1;
-			double d = Math.random(); // è·å–(0,1)ä¹‹é—´çš„éšæœºæ•°
+			double d = Math.random(); // »ñÈ¡(0,1)Ö®¼äµÄËæ»úÊı
 			if (d >= 0.5)
 				operator = "+";
 			else
@@ -37,7 +37,7 @@ public class Teacher implements ActionListener {
 			textOne.setText("" + numberOne);
 			textTwo.setText("" + numberTwo);
 			operatorLabel.setText(operator);
-			message.setText("è¯·å›ç­”");
+			message.setText("Çë»Ø´ğ");
 			textResult.setText(null);
 		} else if (str.equals("answer")) {
 			String answer = textResult.getText();
@@ -45,17 +45,17 @@ public class Teacher implements ActionListener {
 				int result = Integer.parseInt(answer);
 				if (operator.equals("+")) {
 					if (result == numberOne + numberTwo)
-						message.setText("ä½ å›ç­”æ­£ç¡®");
+						message.setText("Äã»Ø´ğÕıÈ·");
 					else
-						message.setText("ä½ å›ç­”é”™è¯¯");
+						message.setText("Äã»Ø´ğ´íÎó");
 				} else if (operator.equals("-")) {
 					if (result == numberOne - numberTwo)
-						message.setText("ä½ å›ç­”æ­£ç¡®");
+						message.setText("Äã»Ø´ğÕıÈ·");
 					else
-						message.setText("ä½ å›ç­”é”™è¯¯");
+						message.setText("Äã»Ø´ğ´íÎó");
 				}
 			} catch (NumberFormatException ex) {
-				message.setText("è¯·è¾“å…¥æ•°å­—å­—ç¬¦");
+				message.setText("ÇëÊäÈëÊı×Ö×Ö·û");
 			}
 		}
 	}

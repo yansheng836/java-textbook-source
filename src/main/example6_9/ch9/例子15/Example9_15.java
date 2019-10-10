@@ -1,11 +1,11 @@
-package ch9.ä¾‹å­15;
+package ch9.Àı×Ó15;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Example9_15 {
 	public static void main(String args[]) {
-		String cost = "è¯è´¹æ¸…å•ï¼šå¸‚è¯è´¹76.89å…ƒï¼Œé•¿é€”èŠ±è´¹167.38å…ƒï¼ŒçŸ­ä¿¡è´¹12.68å…ƒ";
+		String cost = "»°·ÑÇåµ¥£ºÊĞ»°·Ñ76.89Ôª£¬³¤Í¾»¨·Ñ167.38Ôª£¬¶ÌĞÅ·Ñ12.68Ôª";
 		Scanner scanner = new Scanner(cost);
 		scanner.useDelimiter("[^0123456789.]+");
 		double sum = 0;
@@ -18,6 +18,6 @@ public class Example9_15 {
 				String t = scanner.next();
 			}
 		}
-		System.out.println("æ€»é€šä¿¡è´¹ç”¨:" + sum + "å…ƒ");
+		System.out.println("×ÜÍ¨ĞÅ·ÑÓÃ:" + sum + "Ôª");
 	}
 }

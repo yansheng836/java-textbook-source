@@ -1,10 +1,10 @@
-package ch6.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch6.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 public class LeaderHeader {
 	String battleContent;
 
 	public void giveCommand(Commander com){
-//       ã€ä»£ç ã€‘ //comå›è°ƒæ¥å£æ–¹æ³•ï¼Œå¹¶å°†battleContentä¼ é€’ç»™æ¥å£æ–¹æ³•çš„å‚æ•°
+//       ¡¾´úÂë¡¿ //com»Øµ÷½Ó¿Ú·½·¨£¬²¢½«battleContent´«µİ¸ø½Ó¿Ú·½·¨µÄ²ÎÊı
     }
 
 	public void setBattleContent(String s) {

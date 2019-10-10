@@ -1,9 +1,9 @@
-package ch5.渚嬪瓙2;
+package ch5.例子2;
 
 public class B extends A {
 	double y = 12;
 
-	public void setY(int y) {   // this.y=y+x; 闈炴硶锛屽瓙绫绘病鏈夌户鎵縳
+	public void setY(int y) {   // this.y=y+x; 非法，子类没有继承x
 	}
 
 	public double getY() {

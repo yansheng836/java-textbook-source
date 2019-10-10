@@ -1,4 +1,4 @@
-package ch11.渚嬪瓙2;
+package ch11.例子2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,7 +17,7 @@ public class Example11_2 {
       }
       try { 
           String uri="jdbc:derby://127.0.0.1:1527//student;create=true";
-          con=DriverManager.getConnection(uri);//鍜岀綉缁淒erby鏁版嵁搴搒tudent寤虹珛杩炴帴
+          con=DriverManager.getConnection(uri);//和网络Derby数据库student建立连接
           sql=con.createStatement();
           rs=sql.executeQuery("SELECT * FROM mingdan");
           while(rs.next()) {

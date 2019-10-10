@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­19;
+package ch9.Àı×Ó19;
 
 import java.math.BigInteger;
 
@@ -6,12 +6,12 @@ public class Example9_19 {
 	public static void main(String args[]) {
 		double a = 5.0;
 		double st = Math.sqrt(a);
-		System.out.println(a + "çš„å¹³æ–¹è·Ÿ:" + st);
+		System.out.println(a + "µÄÆ½·½¸ú:" + st);
 		BigInteger result = new BigInteger("0"), one = new BigInteger("123456789"),
 				two = new BigInteger("987654321");
 		result = one.add(two);
-		System.out.println("å’Œ:" + result);
+		System.out.println("ºÍ:" + result);
 		result = one.multiply(two);
-		System.out.println("ç§¯:" + result);
+		System.out.println("»ı:" + result);
 	}
 }

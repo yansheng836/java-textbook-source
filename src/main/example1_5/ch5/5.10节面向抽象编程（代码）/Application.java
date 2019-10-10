@@ -3,10 +3,10 @@ public class Application{
         Pillar pillar;
         Geometry bottom;
         bottom=new Rectangle(12,22);
-        pillar =new Pillar (bottom,58);  //pillaræ˜¯å…·æœ‰çŸ©å½¢åº•çš„æŸ±ä½“
-        System.out.println("çŸ©å½¢åº•çš„æŸ±ä½“çš„ä½“ç§¯"+pillar.getVolume());
+        pillar =new Pillar (bottom,58);  //pillarÊÇ¾ßÓĞ¾ØĞÎµ×µÄÖùÌå
+        System.out.println("¾ØĞÎµ×µÄÖùÌåµÄÌå»ı"+pillar.getVolume());
         bottom=new Circle(10);
-        pillar =new Pillar (bottom,58); //pillaræ˜¯å…·æœ‰åœ†å½¢åº•çš„æŸ±ä½“
-        System.out.println("åœ†å½¢åº•çš„æŸ±ä½“çš„ä½“ç§¯"+pillar.getVolume());
+        pillar =new Pillar (bottom,58); //pillarÊÇ¾ßÓĞÔ²ĞÎµ×µÄÖùÌå
+        System.out.println("Ô²ĞÎµ×µÄÖùÌåµÄÌå»ı"+pillar.getVolume());
     }
 } 

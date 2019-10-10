@@ -1,10 +1,10 @@
-package ch4.ä¾‹å­7;
+package ch4.Àı×Ó7;
 
 public class Rational {
-	int numerator;   // åˆ†å­
-	int denominator; // åˆ†æ¯
+	int numerator;   // ·Ö×Ó
+	int denominator; // ·ÖÄ¸
 
-	void setNumeratorAndDenominator(int fenzi, int fenmu) { // è®¾ç½®åˆ†å­å’Œåˆ†æ¯
+	void setNumeratorAndDenominator(int fenzi, int fenmu) { // ÉèÖÃ·Ö×ÓºÍ·ÖÄ¸
 		int m = 1, n = 1;
 		if (fenzi < 0)
 			m = -1 * fenzi;
@@ -15,7 +15,7 @@ public class Rational {
 			denominator = 1;
 			return;
 		}
-		int c = f(m, n);           // è®¡ç®—æœ€å¤§å…¬çº¦æ•°
+		int c = f(m, n);           // ¼ÆËã×î´ó¹«Ô¼Êı
 		numerator = fenzi / c;
 		denominator = fenmu / c;
 		if (numerator < 0 && denominator < 0) {
@@ -32,7 +32,7 @@ public class Rational {
 		return denominator;
 	}
 
-	int f(int a, int b) { // æ±‚aå’Œbçš„æœ€å¤§å…¬çº¦æ•°
+	int f(int a, int b) { // ÇóaºÍbµÄ×î´ó¹«Ô¼Êı
 		if (a < b) {
 			int c = a;
 			a = b;
@@ -47,7 +47,7 @@ public class Rational {
 		return b;
 	}
 
-	Rational add(Rational r) {  // åŠ æ³•è¿ç®—
+	Rational add(Rational r) {  // ¼Ó·¨ÔËËã
 		int a = r.getNumerator();
 		int b = r.getDenominator();
 		int newNumerator = numerator * b + denominator * a;
@@ -57,7 +57,7 @@ public class Rational {
 		return result;
 	}
 
-	Rational sub(Rational r) {  // å‡æ³•è¿ç®—
+	Rational sub(Rational r) {  // ¼õ·¨ÔËËã
 		int a = r.getNumerator();
 		int b = r.getDenominator();
 		int newNumerator = numerator * b - denominator * a;
@@ -67,7 +67,7 @@ public class Rational {
 		return result;
 	}
 
-	Rational muti(Rational r) { // ä¹˜æ³•è¿ç®—
+	Rational muti(Rational r) { // ³Ë·¨ÔËËã
 		int a = r.getNumerator();
 		int b = r.getDenominator();
 		int newNumerator = numerator * a;
@@ -77,7 +77,7 @@ public class Rational {
 		return result;
 	}
 
-	Rational div(Rational r) { // é™¤æ³•è¿ç®—
+	Rational div(Rational r) { // ³ı·¨ÔËËã
 		int a = r.getNumerator();
 		int b = r.getDenominator();
 		int newNumerator = numerator * b;

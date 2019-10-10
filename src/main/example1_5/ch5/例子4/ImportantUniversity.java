@@ -1,11 +1,11 @@
-package ch5.渚嬪瓙4;
+package ch5.例子4;
 
 public class ImportantUniversity extends University {
 	void enterRule(double math, double english, double chinese) {
 		double total = math + english + chinese;
 		if (total >= 245)
-			System.out.println("鑰冨垎" + total + "杈惧埌閲嶇偣澶у鏈�浣庡綍鍙栫嚎");
+			System.out.println("考分" + total + "达到重点大学最低录取线");
 		else
-			System.out.println("鑰冨垎" + total + "鏈揪鍒伴噸鐐瑰ぇ瀛︽渶浣庡綍鍙栫嚎");
+			System.out.println("考分" + total + "未达到重点大学最低录取线");
 	}
 }

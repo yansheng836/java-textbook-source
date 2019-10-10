@@ -1,4 +1,4 @@
-public abstract class Geometry { //å¦‚æœä½¿ç”¨æ¥å£éœ€ç”¨interfaceæ¥å®šä¹‰Geometryã€‚
+public abstract class Geometry { //Èç¹ûÊ¹ÓÃ½Ó¿ÚĞèÓÃinterfaceÀ´¶¨ÒåGeometry¡£
      public abstract double getArea();
 }
 

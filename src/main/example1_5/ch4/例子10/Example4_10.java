@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­10;
+package ch4.Àı×Ó10;
 
 class Sum {
 	int x, y, z;

@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­10;
+package ch5.Àı×Ó10;
 
 public class People10 {
 	int height;
@@ -9,6 +9,6 @@ public class People10 {
 	}
 
 	void mustDoingThing() {
-		System.out.println("åƒé¥­ã€ç¡è§‰... ...é¥®æ°´");
+		System.out.println("³Ô·¹¡¢Ë¯¾õ... ...ÒûË®");
 	}
 }

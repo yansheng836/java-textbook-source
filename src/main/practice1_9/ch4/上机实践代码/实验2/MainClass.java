@@ -1,15 +1,15 @@
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class MainClass {
 	public static void main(String args[]) {
-		// ã€ä»£ç 1ã€‘//ç”¨Teacherç±»å£°æ˜åå­—æ˜¯zhangå’Œwangçš„å¯¹è±¡
-		// ã€ä»£ç 2ã€‘ //åˆ›å»º zhang
+		// ¡¾´úÂë1¡¿//ÓÃTeacherÀàÉùÃ÷Ãû×ÖÊÇzhangºÍwangµÄ¶ÔÏó
+		// ¡¾´úÂë2¡¿ //´´½¨ zhang
 		wang = new Teacher();
 		zhang.teacherType = 1;
 		wang.teacherType = 2;
-		School å®éªŒä¸­å­¦ = new School();
-		// ã€ä»£ç 3ã€‘//å®éªŒä¸­å­¦è°ƒç”¨setTeacher(Teacher t1,Teacher t2)æ–¹æ³•å°†zhangå’Œwangå€¼ä¼ é€’ç»™å‚æ•°t1å’Œt2ã€‚
-		å®éªŒä¸­å­¦.startMathLesson();
-		å®éªŒä¸­å­¦.startMusicLesson();
+		School ÊµÑéÖĞÑ§ = new School();
+		// ¡¾´úÂë3¡¿//ÊµÑéÖĞÑ§µ÷ÓÃsetTeacher(Teacher t1,Teacher t2)·½·¨½«zhangºÍwangÖµ´«µİ¸ø²ÎÊıt1ºÍt2¡£
+		ÊµÑéÖĞÑ§.startMathLesson();
+		ÊµÑéÖĞÑ§.startMusicLesson();
 	}
 }

@@ -1,18 +1,18 @@
-package ch7.ä¾‹å­1;
+package ch7.Àı×Ó1;
 
 public class Example7_1 {
 	public static void main(String args[]) {
 		int a[] = { 1, 2, 3, 4 };
 		int b[] = { 100, 200, 300 };
-		System.out.println("æ•°ç»„açš„å…ƒç´ ä¸ªæ•°=" + a.length);
-		System.out.println("æ•°ç»„bçš„å…ƒç´ ä¸ªæ•°=" + b.length);
-		System.out.println("æ•°ç»„açš„å¼•ç”¨=" + a);
-		System.out.println("æ•°ç»„bçš„å¼•ç”¨=" + b);
-		System.out.println("a==bçš„ç»“æœæ˜¯" + (a == b));
+		System.out.println("Êı×éaµÄÔªËØ¸öÊı=" + a.length);
+		System.out.println("Êı×ébµÄÔªËØ¸öÊı=" + b.length);
+		System.out.println("Êı×éaµÄÒıÓÃ=" + a);
+		System.out.println("Êı×ébµÄÒıÓÃ=" + b);
+		System.out.println("a==bµÄ½á¹ûÊÇ" + (a == b));
 		a = b;
-		System.out.println("æ•°ç»„açš„å…ƒç´ ä¸ªæ•°=" + a.length);
-		System.out.println("æ•°ç»„bçš„å…ƒç´ ä¸ªæ•°=" + b.length);
-		System.out.println("a==bçš„ç»“æœæ˜¯" + (a == b));
+		System.out.println("Êı×éaµÄÔªËØ¸öÊı=" + a.length);
+		System.out.println("Êı×ébµÄÔªËØ¸öÊı=" + b.length);
+		System.out.println("a==bµÄ½á¹ûÊÇ" + (a == b));
 		System.out.println("a[0]=" + a[0] + ",a[1]=" + a[1] + ",a[2]=" + a[2]);
 		System.out.print("b[0]=" + a[0] + ",b[1]=" + b[1] + ",b[2]=" + b[2]);
 	}

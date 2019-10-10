@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­7;
+package ch5.Àı×Ó7;
 
 public class Bank {
 	int savedMoney;
@@ -7,7 +7,7 @@ public class Bank {
 
 	public double computerInterest() {
 		interest = year * 0.035 * savedMoney;
-		System.out.printf("%då…ƒå­˜åœ¨é“¶è¡Œ%då¹´çš„åˆ©æ¯:%få…ƒ\n", savedMoney, year, interest);
+		System.out.printf("%dÔª´æÔÚÒøĞĞ%dÄêµÄÀûÏ¢:%fÔª\n", savedMoney, year, interest);
 		return interest;
 	}
 }

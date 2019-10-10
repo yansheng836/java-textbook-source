@@ -1,9 +1,9 @@
-package ch15.ä¾‹å­11;
+package ch15.Àı×Ó11;
 
 public class Example15_11 {
    public static void main(String args[]) {
       Win win=new Win();
-      win.setTitle("è¾“å…¥åºåˆ—å·");
+      win.setTitle("ÊäÈëĞòÁĞºÅ");
       win.setBounds(10,10,460,360);
    }
 }

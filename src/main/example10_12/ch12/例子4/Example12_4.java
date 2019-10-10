@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­4;
+package ch12.Àı×Ó4;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -6,16 +6,16 @@ import java.util.LinkedList;
 public class Example12_4 {
 	public static void main(String args[]) {
 		LinkedList mylist = new LinkedList();
-		mylist.add("Hello");                 // é“¾è¡¨ä¸­çš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
-		mylist.add("nice meet you");          // é“¾è¡¨ä¸­çš„ç¬¬äºŒä¸ªèŠ‚ç‚¹
-		int number = mylist.size();            // è·å–é“¾è¡¨çš„é•¿åº¦
+		mylist.add("Hello");                 // Á´±íÖĞµÄµÚÒ»¸ö½Úµã
+		mylist.add("nice meet you");          // Á´±íÖĞµÄµÚ¶ş¸ö½Úµã
+		int number = mylist.size();            // »ñÈ¡Á´±íµÄ³¤¶È
 		for (int i = 0; i < number; i++) {
-			String temp = (String) mylist.get(i);   // å¿…é¡»å¼ºåˆ¶è½¬æ¢å–å‡ºçš„æ•°æ®
-			System.out.println("ç¬¬" + i + "èŠ‚ç‚¹ä¸­çš„æ•°æ®:" + temp);
+			String temp = (String) mylist.get(i);   // ±ØĞëÇ¿ÖÆ×ª»»È¡³öµÄÊı¾İ
+			System.out.println("µÚ" + i + "½ÚµãÖĞµÄÊı¾İ:" + temp);
 		}
 		Iterator iter = mylist.iterator();
 		while (iter.hasNext()) {
-			String te = (String) iter.next();  // å¿…é¡»å¼ºåˆ¶è½¬æ¢å–å‡ºçš„æ•°æ®
+			String te = (String) iter.next();  // ±ØĞëÇ¿ÖÆ×ª»»È¡³öµÄÊı¾İ
 			System.out.println(te);
 		}
 	}

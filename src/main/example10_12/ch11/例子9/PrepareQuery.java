@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­9;
+package ch11.Àı×Ó9;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,9 +8,9 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
 public class PrepareQuery {
-	String databaseName = "";    	// æ•°æ®åº“å
-	String tableName = "";        	// è¡¨å
-	String SQL;                	// SQLè¯­å¥
+	String databaseName = "";    	// Êı¾İ¿âÃû
+	String tableName = "";        	// ±íÃû
+	String SQL;                	// SQLÓï¾ä
 
 	public PrepareQuery() {
 		try {
@@ -30,27 +30,27 @@ public class PrepareQuery {
 
 	public void outQueryResult() {
 		Connection con;
-		PreparedStatement sql;   // é¢„å¤„ç†è¯­å¥
+		PreparedStatement sql;   // Ô¤´¦ÀíÓï¾ä
 		ResultSet rs;
 		try {
 			String uri = "jdbc:derby:" + databaseName + ";create=true";
 			con = DriverManager.getConnection(uri);
-			sql = con.prepareStatement(SQL);        // è¿”å›é¢„å¤„ç†è¯­å¥
+			sql = con.prepareStatement(SQL);        // ·µ»ØÔ¤´¦ÀíÓï¾ä
 			rs = sql.executeQuery();
-			ResultSetMetaData metaData = rs.getMetaData();// ç»“æœé›†çš„å…ƒæ•°æ®å¯¹è±¡
-			int columnCount = metaData.getColumnCount(); // ç»“æœé›†çš„æ€»åˆ—æ•°
+			ResultSetMetaData metaData = rs.getMetaData();// ½á¹û¼¯µÄÔªÊı¾İ¶ÔÏó
+			int columnCount = metaData.getColumnCount(); // ½á¹û¼¯µÄ×ÜÁĞÊı
 			for (int i = 1; i <= columnCount; i++) {
-				System.out.print(metaData.getColumnName(i) + "    |"); // è¾“å‡ºå­—æ®µå
+				System.out.print(metaData.getColumnName(i) + "    |"); // Êä³ö×Ö¶ÎÃû
 			}
 			System.out.println();
-			while (rs.next()) {  // è¾“å‡ºç»“æœé›†ä¸­çš„è®°å½•ï¼Œå³è¡Œ
+			while (rs.next()) {  // Êä³ö½á¹û¼¯ÖĞµÄ¼ÇÂ¼£¬¼´ĞĞ
 				for (int i = 1; i <= columnCount; i++) {
 					System.out.print(rs.getString(i) + "|");
 				}
 				System.out.println();
 			}
 		} catch (SQLException e) {
-			System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„è¡¨å" + e);
+			System.out.println("ÇëÊäÈëÕıÈ·µÄ±íÃû" + e);
 		}
 	}
 }

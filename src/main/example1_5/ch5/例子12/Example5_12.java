@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­12;
+package ch5.Àı×Ó12;
 
 abstract class A {
 	abstract int sum(int x, int y);
@@ -9,7 +9,7 @@ abstract class A {
 }
 
 class B extends A {
-	int sum(int x, int y) {   // å­ç±»å¿…é¡»é‡å†™çˆ¶ç±»çš„sumæ–¹æ³•
+	int sum(int x, int y) {   // ×ÓÀà±ØĞëÖØĞ´¸¸ÀàµÄsum·½·¨
 		return x + y;
 	}
 }
@@ -17,8 +17,8 @@ class B extends A {
 public class Example5_12 {
 	public static void main(String args[]) {
 		B b = new B();
-		int sum = b.sum(30, 20);           // è°ƒç”¨é‡å†™çš„æ–¹æ³•
-		int sub = b.sub(30, 20);           // è°ƒç”¨ç»§æ‰¿çš„æ–¹æ³•
+		int sum = b.sum(30, 20);           // µ÷ÓÃÖØĞ´µÄ·½·¨
+		int sub = b.sub(30, 20);           // µ÷ÓÃ¼Ì³ĞµÄ·½·¨
 		System.out.println("sum=" + sum);
 		System.out.println("sum=" + sub);
 	}

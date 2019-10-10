@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­13;
+package ch5.Àı×Ó13;
 
 public abstract class Animal {
 	public abstract void cry();

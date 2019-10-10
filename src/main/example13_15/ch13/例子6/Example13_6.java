@@ -1,4 +1,4 @@
-package ch13.渚嬪瓙6;
+package ch13.例子6;
 
 public class Example13_6 {
 	public static void main(String args[]) {
@@ -6,8 +6,8 @@ public class Example13_6 {
 		Thread police, driver;
 		police = new Thread(road);
 		driver = new Thread(road);
-		police.setName("璀﹀療");
-		driver.setName("鍙告満");
+		police.setName("警察");
+		driver.setName("司机");
 		road.setAttachThread(driver);
 		driver.start();
 		police.start();

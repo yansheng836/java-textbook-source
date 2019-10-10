@@ -1,7 +1,7 @@
-package ch12.ä¾‹å­1;
+package ch12.Àı×Ó1;
 
 public class Dog {
 	public String toString() {
-		return "ä¸€æ¡å°ç‹—";
+		return "Ò»ÌõĞ¡¹·";
 	}
 }

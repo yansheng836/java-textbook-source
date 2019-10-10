@@ -1,13 +1,13 @@
-package ch8.ä¾‹å­2;
+package ch8.Àı×Ó2;
 
 public class Example8_2 {
 	public static void main(String args[]) {
 		ShowBoard board = new ShowBoard();
-		board.showMess(new InputEnglish());  // å‘å‚æ•°ä¼ é€’InputAlphabetçš„å­ç±»å¯¹è±¡
-		board.showMess(new InputAlphabet()   // å‘å‚æ•°ä¼ é€’InputAlphabetçš„åŒ¿åå­ç±»å¯¹è±¡
+		board.showMess(new InputEnglish());  // Ïò²ÎÊı´«µİInputAlphabetµÄ×ÓÀà¶ÔÏó
+		board.showMess(new InputAlphabet()   // Ïò²ÎÊı´«µİInputAlphabetµÄÄäÃû×ÓÀà¶ÔÏó
 		{
 			public void input() {
-				for (char c = 'Î±'; c <= 'Ï‰'; c++)  // è¾“å‡ºå¸Œè…Šå­—æ¯
+				for (char c = '¦Á'; c <= '¦Ø'; c++)  // Êä³öÏ£À°×ÖÄ¸
 					System.out.printf("%3c", c);
 			}
 		});

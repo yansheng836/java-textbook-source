@@ -1,27 +1,27 @@
-package ch6.ä¾‹å­3;
+package ch6.Àı×Ó3;
 
 interface ShowMessage {
-	void æ˜¾ç¤ºå•†æ ‡(String s);
+	void ÏÔÊ¾ÉÌ±ê(String s);
 }
 
 class TV implements ShowMessage {
-	public void æ˜¾ç¤ºå•†æ ‡(String s) {
+	public void ÏÔÊ¾ÉÌ±ê(String s) {
 		System.out.println(s);
 	}
 }
 
 class PC implements ShowMessage {
-	public void æ˜¾ç¤ºå•†æ ‡(String s) {
+	public void ÏÔÊ¾ÉÌ±ê(String s) {
 		System.out.println(s);
 	}
 }
 
 public class Example6_3 {
 	public static void main(String args[]) {
-		ShowMessage sm;                  // å£°æ˜æ¥å£å˜é‡
-		sm = new TV();                     // æ¥å£å˜é‡ä¸­å­˜æ”¾å¯¹è±¡çš„å¼•ç”¨
-		sm.æ˜¾ç¤ºå•†æ ‡("é•¿åŸç‰Œç”µè§†æœº");      // æ¥å£å›è°ƒã€‚
-		sm = new PC();                     // æ¥å£å˜é‡ä¸­å­˜æ”¾å¯¹è±¡çš„å¼•ç”¨
-		sm.æ˜¾ç¤ºå•†æ ‡("è”æƒ³å¥”æœˆ5008PCæœº"); // æ¥å£å›è°ƒ
+		ShowMessage sm;                  // ÉùÃ÷½Ó¿Ú±äÁ¿
+		sm = new TV();                     // ½Ó¿Ú±äÁ¿ÖĞ´æ·Å¶ÔÏóµÄÒıÓÃ
+		sm.ÏÔÊ¾ÉÌ±ê("³¤³ÇÅÆµçÊÓ»ú");      // ½Ó¿Ú»Øµ÷¡£
+		sm = new PC();                     // ½Ó¿Ú±äÁ¿ÖĞ´æ·Å¶ÔÏóµÄÒıÓÃ
+		sm.ÏÔÊ¾ÉÌ±ê("ÁªÏë±¼ÔÂ5008PC»ú"); // ½Ó¿Ú»Øµ÷
 	}
 }

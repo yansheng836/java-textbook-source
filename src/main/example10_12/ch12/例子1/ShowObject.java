@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­1;
+package ch12.Àı×Ó1;
 
 public class ShowObject<E> {
 	public void showMess(E b) {

@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­5;
+package ch14.Àı×Ó5;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -20,7 +20,7 @@ public class ReceiveLetterForZhang implements Runnable {
 				try {
 					postman.receive(pack);
 					String message = new String(pack.getData(), 0, pack.getLength());
-					System.out.printf("%25s\n", "æ”¶åˆ°:" + message);
+					System.out.printf("%25s\n", "ÊÕµ½:" + message);
 				} catch (Exception e) {
 				}
 		}

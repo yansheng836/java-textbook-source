@@ -1,10 +1,10 @@
-package ch9.ä¾‹å­10;
+package ch9.Àı×Ó10;
 
 public class Example9_10 {
 	public static void main(String args[]) {
-		String str = "æ¬¢è¿å¤§å®¶è®¿é—®http://www.xiaojiang.cnäº†è§£ã€å‚è§‚å…¬å¸";
+		String str = "»¶Ó­´ó¼Ò·ÃÎÊhttp://www.xiaojiang.cnÁË½â¡¢²Î¹Û¹«Ë¾";
 		String regex = "(http://|www)\56?\\w+\56{1}\\w+\56{1}\\p{Alpha}+";
-		System.out.printf("å‰”é™¤\n\"%s\"\nä¸­çš„ç½‘ç«™é“¾æ¥ä¿¡æ¯åå¾—åˆ°çš„å­—ç¬¦ä¸²:\n", str);
+		System.out.printf("ÌŞ³ı\n\"%s\"\nÖĞµÄÍøÕ¾Á´½ÓĞÅÏ¢ºóµÃµ½µÄ×Ö·û´®:\n", str);
 		str = str.replaceAll(regex, "");
 		System.out.println(str);
 	}

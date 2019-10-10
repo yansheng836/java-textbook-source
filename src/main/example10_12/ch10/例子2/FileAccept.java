@@ -1,4 +1,4 @@
-package ch10.渚嬪瓙2;
+package ch10.例子2;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -10,7 +10,7 @@ public class FileAccept implements FilenameFilter {
 		extendName = "." + s;
 	}
 
-	public boolean accept(File dir, String name) { // 閲嶅啓鎺ュ彛涓殑鏂规硶
+	public boolean accept(File dir, String name) { // 重写接口中的方法
 		return name.endsWith(extendName);
 	}
 }

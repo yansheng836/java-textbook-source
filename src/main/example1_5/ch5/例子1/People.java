@@ -1,9 +1,9 @@
-package ch5.ä¾‹å­1;
+package ch5.Àı×Ó1;
 
 public class People {
 	double height = 170, weight = 67.9;
 
 	protected void tellHeightAndWeight() {
-		System.out.printf("æˆ‘çš„ä½“é‡å’Œèº«é«˜:%2.2fkg,%2.2fcm\n", weight, height);
+		System.out.printf("ÎÒµÄÌåÖØºÍÉí¸ß:%2.2fkg,%2.2fcm\n", weight, height);
 	}
 }

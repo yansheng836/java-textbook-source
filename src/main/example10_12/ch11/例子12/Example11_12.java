@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­12;
+package ch11.Àı×Ó12;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,19 +19,19 @@ public class Example11_12 {
 		try {
 			double n = 500;
 			con = DriverManager.getConnection("jdbc:derby:shop;create=true");
-			con.setAutoCommit(false);       // å…³é—­è‡ªåŠ¨æäº¤æ¨¡å¼
+			con.setAutoCommit(false);       // ¹Ø±Õ×Ô¶¯Ìá½»Ä£Ê½
 			sql = con.createStatement();
 			sql.addBatch("UPDATE goods SET price =5555 WHERE number='001'");
 			sql.addBatch("UPDATE goods SET name ='haierTV' WHERE number='001'");
-			sql.addBatch("INSERT INTO goods VALUES ('008','æ°´æ¯','2015-12-20',39)");
-			int[] number = sql.executeBatch();// å¼€å§‹æ‰¹å¤„ç†ï¼Œè¿”å›è¢«æ‰§è¡Œçš„SQLè¯­å¥çš„åºå·
-			con.commit();   // è¿›è¡Œäº‹åŠ¡å¤„ç†
-			System.out.println("å…±æœ‰" + number.length + "æ¡SQLè¯­å¥è¢«æ‰§è¡Œ");
+			sql.addBatch("INSERT INTO goods VALUES ('008','Ë®±­','2015-12-20',39)");
+			int[] number = sql.executeBatch();// ¿ªÊ¼Åú´¦Àí£¬·µ»Ø±»Ö´ĞĞµÄSQLÓï¾äµÄĞòºÅ
+			con.commit();   // ½øĞĞÊÂÎñ´¦Àí
+			System.out.println("¹²ÓĞ" + number.length + "ÌõSQLÓï¾ä±»Ö´ĞĞ");
 			sql.clearBatch();
 			con.close();
 		} catch (SQLException e) {
 			try {
-				con.rollback();          // æ’¤é”€äº‹åŠ¡æ‰€åšçš„æ“ä½œ
+				con.rollback();          // ³·ÏúÊÂÎñËù×öµÄ²Ù×÷
 			} catch (SQLException exp) {
 			}
 			System.out.println(e);

@@ -1,16 +1,16 @@
-package ch9.ä¾‹å­1;
+package ch9.Àı×Ó1;
 
 public class Example9_1 {
 	public static void main(String args[]) {
 		String s1, s2;
-		s1 = new String("å¤©é“é…¬å‹¤");
-		s2 = new String("å¤©é“é…¬å‹¤");
-		System.out.println(s1.equals(s2));     // è¾“å‡ºç»“æœæ˜¯ï¼štrue
-		System.out.println(s1 == s2);            // è¾“å‡ºç»“æœæ˜¯ï¼šfalse
+		s1 = new String("ÌìµÀ³êÇÚ");
+		s2 = new String("ÌìµÀ³êÇÚ");
+		System.out.println(s1.equals(s2));     // Êä³ö½á¹ûÊÇ£ºtrue
+		System.out.println(s1 == s2);            // Êä³ö½á¹ûÊÇ£ºfalse
 		String s3, s4;
-		s3 = "å‹‡è€…æ— æ•Œ";
-		s4 = "å‹‡è€…æ— æ•Œ";
-		System.out.println(s3.equals(s4));     // è¾“å‡ºç»“æœæ˜¯ï¼štrue
-		System.out.println(s3 == s4);            // è¾“å‡ºç»“æœæ˜¯ï¼štrue
+		s3 = "ÓÂÕßÎŞµĞ";
+		s4 = "ÓÂÕßÎŞµĞ";
+		System.out.println(s3.equals(s4));     // Êä³ö½á¹ûÊÇ£ºtrue
+		System.out.println(s3 == s4);            // Êä³ö½á¹ûÊÇ£ºtrue
 	}
 }

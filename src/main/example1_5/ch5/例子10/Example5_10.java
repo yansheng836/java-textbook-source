@@ -1,22 +1,22 @@
-package ch5.ä¾‹å­10;
+package ch5.Àı×Ó10;
 
 public class Example5_10 {
 	public static void main(String args[]) {
 		People10 people = null;
 		American Johnson = new American();
-		people = Johnson;      // peopleæ˜¯Johnsonå¯¹è±¡çš„ä¸Šè½¬å‹å¯¹è±¡ã€‚
-		people.height = 187;    // åŒäºJohnson.height=187
+		people = Johnson;      // peopleÊÇJohnson¶ÔÏóµÄÉÏ×ªĞÍ¶ÔÏó¡£
+		people.height = 187;    // Í¬ÓÚJohnson.height=187
 		people.weight = 78.67;
-		people.showBodyMess();  // ç­‰åŒäºJohnsonè°ƒç”¨é‡å†™çš„showBodyMess()æ–¹æ³•
-		// people.speakEnglish(); //éæ³•,å› ä¸ºspeakEnglish()æ˜¯å­ç±»æ–°å¢çš„æ–¹æ³•
+		people.showBodyMess();  // µÈÍ¬ÓÚJohnsonµ÷ÓÃÖØĞ´µÄshowBodyMess()·½·¨
+		// people.speakEnglish(); //·Ç·¨,ÒòÎªspeakEnglish()ÊÇ×ÓÀàĞÂÔöµÄ·½·¨
 		people.mustDoingThing();
 		
 		Chinese zhang = new Chinese();
-		people = zhang;      // peopleæ˜¯zhangå¯¹è±¡çš„ä¸Šè½¬å‹å¯¹è±¡ã€‚
-		people.height = 177;    // åŒäºzhang.height=187
+		people = zhang;      // peopleÊÇzhang¶ÔÏóµÄÉÏ×ªĞÍ¶ÔÏó¡£
+		people.height = 177;    // Í¬ÓÚzhang.height=187
 		people.weight = 68.59;
-		people.showBodyMess();  // ç­‰åŒäºJohnsonè°ƒç”¨é‡å†™çš„showBodyMess()æ–¹æ³•
-		// people.speakChinese(); //éæ³•,å› ä¸ºspeakChinese()æ˜¯å­ç±»æ–°å¢çš„æ–¹æ³•
+		people.showBodyMess();  // µÈÍ¬ÓÚJohnsonµ÷ÓÃÖØĞ´µÄshowBodyMess()·½·¨
+		// people.speakChinese(); //·Ç·¨,ÒòÎªspeakChinese()ÊÇ×ÓÀàĞÂÔöµÄ·½·¨
 		people.mustDoingThing();
 		// zhang = (Chinese)people;
 		zhang.speakChinese();

@@ -1,12 +1,12 @@
-package ch13.ä¾‹å­10;
+package ch13.Àı×Ó10;
 
 public class Example13_10 {
 	public static void main(String args[]) {
 		ThreadJoin a = new ThreadJoin();
 		Thread customer = new Thread(a);
 		Thread cakeMaker = new Thread(a);
-		customer.setName("é¡¾å®¢");
-		cakeMaker.setName("è›‹ç³•å¸ˆ");
+		customer.setName("¹Ë¿Í");
+		cakeMaker.setName("µ°¸âÊ¦");
 		a.setJoinThread(cakeMaker);
 		customer.start();
 	}

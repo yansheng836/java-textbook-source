@@ -1,4 +1,4 @@
-package ch14.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ;
+package ch14.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -13,16 +13,16 @@ public class ServerNumber {
 	      ServerThread thread;
 	      Socket you=null;
 	      while(true) { 
-//	          try{  server= ã€ä»£ç 3ã€‘//åˆ›å»ºåœ¨ç«¯å£4331ä¸Šè´Ÿè´£ç›‘å¬çš„ ServerSocketå¯¹è±¡
+//	          try{  server= ¡¾´úÂë3¡¿//´´½¨ÔÚ¶Ë¿Ú4331ÉÏ¸ºÔğ¼àÌıµÄ ServerSocket¶ÔÏó
 	          }
 	          catch(IOException e1) {
-	             System.out.println("æ­£åœ¨ç›‘å¬");   
+	             System.out.println("ÕıÔÚ¼àÌı");   
 	          } 
-//	          try{  you=  ã€ä»£ç 4ã€‘ // serverè°ƒç”¨accept()è¿”å›å’Œå®¢æˆ·ç«¯ç›¸è¿æ¥çš„Socketå¯¹è±¡
-	                System.out.println("å®¢æˆ·çš„åœ°å€:"+you.getInetAddress());
+//	          try{  you=  ¡¾´úÂë4¡¿ // serverµ÷ÓÃaccept()·µ»ØºÍ¿Í»§¶ËÏàÁ¬½ÓµÄSocket¶ÔÏó
+	                System.out.println("¿Í»§µÄµØÖ·:"+you.getInetAddress());
 	          }
 	          catch (IOException e) {
-	                System.out.println("æ­£åœ¨ç­‰å¾…å®¢æˆ·");
+	                System.out.println("ÕıÔÚµÈ´ı¿Í»§");
 	          }
 	          if(you!=null) {
 	                new ServerThread(you).start();  
@@ -51,11 +51,11 @@ class ServerThread extends Thread {
 				String str = in.readUTF();
 				boolean boo = str.startsWith("Y") || str.startsWith("y");
 				if (boo) {
-					out.writeUTF("ç»™ä½ ä¸€ä¸ª1è‡³100ä¹‹é—´çš„éšæœºæ•°,è¯·çŒœå®ƒæ˜¯å¤šå°‘å‘€!");
+					out.writeUTF("¸øÄãÒ»¸ö1ÖÁ100Ö®¼äµÄËæ»úÊı,Çë²ÂËüÊÇ¶àÉÙÑ½!");
 					Random random = new Random();
 					int realNumber = random.nextInt(100) + 1;
 					handleClientGuess(realNumber);
-					out.writeUTF("è¯¢é—®:æƒ³ç»§ç»­ç©è¾“å…¥Yï¼Œå¦åˆ™è¾“å…¥N:");
+					out.writeUTF("Ñ¯ÎÊ:Ïë¼ÌĞøÍæÊäÈëY£¬·ñÔòÊäÈëN:");
 				} else {
 					return;
 				}
@@ -70,15 +70,15 @@ class ServerThread extends Thread {
 				int clientGuess = in.readInt();
 				System.out.println(clientGuess);
 				if (clientGuess > realNumber)
-					out.writeUTF("çŒœå¤§äº†");
+					out.writeUTF("²Â´óÁË");
 				else if (clientGuess < realNumber)
-					out.writeUTF("çŒœå°äº†");
+					out.writeUTF("²ÂĞ¡ÁË");
 				else if (clientGuess == realNumber) {
-					out.writeUTF("çŒœå¯¹äº†ï¼");
+					out.writeUTF("²Â¶ÔÁË£¡");
 					break;
 				}
 			} catch (IOException e) {
-				System.out.println("å®¢æˆ·ç¦»å¼€");
+				System.out.println("¿Í»§Àë¿ª");
 				return;
 			}
 		}

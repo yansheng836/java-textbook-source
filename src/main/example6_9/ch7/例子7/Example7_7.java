@@ -1,7 +1,7 @@
-package ch7.ä¾‹å­7;
+package ch7.Àı×Ó7;
 
 enum Color {
-	çº¢, é»„, ç»¿
+	ºì, »Æ, ÂÌ
 }
 
 public class Example7_7 {

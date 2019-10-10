@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­6;
+package ch14.Àı×Ó6;
 
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -6,23 +6,23 @@ import java.net.MulticastSocket;
 
 public class Receiver {
 	public static void main(String args[]) {
-		int port = 5858;                               // ç»„æ’­çš„ç«¯å£
-		InetAddress group = null;                        // ç»„æ’­ç»„çš„åœ°å€
-		MulticastSocket socket = null;                   // å¤šç‚¹å¹¿æ’­å¥—æ¥å­—
+		int port = 5858;                               // ×é²¥µÄ¶Ë¿Ú
+		InetAddress group = null;                        // ×é²¥×éµÄµØÖ·
+		MulticastSocket socket = null;                   // ¶àµã¹ã²¥Ì×½Ó×Ö
 		try {
-			group = InetAddress.getByName("239.255.8.0");// è®¾ç½®å¹¿æ’­ç»„çš„åœ°å€ä¸º239.255.8.0
-			socket = new MulticastSocket(port);    // å¤šç‚¹å¹¿æ’­å¥—æ¥å­—å°†åœ¨portç«¯å£å¹¿æ’­
-			socket.joinGroup(group); // åŠ å…¥group
+			group = InetAddress.getByName("239.255.8.0");// ÉèÖÃ¹ã²¥×éµÄµØÖ·Îª239.255.8.0
+			socket = new MulticastSocket(port);    // ¶àµã¹ã²¥Ì×½Ó×Ö½«ÔÚport¶Ë¿Ú¹ã²¥
+			socket.joinGroup(group); // ¼ÓÈëgroup
 		} catch (Exception e) {
 		}
 		while (true) {
 			byte data[] = new byte[8192];
 			DatagramPacket packet = null;
-			packet = new DatagramPacket(data, data.length, group, port); // å¾…æ¥æ”¶çš„æ•°æ®åŒ…
+			packet = new DatagramPacket(data, data.length, group, port); // ´ı½ÓÊÕµÄÊı¾İ°ü
 			try {
 				socket.receive(packet);
 				String message = new String(packet.getData(), 0, packet.getLength());
-				System.out.println("æ¥æ”¶çš„å†…å®¹:\n" + message);
+				System.out.println("½ÓÊÕµÄÄÚÈİ:\n" + message);
 			} catch (Exception e) {
 			}
 		}

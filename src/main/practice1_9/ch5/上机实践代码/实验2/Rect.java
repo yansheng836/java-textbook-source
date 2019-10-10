@@ -1,4 +1,4 @@
-package ch5.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch5.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class Rect extends Geometry {
 	double a, b;
@@ -7,5 +7,5 @@ public class Rect extends Geometry {
 		this.a = a;
 		this.b = b;
 	}
-	// ã€ä»£ç 1ã€‘ //é‡å†™ getArea()æ–¹æ³•,è¿”å›çŸ©å½¢é¢ç§¯
+	// ¡¾´úÂë1¡¿ //ÖØĞ´ getArea()·½·¨,·µ»Ø¾ØĞÎÃæ»ı
 }

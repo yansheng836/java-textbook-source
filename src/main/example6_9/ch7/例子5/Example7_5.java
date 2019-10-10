@@ -1,4 +1,4 @@
-package ch7.ä¾‹å­5;
+package ch7.Àı×Ó5;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -9,16 +9,16 @@ public class Example7_5 {
 		int[] a = { 12, 34, 9, 23, 45, 6, 45, 90, 123, 19, 34 };
 		Arrays.sort(a);
 		System.out.println(Arrays.toString(a));
-		System.out.println("è¾“å…¥æ•´æ•°ï¼Œç¨‹åºåˆ¤æ–­è¯¥æ•´æ•°æ˜¯å¦åœ¨æ•°ç»„ä¸­:");
+		System.out.println("ÊäÈëÕûÊı£¬³ÌĞòÅĞ¶Ï¸ÃÕûÊıÊÇ·ñÔÚÊı×éÖĞ:");
 		while (scanner.hasNextInt()) {
 			int number = scanner.nextInt();
 			int index = Arrays.binarySearch(a, number);
 			if (index >= 0) {
-				System.out.println(number + "å’Œæ•°ç»„ä¸­ç´¢å¼•ä¸º" + index + "çš„å…ƒç´ å€¼ç›¸åŒ");
+				System.out.println(number + "ºÍÊı×éÖĞË÷ÒıÎª" + index + "µÄÔªËØÖµÏàÍ¬");
 			} else {
-				System.out.println(number + "ä¸ä¸æ•°ç»„ä¸­ä»»ä½•å…ƒç´ å€¼ç›¸åŒ");
+				System.out.println(number + "²»ÓëÊı×éÖĞÈÎºÎÔªËØÖµÏàÍ¬");
 			}
-			System.out.println("æ˜¯å¦ç»§ç»­è¾“å…¥æ•´æ•°ï¼Ÿè¾“å…¥ä»»ä½•éæ•´æ•°å³å¯ç»“æŸ");
+			System.out.println("ÊÇ·ñ¼ÌĞøÊäÈëÕûÊı£¿ÊäÈëÈÎºÎ·ÇÕûÊı¼´¿É½áÊø");
 		}
 	}
 }

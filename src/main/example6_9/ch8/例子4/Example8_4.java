@@ -1,22 +1,22 @@
-package ch8.ä¾‹å­4;
+package ch8.Àı×Ó4;
 
 public class Example8_4 {
 	public static void main(String args[]) {
 		int n = 0, m = 0, t = 1000;
 		try {
 			m = Integer.parseInt("8888");
-			n = Integer.parseInt("ab89"); // å‘ç”Ÿå¼‚å¸¸,è½¬å‘catch
-			t = 7777;  // tæ²¡æœ‰æœºä¼šè¢«èµ‹å€¼
+			n = Integer.parseInt("ab89"); // ·¢ÉúÒì³£,×ªÏòcatch
+			t = 7777;  // tÃ»ÓĞ»ú»á±»¸³Öµ
 		} catch (NumberFormatException e) {
-			System.out.println("å‘ç”Ÿå¼‚å¸¸:" + e.getMessage());
+			System.out.println("·¢ÉúÒì³£:" + e.getMessage());
 		}
 		System.out.println("n=" + n + ",m=" + m + ",t=" + t);
 		try {
 			m = Integer.parseInt("123");
 			n = Integer.parseInt("678");
-			t = 5555;  // tè¢«èµ‹å€¼
+			t = 5555;  // t±»¸³Öµ
 		} catch (NumberFormatException e) {
-			System.out.println("å‘ç”Ÿå¼‚å¸¸:" + e.getMessage());
+			System.out.println("·¢ÉúÒì³£:" + e.getMessage());
 		}
 		System.out.println("n=" + n + ",m=" + m + ",t=" + t);
 	}

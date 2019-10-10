@@ -1,39 +1,39 @@
-package ch3.ä¾‹å­2;
+package ch3.Àı×Ó2;
 
 public class Administrator {
 	void giveMess(int number) {
 		if (number / 10000 <= 0 || number / 10000 >= 10) {
-			System.out.println("è¯·ç»™å‡º5ä½æ•°çš„å½©ç¥¨å·ç ");
+			System.out.println("Çë¸ø³ö5Î»ÊıµÄ²ÊÆ±ºÅÂë");
 		} else {
-			int d1 = number % 10;  // å°¾å·
-			int d2 = number % 100; // å2ä½æ•°
-			int d3 = number % 1000;// å3ä½æ•°
+			int d1 = number % 10;  // Î²ºÅ
+			int d2 = number % 100; // ºó2Î»Êı
+			int d3 = number % 1000;// ºó3Î»Êı
 			switch (d1) {
 			case 9:
 			case 3:
 			case 1:
-				System.out.println("å½©ç¥¨æ˜¯ä¸‰ç­‰å¥–");
+				System.out.println("²ÊÆ±ÊÇÈıµÈ½±");
 				break;
 			default:
-				System.out.println("å½©ç¥¨ä¸æ˜¯ä¸‰ç­‰å¥–");
+				System.out.println("²ÊÆ±²»ÊÇÈıµÈ½±");
 			}
 			switch (d2) {
 			case 29:
 			case 46:
 			case 21:
-				System.out.println("å½©ç¥¨æ˜¯äºŒç­‰å¥–");
+				System.out.println("²ÊÆ±ÊÇ¶şµÈ½±");
 				break;
 			default:
-				System.out.println("å½©ç¥¨ä¸æ˜¯äºŒç­‰å¥–");
+				System.out.println("²ÊÆ±²»ÊÇ¶şµÈ½±");
 			}
 			switch (d3) {
 			case 875:
 			case 326:
 			case 596:
-				System.out.println("å½©ç¥¨æ˜¯ä¸€ç­‰å¥–");
+				System.out.println("²ÊÆ±ÊÇÒ»µÈ½±");
 				break;
 			default:
-				System.out.println("å½©ç¥¨ä¸æ˜¯ä¸€ç­‰å¥–");
+				System.out.println("²ÊÆ±²»ÊÇÒ»µÈ½±");
 			}
 		}
 	}

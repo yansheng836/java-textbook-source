@@ -1,11 +1,11 @@
-package ch5.ä¾‹å­10;
+package ch5.Àı×Ó10;
 
 public class Chinese extends People10 {
 	void showBodyMess() {
-		System.out.printf("èº«é«˜:%5dcm\tä½“é‡:%3.2fkg\n", height, weight);
+		System.out.printf("Éí¸ß:%5dcm\tÌåÖØ:%3.2fkg\n", height, weight);
 	}
 
 	void speakChinese() {
-		System.out.println("æˆ‘æ˜¯ä¸­å›½äºº");
+		System.out.println("ÎÒÊÇÖĞ¹úÈË");
 	}
 }

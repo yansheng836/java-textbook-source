@@ -1,17 +1,17 @@
-package ch2.ä¾‹å­1;
+package ch2.Àı×Ó1;
 
 public class Example2_1 {
 	public static void main(String args[]) {
-		Rect rectangle1, rectangle2; // å£°æ˜2ä¸ªå¯¹è±¡
-		rectangle1 = new Rect();    // åˆ›å»ºå¯¹è±¡
+		Rect rectangle1, rectangle2; // ÉùÃ÷2¸ö¶ÔÏó
+		rectangle1 = new Rect();    // ´´½¨¶ÔÏó
 		rectangle2 = new Rect();
 		rectangle1.width = 128;
 		rectangle1.height = 69;
 		rectangle2.width = 18.9;
 		rectangle2.height = 59.8;
 		double area = rectangle1.getArea();
-		System.out.println("rectangle1çš„é¢ç§¯:" + area);
+		System.out.println("rectangle1µÄÃæ»ı:" + area);
 		area = rectangle2.getArea();
-		System.out.println("rectangle2çš„é¢ç§¯:" + area);
+		System.out.println("rectangle2µÄÃæ»ı:" + area);
 	}
 }

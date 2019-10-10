@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙18;
+package ch15.例子18;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -39,12 +39,12 @@ public class WindowReader extends JFrame implements ActionListener {
 
 	void init() {
 		text = new JTextArea(10, 10);
-		text.setFont(new Font("妤蜂綋_gb2312", Font.PLAIN, 28));
+		text.setFont(new Font("楷体_gb2312", Font.PLAIN, 28));
 		add(new JScrollPane(text), BorderLayout.CENTER);
 		menubar = new JMenuBar();
-		menu = new JMenu("鏂囦欢");
-		itemSave = new JMenuItem("淇濆瓨鏂囦欢");
-		itemOpen = new JMenuItem("鎵撳紑鏂囦欢");
+		menu = new JMenu("文件");
+		itemSave = new JMenuItem("保存文件");
+		itemOpen = new JMenuItem("打开文件");
 		itemSave.addActionListener(this);
 		itemOpen.addActionListener(this);
 		menu.add(itemSave);

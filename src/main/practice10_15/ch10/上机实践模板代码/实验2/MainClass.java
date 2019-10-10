@@ -1,4 +1,4 @@
-package ch10.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch10.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.util.Vector;
 
@@ -7,12 +7,12 @@ public class MainClass {
 		Vector<String> allWord, noSameWord;
 		WordStatistic statistic = new WordStatistic();
 		statistic.setFileName("hello.txt");
-		// ã€ä»£ç 3ã€‘ //statisticè°ƒç”¨wordStatistic()æ–¹æ³•
+		// ¡¾´úÂë3¡¿ //statisticµ÷ÓÃwordStatistic()·½·¨
 		allWord = statistic.getAllWord();
 		noSameWord = statistic.getNoSameWord();
-		System.out.println("å…±æœ‰" + allWord.size() + "ä¸ªè‹±æ–‡å•è¯");
-		System.out.println("æœ‰" + noSameWord.size() + "ä¸ªäº’ä¸ç›¸åŒè‹±æ–‡å•è¯");
-		System.out.println("æŒ‰å‡ºç°é¢‘ç‡æ’åˆ—:");
+		System.out.println("¹²ÓĞ" + allWord.size() + "¸öÓ¢ÎÄµ¥´Ê");
+		System.out.println("ÓĞ" + noSameWord.size() + "¸ö»¥²»ÏàÍ¬Ó¢ÎÄµ¥´Ê");
+		System.out.println("°´³öÏÖÆµÂÊÅÅÁĞ:");
 		int count[] = new int[noSameWord.size()];
 		for (int i = 0; i < noSameWord.size(); i++) {
 			String s1 = noSameWord.elementAt(i);

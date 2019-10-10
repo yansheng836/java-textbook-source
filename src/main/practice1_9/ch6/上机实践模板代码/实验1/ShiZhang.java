@@ -1,4 +1,4 @@
-package ch6.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch6.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 class ShiZhang implements Commander {
 	final int MAXSoldierNumber = 1000;
@@ -10,9 +10,9 @@ class ShiZhang implements Commander {
 	}
 
 	public void battle(String mess) {
-		System.out.println(name + "æ¥åˆ°ä½œæˆ˜å‘½ä»¤:" + mess);
-		System.out.println(name + "æŒ‡æ´¾" + soldierNumber + "äººå‚ä¸ä½œæˆ˜");
-		System.out.println(name + "ä¿è¯å®Œæˆä»»åŠ¡");
+		System.out.println(name + "½Óµ½×÷Õ½ÃüÁî:" + mess);
+		System.out.println(name + "Ö¸ÅÉ" + soldierNumber + "ÈË²ÎÓë×÷Õ½");
+		System.out.println(name + "±£Ö¤Íê³ÉÈÎÎñ");
 	}
 
 	void setSoldierNumber(int m) {

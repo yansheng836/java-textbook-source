@@ -1,4 +1,4 @@
-package ch10.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch10.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,14 +8,14 @@ public class AnalysisResult {
 		File fRead = new File("score.txt");
 		File fWrite = new File("socreAnalysis.txt");
 		try {
-			// Writer out = ã€ä»£ç 1ã€‘//ä»¥å°¾åŠ æ–¹å¼åˆ›å»ºæŒ‡å‘æ–‡ä»¶fWriteçš„outæµ
-			// BufferedWriter bufferWrite = ã€ä»£ç 2ã€‘//åˆ›å»ºæŒ‡å‘outçš„bufferWriteæµ
-			// Reader in = ã€ä»£ç 3ã€‘//åˆ›å»ºæŒ‡å‘æ–‡ä»¶fReadçš„inæµ
-			// BufferedReader bufferRead =ã€ä»£ç 4ã€‘//åˆ›å»ºæŒ‡å‘inçš„bufferReadæµ
+			// Writer out = ¡¾´úÂë1¡¿//ÒÔÎ²¼Ó·½Ê½´´½¨Ö¸ÏòÎÄ¼şfWriteµÄoutÁ÷
+			// BufferedWriter bufferWrite = ¡¾´úÂë2¡¿//´´½¨Ö¸ÏòoutµÄbufferWriteÁ÷
+			// Reader in = ¡¾´úÂë3¡¿//´´½¨Ö¸ÏòÎÄ¼şfReadµÄinÁ÷
+			// BufferedReader bufferRead =¡¾´úÂë4¡¿//´´½¨Ö¸ÏòinµÄbufferReadÁ÷
 			String str = null;
 			while ((str = bufferRead.readLine()) != null) {
 				double totalScore = Fenxi.getTotalScore(str);
-				str = str + " æ€»åˆ†:" + totalScore;
+				str = str + " ×Ü·Ö:" + totalScore;
 				System.out.println(str);
 				bufferWrite.write(str);
 				bufferWrite.newLine();

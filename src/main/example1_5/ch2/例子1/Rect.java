@@ -1,8 +1,8 @@
-package ch2.渚嬪瓙1;
+package ch2.例子1;
 
 public class Rect {
-	double width;  // 鐭╁舰鐨勫
-	double height; // 鐭╁舰鐨勯珮
+	double width;  // 矩形的宽
+	double height; // 矩形的高
 
 	double getArea() {
 		double area = width * height;

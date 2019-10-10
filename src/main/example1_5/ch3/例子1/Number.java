@@ -1,4 +1,4 @@
-package ch3.ä¾‹å­1;
+package ch3.Àı×Ó1;
 
 public class Number {
 	void sort(int a, int b, int c) {
@@ -9,24 +9,24 @@ public class Number {
 			a = b;
 			b = temp;
 			count++;
-			System.out.println("æ’åºçš„ç¬¬" + count + "æ¬¡æ“ä½œç»“æœ:" + a + "," + b + "," + c);
+			System.out.println("ÅÅĞòµÄµÚ" + count + "´Î²Ù×÷½á¹û:" + a + "," + b + "," + c);
 		}
 		if (c < a) {
 			temp = a;
 			a = c;
 			c = temp;
 			count++;
-			System.out.println("æ’åºçš„ç¬¬" + count + "æ¬¡æ“ä½œç»“æœ:" + a + "," + b + "," + c);
+			System.out.println("ÅÅĞòµÄµÚ" + count + "´Î²Ù×÷½á¹û:" + a + "," + b + "," + c);
 		}
 		if (c < b) {
 			temp = b;
 			b = c;
 			c = temp;
 			count++;
-			System.out.println("æ’åºçš„ç¬¬" + count + "æ¬¡æ“ä½œç»“æœ:" + a + "," + b + "," + c);
+			System.out.println("ÅÅĞòµÄµÚ" + count + "´Î²Ù×÷½á¹û:" + a + "," + b + "," + c);
 		}
 		if (count == 0) {
-			System.out.println("æ’åºçš„ç¬¬" + count + "æ¬¡æ“ä½œç»“æœ:" + a + "," + b + "," + c);
+			System.out.println("ÅÅĞòµÄµÚ" + count + "´Î²Ù×÷½á¹û:" + a + "," + b + "," + c);
 		}
 	}
 }

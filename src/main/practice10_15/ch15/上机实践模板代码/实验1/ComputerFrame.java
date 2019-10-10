@@ -1,4 +1,4 @@
-package ch15.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch15.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -19,7 +19,7 @@ public class ComputerFrame extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	JMenuBar menubar;
-	JMenu choiceGrade; // é€‰æ‹©çº§åˆ«çš„èœå•
+	JMenu choiceGrade; // Ñ¡Ôñ¼¶±ğµÄ²Ëµ¥
 	JMenuItem grade1, grade2;
 	JTextField textOne, textTwo, textResult;
 	JButton getProblem, giveAnswer;
@@ -31,9 +31,9 @@ public class ComputerFrame extends JFrame {
 		teacherZhang.setMaxInteger(20);
 		setLayout(new FlowLayout());
 		menubar = new JMenuBar();
-		choiceGrade = new JMenu("é€‰æ‹©çº§åˆ«");
-		grade1 = new JMenuItem("å¹¼å„¿çº§åˆ«");
-		grade2 = new JMenuItem("å„¿ç«¥çº§åˆ«");
+		choiceGrade = new JMenu("Ñ¡Ôñ¼¶±ğ");
+		grade1 = new JMenuItem("Ó×¶ù¼¶±ğ");
+		grade2 = new JMenuItem("¶ùÍ¯¼¶±ğ");
 		grade1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				teacherZhang.setMaxInteger(10);
@@ -48,14 +48,14 @@ public class ComputerFrame extends JFrame {
 		choiceGrade.add(grade2);
 		menubar.add(choiceGrade);
 		setJMenuBar(menubar);
-		// ã€ä»£ç 1ã€‘ //åˆ›å»ºtextOne,å…¶å¯è§å­—ç¬¦é•¿æ˜¯5
+		// ¡¾´úÂë1¡¿ //´´½¨textOne,Æä¿É¼û×Ö·û³¤ÊÇ5
 		textTwo = new JTextField(5);
 		textResult = new JTextField(5);
 		operatorLabel = new JLabel("+");
 		operatorLabel.setFont(new Font("Arial", Font.BOLD, 20));
-		message = new JLabel("ä½ è¿˜æ²¡æœ‰å›ç­”å‘¢");
-		getProblem = new JButton("è·å–é¢˜ç›®");
-		giveAnswer = new JButton("ç¡®è®¤ç­”æ¡ˆ");
+		message = new JLabel("Äã»¹Ã»ÓĞ»Ø´ğÄØ");
+		getProblem = new JButton("»ñÈ¡ÌâÄ¿");
+		giveAnswer = new JButton("È·ÈÏ´ğ°¸");
 		add(textOne);
 		add(operatorLabel);
 		add(textTwo);
@@ -72,9 +72,9 @@ public class ComputerFrame extends JFrame {
 		giveAnswer.setActionCommand("answer");
 		teacherZhang.setJTextField(textOne, textTwo, textResult);
 		teacherZhang.setJLabel(operatorLabel, message);
-		// ã€ä»£ç 2ã€‘//å°†teacherZhangæ³¨å†Œä¸ºgetProblemçš„ActionEventäº‹ä»¶ç›‘è§†å™¨
-		// ã€ä»£ç 3ã€‘//å°†teacherZhangæ³¨å†Œä¸ºgiveAnswerçš„ActionEventäº‹ä»¶ç›‘è§†å™¨
-		// ã€ä»£ç 4ã€‘//å°†teacherZhangæ³¨å†Œä¸ºtextResultçš„ActionEventäº‹ä»¶ç›‘è§†å™¨
+		// ¡¾´úÂë2¡¿//½«teacherZhang×¢²áÎªgetProblemµÄActionEventÊÂ¼ş¼àÊÓÆ÷
+		// ¡¾´úÂë3¡¿//½«teacherZhang×¢²áÎªgiveAnswerµÄActionEventÊÂ¼ş¼àÊÓÆ÷
+		// ¡¾´úÂë4¡¿//½«teacherZhang×¢²áÎªtextResultµÄActionEventÊÂ¼ş¼àÊÓÆ÷
 		setVisible(true);
 		validate();
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);

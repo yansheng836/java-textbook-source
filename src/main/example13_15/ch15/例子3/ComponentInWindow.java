@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­3;
+package ch15.Àı×Ó3;
 
 import java.awt.FlowLayout;
 
@@ -30,34 +30,34 @@ public class ComponentInWindow extends JFrame {
 
 	void init() {
 		setLayout(new FlowLayout());
-		add(new JLabel("æ–‡æœ¬æ¡†:"));
+		add(new JLabel("ÎÄ±¾¿ò:"));
 		text = new JTextField(10);
 		add(text);
-		add(new JLabel("æŒ‰é’®:"));
-		button = new JButton("ç¡®å®š");
+		add(new JLabel("°´Å¥:"));
+		button = new JButton("È·¶¨");
 		add(button);
-		add(new JLabel("é€‰æ‹©æ¡†:"));
-		checkBox1 = new JCheckBox("å–œæ¬¢éŸ³ä¹");
-		checkBox2 = new JCheckBox("å–œæ¬¢æ—…æ¸¸");
-		checkBox3 = new JCheckBox("å–œæ¬¢ç¯®çƒ");
+		add(new JLabel("Ñ¡Ôñ¿ò:"));
+		checkBox1 = new JCheckBox("Ï²»¶ÒôÀÖ");
+		checkBox2 = new JCheckBox("Ï²»¶ÂÃÓÎ");
+		checkBox3 = new JCheckBox("Ï²»¶ÀºÇò");
 		add(checkBox1);
 		add(checkBox2);
 		add(checkBox3);
-		add(new JLabel("å•é€‰æŒ‰é’®:"));
+		add(new JLabel("µ¥Ñ¡°´Å¥:"));
 		group = new ButtonGroup();
-		radio1 = new JRadioButton("ç”·");
-		radio2 = new JRadioButton("å¥³");
+		radio1 = new JRadioButton("ÄĞ");
+		radio2 = new JRadioButton("Å®");
 		group.add(radio1);
 		group.add(radio2);
 		add(radio1);
 		add(radio2);
-		add(new JLabel("ä¸‹æ‹‰åˆ—è¡¨:"));
+		add(new JLabel("ÏÂÀ­ÁĞ±í:"));
 		comBox = new JComboBox();
-		comBox.addItem("éŸ³ä¹å¤©åœ°");
-		comBox.addItem("æ­¦æœ¯å¤©åœ°");
-		comBox.addItem("è±¡æ£‹ä¹å›­");
+		comBox.addItem("ÒôÀÖÌìµØ");
+		comBox.addItem("ÎäÊõÌìµØ");
+		comBox.addItem("ÏóÆåÀÖÔ°");
 		add(comBox);
-		add(new JLabel("æ–‡æœ¬åŒº:"));
+		add(new JLabel("ÎÄ±¾Çø:"));
 		area = new JTextArea(6, 12);
 		add(new JScrollPane(area));
 	}

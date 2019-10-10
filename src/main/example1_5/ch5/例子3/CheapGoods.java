@@ -1,11 +1,11 @@
-package ch5.ä¾‹å­3;
+package ch5.Àı×Ó3;
 
 public class CheapGoods extends Goods {
 	public int weight;
 
 	public void newSetWeight(int w) {
 		weight = w;
-		System.out.println("intå‹çš„weight=" + weight);
+		System.out.println("intĞÍµÄweight=" + weight);
 	}
 
 	public double newGetPrice() {

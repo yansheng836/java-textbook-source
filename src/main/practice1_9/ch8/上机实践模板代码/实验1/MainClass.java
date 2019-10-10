@@ -1,13 +1,13 @@
-package ch8.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch8.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 class MobileShop {
-	ã€ä»£ç 1ã€‘// ç”¨å†…éƒ¨ç±»InnerPurchaseMoneyå£°æ˜å¯¹è±¡purchaseMoney1
-	ã€ä»£ç 2ã€‘ // ç”¨å†…éƒ¨ç±»InnerPurchaseMoneyå£°æ˜å¯¹è±¡purchaseMoney1
-	private int mobileAmount;  // æ‰‹æœºçš„æ•°é‡
+	¡¾´úÂë1¡¿// ÓÃÄÚ²¿ÀàInnerPurchaseMoneyÉùÃ÷¶ÔÏópurchaseMoney1
+	¡¾´úÂë2¡¿ // ÓÃÄÚ²¿ÀàInnerPurchaseMoneyÉùÃ÷¶ÔÏópurchaseMoney1
+	private int mobileAmount;  // ÊÖ»úµÄÊıÁ¿
 
 	MobileShop(){
-	    ã€ä»£ç 3ã€‘ //åˆ›å»ºä»·å€¼ä¸º20000çš„purchaseMoney1
-	    ã€ä»£ç 4ã€‘ //åˆ›å»ºä»·å€¼ä¸º10000çš„purchaseMoney2
+	    ¡¾´úÂë3¡¿ //´´½¨¼ÛÖµÎª20000µÄpurchaseMoney1
+	    ¡¾´úÂë4¡¿ //´´½¨¼ÛÖµÎª10000µÄpurchaseMoney2
 	   }
 
 	void setMobileAmount(int m) {
@@ -28,10 +28,10 @@ class MobileShop {
 		void buyMobile() {
 			if (moneyValue >= 20000) {
 				mobileAmount = mobileAmount - 6;
-				System.out.println("ç”¨ä»·å€¼" + moneyValue + "çš„å†…éƒ¨è´­ç‰©å·ä¹°äº†6éƒ¨æ‰‹æœº");
+				System.out.println("ÓÃ¼ÛÖµ" + moneyValue + "µÄÄÚ²¿¹ºÎï¾íÂòÁË6²¿ÊÖ»ú");
 			} else if (moneyValue < 20000 && moneyValue >= 10000) {
 				mobileAmount = mobileAmount - 3;
-				System.out.println("ç”¨ä»·å€¼" + moneyValue + "çš„å†…éƒ¨è´­ç‰©å·ä¹°äº†3éƒ¨æ‰‹æœº");
+				System.out.println("ÓÃ¼ÛÖµ" + moneyValue + "µÄÄÚ²¿¹ºÎï¾íÂòÁË3²¿ÊÖ»ú");
 			}
 		}
 	}
@@ -41,9 +41,9 @@ public class MainClass {
 	public static void main(String args[]) {
 		MobileShop shop = new MobileShop();
 		shop.setMobileAmount(30);
-		System.out.println("æ‰‹æœºä¸“å–åº—ç›®å‰æœ‰" + shop.getMobileAmount() + "éƒ¨æ‰‹æœº");
+		System.out.println("ÊÖ»ú×¨ÂôµêÄ¿Ç°ÓĞ" + shop.getMobileAmount() + "²¿ÊÖ»ú");
 		shop.purchaseMoney1.buyMobile();
 		shop.purchaseMoney2.buyMobile();
-		System.out.println("æ‰‹æœºä¸“å–åº—ç›®å‰æœ‰" + shop.getMobileAmount() + "éƒ¨æ‰‹æœº");
+		System.out.println("ÊÖ»ú×¨ÂôµêÄ¿Ç°ÓĞ" + shop.getMobileAmount() + "²¿ÊÖ»ú");
 	}
 }

@@ -1,7 +1,7 @@
-package ch1.渚嬪瓙1;
+package ch1.例子1;
 
 public class Hello {
 	public static void main(String args[]) {
-		System.out.println("杩欐槸涓�涓畝鍗曠殑Java搴旂敤绋嬪簭");
+		System.out.println("这是一个简单的Java应用程序");
 	}
 }

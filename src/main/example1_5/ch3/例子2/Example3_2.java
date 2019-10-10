@@ -1,11 +1,11 @@
-package ch3.ä¾‹å­2;
+package ch3.Àı×Ó2;
 
 import java.util.Scanner;
 
 public class Example3_2 {
 	public static void main(String args[]) {
 		Scanner reader = new Scanner(System.in);
-		System.out.println("è¾“å…¥å½©ç¥¨å·å›è½¦ç¡®è®¤");
+		System.out.println("ÊäÈë²ÊÆ±ºÅ»Ø³µÈ·ÈÏ");
 		int number = reader.nextInt();
 		Administrator person = new Administrator();
 		person.giveMess(number);

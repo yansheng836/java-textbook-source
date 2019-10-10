@@ -1,4 +1,4 @@
-package ch10.渚嬪瓙14;
+package ch10.例子14;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,17 +14,17 @@ public class Example10_14 {
 		try {
 			RandomAccessFile input = new RandomAccessFile(file, "rw");
 			FileChannel channel = input.getChannel();
-			FileLock lock = channel.tryLock(); // 鍔犻攣
-			System.out.println("杈撳叆瑕佽鍘荤殑琛屾暟:");
+			FileLock lock = channel.tryLock(); // 加锁
+			System.out.println("输入要读去的行数:");
 			while (scanner.hasNextInt()) {
 				int m = scanner.nextInt();
-				lock.release();                // 瑙ｉ攣
+				lock.release();                // 解锁
 				for (int i = 1; i <= m; i++) {
 					String str = input.readLine();
 					System.out.println(str);
 				}
-				lock = channel.tryLock(); // 鍔犻攣
-				System.out.println("杈撳叆瑕佽鍘荤殑琛屾暟:");
+				lock = channel.tryLock(); // 加锁
+				System.out.println("输入要读去的行数:");
 			}
 		} catch (IOException event) {
 			System.out.println(event);

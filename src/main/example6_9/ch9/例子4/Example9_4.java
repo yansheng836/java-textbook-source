@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­4;
+package ch9.Àı×Ó4;
 
 public class Example9_4 {
 	public static void main(String args[]) {
@@ -9,7 +9,7 @@ public class Example9_4 {
 				item = Double.parseDouble(s);
 				sum = sum + item;
 			} catch (NumberFormatException e) {
-				System.out.println("æ‚¨é”®å…¥äº†éæ•°å­—å­—ç¬¦:" + e);
+				System.out.println("Äú¼üÈëÁË·ÇÊı×Ö×Ö·û:" + e);
 				computable = false;
 			}
 		}

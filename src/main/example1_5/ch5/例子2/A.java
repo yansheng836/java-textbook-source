@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­2;
+package ch5.Àı×Ó2;
 
 public class A {
 	private int x;

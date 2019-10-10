@@ -1,13 +1,13 @@
-package ch13.ä¾‹å­2;
+package ch13.Àı×Ó2;
 
 public class Example13_2 {
 	public static void main(String args[]) {
 		Cake cake = new Cake();
 		int size = 10;
 		cake.setSize(size);
-		System.out.println("è›‹ç³•å¤§å°æ˜¯" + size + "å…‹");
-		Ant antRed = new Ant("çº¢èš‚èš", cake);
-		Ant antBlack = new Ant("é»‘èš‚èš", cake);
+		System.out.println("µ°¸â´óĞ¡ÊÇ" + size + "¿Ë");
+		Ant antRed = new Ant("ºìÂìÒÏ", cake);
+		Ant antBlack = new Ant("ºÚÂìÒÏ", cake);
 		antRed.start();
 		antBlack.start();
 	}

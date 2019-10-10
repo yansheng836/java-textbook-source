@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­8;
+package ch10.Àı×Ó8;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -12,9 +12,9 @@ public class Example10_8 {
 			for (int i = 0; i < data.length; i++) {
 				inAndOut.writeInt(data[i]);
 			}
-			for (long i = data.length - 1; i >= 0; i--) { // ä¸€ä¸ªintå‹æ•°æ®å 4ä¸ªå­—èŠ‚ï¼ŒinAndOutä»
-				inAndOut.seek(i * 4);          // æ–‡ä»¶çš„ç¬¬36ä¸ªå­—èŠ‚è¯»å–æœ€åé¢çš„ä¸€ä¸ªæ•´æ•°ï¼Œ
-				System.out.printf("\t%d", inAndOut.readInt()); // æ¯éš”4ä¸ªå­—èŠ‚å¾€å‰è¯»å–ä¸€ä¸ªæ•´æ•°
+			for (long i = data.length - 1; i >= 0; i--) { // Ò»¸öintĞÍÊı¾İÕ¼4¸ö×Ö½Ú£¬inAndOut´Ó
+				inAndOut.seek(i * 4);          // ÎÄ¼şµÄµÚ36¸ö×Ö½Ú¶ÁÈ¡×îºóÃæµÄÒ»¸öÕûÊı£¬
+				System.out.printf("\t%d", inAndOut.readInt()); // Ã¿¸ô4¸ö×Ö½ÚÍùÇ°¶ÁÈ¡Ò»¸öÕûÊı
 			}
 			inAndOut.close();
 		} catch (IOException e) {

@@ -1,7 +1,7 @@
-package ch4.ä¾‹å­16;
+package ch4.Àı×Ó16;
 
 public class A {
 	public void hello() {
-		System.out.println("ä½ å¥½");
+		System.out.println("ÄãºÃ");
 	}
 }

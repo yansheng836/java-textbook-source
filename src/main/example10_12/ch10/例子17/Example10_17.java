@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­17;
+package ch10.Àı×Ó17;
 
 import java.io.Console;
 
@@ -10,24 +10,24 @@ public class Example10_17 {
 		char[] passwd;
 		cons = System.console();
 		while (true) {
-			System.out.print("è¾“å…¥å¯†ç :");
+			System.out.print("ÊäÈëÃÜÂë:");
 			passwd = cons.readPassword();
 			count++;
 			String password = new String(passwd);
 			if (password.equals("Tiger123")) {
 				success = true;
-				System.out.println("æ‚¨ç¬¬" + count + "æ¬¡è¾“å…¥çš„å¯†ç æ­£ç¡®!");
+				System.out.println("ÄúµÚ" + count + "´ÎÊäÈëµÄÃÜÂëÕıÈ·!");
 				break;
 			} else {
-				System.out.println("æ‚¨ç¬¬" + count + "æ¬¡è¾“å…¥çš„å¯†ç " + password + "ä¸æ­£ç¡®");
+				System.out.println("ÄúµÚ" + count + "´ÎÊäÈëµÄÃÜÂë" + password + "²»ÕıÈ·");
 			}
 			if (count == 3) {
-				System.out.println("æ‚¨" + count + "æ¬¡è¾“å…¥çš„å¯†ç éƒ½ä¸æ­£ç¡®");
+				System.out.println("Äú" + count + "´ÎÊäÈëµÄÃÜÂë¶¼²»ÕıÈ·");
 				System.exit(0);
 			}
 		}
 		if (success) {
-			System.out.println("ä½ å¥½ï¼Œæ¬¢è¿ä½ !");
+			System.out.println("ÄãºÃ£¬»¶Ó­Äã!");
 		}
 	}
 }

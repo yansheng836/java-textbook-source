@@ -1,19 +1,19 @@
-package ch10.ä¾‹å­1;
+package ch10.Àı×Ó1;
 
 import java.io.File;
 import java.io.IOException;
 public class Example10_1 {
    public static void main(String args[]) {
       File f = new File("C:\\ch10","Example10_1.java");
-      System.out.println(f.getName()+"æ˜¯å¯è¯»çš„å—:"+f.canRead());
-      System.out.println(f.getName()+"çš„é•¿åº¦:"+f.length());
-      System.out.println(f.getName()+"çš„ç»å¯¹è·¯å¾„:"+f.getAbsolutePath());
+      System.out.println(f.getName()+"ÊÇ¿É¶ÁµÄÂğ:"+f.canRead());
+      System.out.println(f.getName()+"µÄ³¤¶È:"+f.length());
+      System.out.println(f.getName()+"µÄ¾ø¶ÔÂ·¾¶:"+f.getAbsolutePath());
       File file = new File("new.txt");
-      System.out.println("åœ¨å½“å‰ç›®å½•ä¸‹åˆ›å»ºæ–°æ–‡ä»¶"+file.getName());
+      System.out.println("ÔÚµ±Ç°Ä¿Â¼ÏÂ´´½¨ĞÂÎÄ¼ş"+file.getName());
       if(!file.exists()) {
          try {
               file.createNewFile();
-              System.out.println("åˆ›å»ºæˆåŠŸ");
+              System.out.println("´´½¨³É¹¦");
          }
          catch(IOException exp){}
       }

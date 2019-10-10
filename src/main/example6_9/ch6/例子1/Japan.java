@@ -1,6 +1,6 @@
-package ch6.渚嬪瓙1;
+package ch6.例子1;
 
-public class Japan implements Computable { //// Japan绫诲疄鐜癈omputable鎺ュ彛
+public class Japan implements Computable { //// Japan类实现Computable接口
 	int number;
 
 	public int f(int x) {

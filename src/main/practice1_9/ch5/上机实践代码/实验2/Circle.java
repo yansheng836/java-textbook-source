@@ -1,4 +1,4 @@
-package ch5.ä¸Šæœºå®è·µä»£ç .å®éªŒ2;
+package ch5.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé2;
 
 public class Circle extends Geometry {
 	double r;
@@ -6,5 +6,5 @@ public class Circle extends Geometry {
 	Circle(double r) {
 		this.r = r;
 	}
-	// ã€ä»£ç 2ã€‘ //é‡å†™ getArea()æ–¹æ³•,è¿”å›åœ†é¢ç§¯
+	// ¡¾´úÂë2¡¿ //ÖØĞ´ getArea()·½·¨,·µ»ØÔ²Ãæ»ı
 }

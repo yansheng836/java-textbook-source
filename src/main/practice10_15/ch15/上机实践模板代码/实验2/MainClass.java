@@ -1,4 +1,4 @@
-package ch15.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙2;
+package ch15.上机实践模板代码.实验2;
 
 public class MainClass {
 	public static void main(String args[]) {

@@ -1,18 +1,18 @@
-package ch9.ä¾‹å­18;
+package ch9.Àı×Ó18;
 
 public class Example9_18 {
 	public static void main(String args[]) {
 		CalendarBean1 cb = new CalendarBean1();
 		cb.setYear(2015);
 		cb.setMonth(7);
-		String[] a = cb.getCalendar();// è¿”å›å·ç çš„ä¸€ç»´æ•°ç»„
-		char[] str = "æ—¥ä¸€äºŒä¸‰å››äº”å…­".toCharArray();
+		String[] a = cb.getCalendar();// ·µ»ØºÅÂëµÄÒ»Î¬Êı×é
+		char[] str = "ÈÕÒ»¶şÈıËÄÎåÁù".toCharArray();
 		for (char c : str) {
 			System.out.printf("%3c", c);
 		}
-		for (int i = 0; i < a.length; i++) {     // è¾“å‡ºæ•°ç»„a
+		for (int i = 0; i < a.length; i++) {     // Êä³öÊı×éa
 			if (i % 7 == 0)
-				System.out.println("");  // æ¢è¡Œ
+				System.out.println("");  // »»ĞĞ
 			System.out.printf("%4s", a[i]);
 		}
 	}

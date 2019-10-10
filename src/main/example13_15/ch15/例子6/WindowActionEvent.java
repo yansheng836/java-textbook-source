@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙6;
+package ch15.例子6;
 
 import java.awt.FlowLayout;
 
@@ -23,13 +23,13 @@ public class WindowActionEvent extends JFrame {
 	void init() {
 		setLayout(new FlowLayout());
 		inputText = new JTextField(10);
-		button = new JButton("璇诲彇");
+		button = new JButton("读取");
 		textShow = new JTextArea(9, 30);
 		listener = new PoliceListen();
 		listener.setJTextField(inputText);
 		listener.setJTextArea(textShow);
-		inputText.addActionListener(listener);  // inputText鏄簨浠舵簮,listener鏄洃瑙嗗櫒
-		button.addActionListener(listener);     // button鏄簨浠舵簮,listener鏄洃瑙嗗櫒
+		inputText.addActionListener(listener);  // inputText是事件源,listener是监视器
+		button.addActionListener(listener);     // button是事件源,listener是监视器
 		add(inputText);
 		add(button);
 		add(new JScrollPane(textShow));

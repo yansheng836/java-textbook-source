@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­7;
+package ch10.Àı×Ó7;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Example10_7 {
 	public static void main(String args[]) {
 		File file = new File("goods.txt");
-		String content[] = { "å•†å“åˆ—è¡¨:", "ç”µè§†æœº,2567å…ƒ/å°", "æ´—è¡£æœº,3562.å…ƒ/å°", "å†°ç®±,6573å…ƒ/å°" };
+		String content[] = { "ÉÌÆ·ÁĞ±í:", "µçÊÓ»ú,2567Ôª/Ì¨", "Ï´ÒÂ»ú,3562.Ôª/Ì¨", "±ùÏä,6573Ôª/Ì¨" };
 		try {
 			FileWriter outOne = new FileWriter(file);
 			BufferedWriter outTwo = new BufferedWriter(outOne);

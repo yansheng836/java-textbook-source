@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­1;
+package ch5.Àı×Ó1;
 
 public class Example5_1 {
 	public static void main(String args[]) {
@@ -9,7 +9,7 @@ public class Example5_1 {
 		zhang.number = 100101;
 		zhang.tellHeightAndWeight();
 		zhang.tellNumber();
-		System.out.print("zhangä¼šåšåŠ å‡ï¼š");
+		System.out.print("zhang»á×ö¼Ó¼õ£º");
 		int result = zhang.add(x, y);
 		System.out.printf("%d+%d=%d\t", x, y, result);
 		result = zhang.sub(x, y);
@@ -18,14 +18,14 @@ public class Example5_1 {
 		geng.number = 6609;
 		geng.tellHeightAndWeight();
 		geng.tellNumber();
-		System.out.print("gengä¼šåšåŠ å‡ä¹˜é™¤ï¼š");
+		System.out.print("geng»á×ö¼Ó¼õ³Ë³ı£º");
 		result = geng.add(x, y);
 		System.out.printf("%d+%d=%d\t", x, y, result);
 		result = geng.sub(x, y);
 		System.out.printf("%d-%d=%d\t", x, y, result);
 		result = geng.multi(x, y);
-		System.out.printf("%dÃ—%d=%d\t", x, y, result);
+		System.out.printf("%d¡Á%d=%d\t", x, y, result);
 		double re = geng.div(x, y);
-		System.out.printf("%dÃ·%d=%f\n", x, y, re);
+		System.out.printf("%d¡Â%d=%f\n", x, y, re);
 	}
 }

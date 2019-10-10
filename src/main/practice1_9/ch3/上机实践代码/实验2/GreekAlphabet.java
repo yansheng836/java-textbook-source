@@ -1,4 +1,4 @@
-package ch3.涓婃満瀹炶返浠ｇ爜.瀹為獙2;
+package ch3.上机实践代码.实验2;
 
 public class GreekAlphabet {
 

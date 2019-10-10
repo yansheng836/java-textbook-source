@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙4;
+package ch15.例子4;
 
 import javax.swing.Box;
 import javax.swing.JFrame;
@@ -14,11 +14,11 @@ public class WindowBoxLayout extends JFrame  {
     }
     void init() {
         boxV1=Box.createVerticalBox();
-        boxV1.add(new JLabel("濮撳悕"));
+        boxV1.add(new JLabel("姓名"));
         boxV1.add(Box.createVerticalStrut(8));
         boxV1.add(new JLabel("email"));
         boxV1.add(Box.createVerticalStrut(8));
-        boxV1.add(new JLabel("鑱屼笟"));
+        boxV1.add(new JLabel("职业"));
         boxV2=Box.createVerticalBox();
         boxV2.add(new JTextField(10));
         boxV2.add(Box.createVerticalStrut(8));

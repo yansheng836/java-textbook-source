@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­8;
+package ch4.Àı×Ó8;
 
 public class Example4_8 {
 	public static void main(String args[]) {
@@ -7,10 +7,10 @@ public class Example4_8 {
 		Circular circular = new Circular();
 		circular.setBottom(circle);
 		circular.setHeight(128.76);
-		System.out.println("åœ†é”¥åº•åœ†çš„åŠå¾„:" + circular.getBottomRadius());
-		System.out.printf("åœ†é”¥çš„ä½“ç§¯(ä¿ç•™3ä½å°æ•°):%5.3f\n", circular.getVolme());
+		System.out.println("Ô²×¶µ×Ô²µÄ°ë¾¶:" + circular.getBottomRadius());
+		System.out.printf("Ô²×¶µÄÌå»ı(±£Áô3Î»Ğ¡Êı):%5.3f\n", circular.getVolme());
 		circular.setBottomRadius(208);
-		System.out.println("åœ†é”¥åº•åœ†çš„åŠå¾„:" + circular.getBottomRadius());
-		System.out.printf("åœ†é”¥çš„ä½“ç§¯(ä¿ç•™3ä½å°æ•°):%5.3f\n", circular.getVolme());
+		System.out.println("Ô²×¶µ×Ô²µÄ°ë¾¶:" + circular.getBottomRadius());
+		System.out.printf("Ô²×¶µÄÌå»ı(±£Áô3Î»Ğ¡Êı):%5.3f\n", circular.getVolme());
 	}
 }

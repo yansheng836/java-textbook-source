@@ -1,4 +1,4 @@
-package ch9.ä¾‹å­14;
+package ch9.Àı×Ó14;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -17,6 +17,6 @@ public class Example9_14 {
 				String t = scanner.next();
 			}
 		}
-		System.out.println("æ€»æ¶ˆè´¹:" + sum + "å…ƒ");
+		System.out.println("×ÜÏû·Ñ:" + sum + "Ôª");
 	}
 }

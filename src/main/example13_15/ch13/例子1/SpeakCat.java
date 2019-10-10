@@ -1,9 +1,9 @@
-ï»¿package ch13.ä¾‹å­1;
+?package ch13.Àı×Ó1;
 
 public class SpeakCat extends Thread {
 	public void run() {
 		for (int i = 1; i <= 20; i++) {
-			System.out.print("å°çŒ«" + i + "  ");
+			System.out.print("Ğ¡Ã¨" + i + "  ");
 		}
 	}
 }

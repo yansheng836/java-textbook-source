@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­19;
+package ch15.Àı×Ó19;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -9,16 +9,16 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class MyDialog extends JDialog implements ActionListener { // å¯¹è¯æ¡†ç±»
+public class MyDialog extends JDialog implements ActionListener { // ¶Ô»°¿òÀà
 	JTextField inputTitle;
 	String title;
 
-	MyDialog(JFrame f, String s) { // æ„é€ æ–¹æ³•
+	MyDialog(JFrame f, String s) { // ¹¹Ôì·½·¨
 		super(f, s);
 		inputTitle = new JTextField(10);
 		inputTitle.addActionListener(this);
 		setLayout(new FlowLayout());
-		add(new JLabel("è¾“å…¥çª—å£çš„æ–°æ ‡é¢˜"));
+		add(new JLabel("ÊäÈë´°¿ÚµÄĞÂ±êÌâ"));
 		add(inputTitle);
 		setBounds(60, 60, 100, 100);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

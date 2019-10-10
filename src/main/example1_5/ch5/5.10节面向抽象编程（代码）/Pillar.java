@@ -1,11 +1,11 @@
 public class Pillar {
-    Geometry  bottom;        //bottomæ˜¯æŠ½è±¡ç±»Geometryå£°æ˜çš„å˜é‡
+    Geometry  bottom;        //bottomÊÇ³éÏóÀàGeometryÉùÃ÷µÄ±äÁ¿
     double height;
     Pillar (Geometry bottom,double height) {
         this.bottom=bottom; this.height=height;
     }
     public double getVolume() {
-        return bottom.getArea()*height; //bottomå¯ä»¥è°ƒç”¨å­ç±»é‡å†™çš„getAreaæ–¹æ³•
+        return bottom.getArea()*height; //bottom¿ÉÒÔµ÷ÓÃ×ÓÀàÖØĞ´µÄgetArea·½·¨
     }
 }
 

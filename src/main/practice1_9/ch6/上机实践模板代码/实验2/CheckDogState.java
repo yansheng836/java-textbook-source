@@ -1,19 +1,19 @@
-package ch6.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch6.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 interface DogState {
 	public void showState();
 }
 
 class SoftlyState implements DogState {
-	// ã€ä»£ç 1ã€‘ //é‡å†™public void showState()
+	// ¡¾´úÂë1¡¿ //ÖØĞ´public void showState()
 }
 
 class MeetEnemyState implements DogState {
-	// ã€ä»£ç 2ã€‘ //é‡å†™public void showState()
+	// ¡¾´úÂë2¡¿ //ÖØĞ´public void showState()
 }
 
 class MeetFriendState implements DogState {
-	// ã€ä»£ç 3ã€‘ //é‡å†™public void showState()
+	// ¡¾´úÂë3¡¿ //ÖØĞ´public void showState()
 }
 
 class Dog {

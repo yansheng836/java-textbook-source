@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­9;
+package ch15.Àı×Ó9;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -16,28 +16,28 @@ public class MousePolice implements MouseListener {
 	}
 
 	public void mousePressed(MouseEvent e) {
-		area.append("\né¼ æ ‡æŒ‰ä¸‹,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+		area.append("\nÊó±ê°´ÏÂ,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 	}
 
 	public void mouseReleased(MouseEvent e) {
-		area.append("\né¼ æ ‡é‡Šæ”¾,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+		area.append("\nÊó±êÊÍ·Å,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 	}
 
 	public void mouseEntered(MouseEvent e) {
 		if (e.getSource() instanceof JButton)
-			area.append("\né¼ æ ‡è¿›å…¥æŒ‰çº½,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+			area.append("\nÊó±ê½øÈë°´Å¦,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 		if (e.getSource() instanceof JTextField)
-			area.append("\né¼ æ ‡è¿›å…¥æ–‡æœ¬æ¡†,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+			area.append("\nÊó±ê½øÈëÎÄ±¾¿ò,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 		if (e.getSource() instanceof JFrame)
-			area.append("\né¼ æ ‡è¿›å…¥çª—å£,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+			area.append("\nÊó±ê½øÈë´°¿Ú,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 	}
 
 	public void mouseExited(MouseEvent e) {
-		area.append("\né¼ æ ‡é€€å‡º,ä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+		area.append("\nÊó±êÍË³ö,Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		if (e.getClickCount() >= 2)
-			area.setText("é¼ æ ‡è¿å‡»ï¼Œä½ç½®:" + "(" + e.getX() + "," + e.getY() + ")");
+			area.setText("Êó±êÁ¬»÷£¬Î»ÖÃ:" + "(" + e.getX() + "," + e.getY() + ")");
 	}
 }

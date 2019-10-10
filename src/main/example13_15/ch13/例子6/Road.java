@@ -1,4 +1,4 @@
-package ch13.ä¾‹å­6;
+package ch13.Àı×Ó6;
 
 public class Road implements Runnable {
 	Thread attachThread;
@@ -9,24 +9,24 @@ public class Road implements Runnable {
 
 	public void run() {
 		String name = Thread.currentThread().getName();
-		if (name.equals("å¸æœº")) {
+		if (name.equals("Ë¾»ú")) {
 			try {
-				System.out.println("æˆ‘æ˜¯" + name + "åœ¨é©¬è·¯ä¸Šå¼€è½¦.");
-				System.out.println("æƒ³ç¡ä¸Šä¸€ä¸ªå°æ—¶åå†å¼€è½¦");
+				System.out.println("ÎÒÊÇ" + name + "ÔÚÂíÂ·ÉÏ¿ª³µ.");
+				System.out.println("ÏëË¯ÉÏÒ»¸öĞ¡Ê±ºóÔÙ¿ª³µ");
 				Thread.sleep(1000 * 60 * 60);
 			} catch (InterruptedException e) {
-				System.out.println(name + "è¢«è­¦å¯Ÿå«é†’äº†");
+				System.out.println(name + "±»¾¯²ì½ĞĞÑÁË");
 			}
-			System.out.println(name + "ç»§ç»­å¼€è½¦");
-		} else if (name.equals("è­¦å¯Ÿ")) {
+			System.out.println(name + "¼ÌĞø¿ª³µ");
+		} else if (name.equals("¾¯²ì")) {
 			for (int i = 1; i <= 3; i++) {
-				System.out.println(name + "å–Šï¼šå¼€è½¦!");
+				System.out.println(name + "º°£º¿ª³µ!");
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
 				}
 			}
-			attachThread.interrupt();   // åµé†’driver
+			attachThread.interrupt();   // ³³ĞÑdriver
 		}
 	}
 }

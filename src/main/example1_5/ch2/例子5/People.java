@@ -1,11 +1,11 @@
-package ch2.ä¾‹å­5;
+package ch2.Àı×Ó5;
 
 public class People {
 	float weight;
 	int height;
 
 	void speak() {
-		System.out.println("æˆ‘çš„èº«é«˜æ˜¯:" + height + "cm");
-		System.out.println("æˆ‘çš„ä½“é‡æ˜¯:" + weight + "kg");
+		System.out.println("ÎÒµÄÉí¸ßÊÇ:" + height + "cm");
+		System.out.println("ÎÒµÄÌåÖØÊÇ:" + weight + "kg");
 	}
 }

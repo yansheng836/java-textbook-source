@@ -1,4 +1,4 @@
-package ch12.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch12.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -7,7 +7,7 @@ import java.util.List;
 public class MainClass {
 	public static void main(String args[]) {
 		List<Book> bookList = new LinkedList<Book>();
-		String bookName[] = { "JavaåŸºç¡€æ•™ç¨‹", "XMLåŸºç¡€æ•™ç¨‹", "JSPåŸºç¡€æ•™ç¨‹", "C++åŸºç¡€æ•™ç¨‹", "J2MEç¼–ç¨‹", "æ“ä½œç³»ç»Ÿ", "æ•°æ®åº“æŠ€æœ¯" };
+		String bookName[] = { "Java»ù´¡½Ì³Ì", "XML»ù´¡½Ì³Ì", "JSP»ù´¡½Ì³Ì", "C++»ù´¡½Ì³Ì", "J2ME±à³Ì", "²Ù×÷ÏµÍ³", "Êı¾İ¿â¼¼Êõ" };
 		double bookPrice[] = { 29, 21, 22, 29, 34, 32, 29 };
 		Book book[] = new Book[bookName.length];
 		for (int k = 0; k < book.length; k++) {
@@ -18,15 +18,15 @@ public class MainClass {
 		}
 		Book newBook = new Book();
 		newBook.setPrice(29);
-		newBook.setName("Javaä¸æ¨¡å¼");
+		newBook.setName("JavaÓëÄ£Ê½");
 		Collections.sort(bookList);
 		int m = -1;
-		System.out.println("æ–°ä¹¦:" + newBook.getName() + "(" + newBook.getPrice() + ")ä¸ä¸‹åˆ—å›¾ä¹¦:");
+		System.out.println("ĞÂÊé:" + newBook.getName() + "(" + newBook.getPrice() + ")ÓëÏÂÁĞÍ¼Êé:");
 		while ((m = Collections.binarySearch(bookList, newBook, null)) >= 0) {
 			Book bk = bookList.get(m);
 			System.out.println("\t" + bk.getName() + "(" + bk.getPrice() + ")");
 			bookList.remove(m);
 		}
-		System.out.println("ä»·é’±ç›¸åŒ.");
+		System.out.println("¼ÛÇ®ÏàÍ¬.");
 	}
 }

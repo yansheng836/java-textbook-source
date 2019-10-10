@@ -1,12 +1,12 @@
-package ch2.ä¾‹å­4;
+package ch2.Àı×Ó4;
 
 public class Example2_4 {
 	public static void main(String args[]) {
-		char ch1 = 'å›½', ch2 = 'åº†';
+		char ch1 = '¹ú', ch2 = 'Çì';
 		int p1 = 969, p2 = 12353;
-		System.out.println(ch1 + "åœ¨Unicodeè¡¨ä¸­çš„ä½ç½®:" + (int) ch1);
-		System.out.println(ch2 + "åœ¨Unicodeè¡¨ä¸­çš„ä½ç½®:" + (int) ch2);
-		System.out.println("ç¬¬" + p1 + "ä¸ªä½ç½®ä¸Šçš„å­—ç¬¦æ˜¯:" + (char) p1);
-		System.out.println("ç¬¬" + p2 + "ä¸ªä½ç½®ä¸Šçš„å­—ç¬¦æ˜¯:" + (char) p2);
+		System.out.println(ch1 + "ÔÚUnicode±íÖĞµÄÎ»ÖÃ:" + (int) ch1);
+		System.out.println(ch2 + "ÔÚUnicode±íÖĞµÄÎ»ÖÃ:" + (int) ch2);
+		System.out.println("µÚ" + p1 + "¸öÎ»ÖÃÉÏµÄ×Ö·ûÊÇ:" + (char) p1);
+		System.out.println("µÚ" + p2 + "¸öÎ»ÖÃÉÏµÄ×Ö·ûÊÇ:" + (char) p2);
 	}
 }

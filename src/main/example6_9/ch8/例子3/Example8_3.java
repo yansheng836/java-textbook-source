@@ -1,4 +1,4 @@
-package ch8.ä¾‹å­3;
+package ch8.Àı×Ó3;
 
 interface SpeakHello {
 	void speak();
@@ -20,7 +20,7 @@ public class Example8_3 {
 		});
 		machine.turnOn(new SpeakHello() {
 			public void speak() {
-				System.out.println("ä½ å¥½ï¼Œæ¬¢è¿å…‰ä¸´!");
+				System.out.println("ÄãºÃ£¬»¶Ó­¹âÁÙ!");
 			}
 		});
 	}

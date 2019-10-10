@@ -1,4 +1,4 @@
-package ch15.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch15.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 public class Hua_Rong_Road extends JFrame implements MouseListener, KeyListener, ActionListener {
 	Person person[] = new Person[10];
 	JButton left, right, above, below;
-	JButton restart = new JButton("é‡æ–°å¼€å§‹");
+	JButton restart = new JButton("ÖØĞÂ¿ªÊ¼");
 
 	public Hua_Rong_Road() {
 		init();
@@ -29,7 +29,7 @@ public class Hua_Rong_Road extends JFrame implements MouseListener, KeyListener,
 		add(restart);
 		restart.setBounds(100, 320, 120, 35);
 		restart.addActionListener(this);
-		String name[] = { "æ›¹æ“", "å…³ç¾½", "å¼ ", "åˆ˜", "å‘¨", "é»„", "å…µ", "å…µ", "å…µ", "å…µ" };
+		String name[] = { "²Ü²Ù", "¹ØÓğ", "ÕÅ", "Áõ", "ÖÜ", "»Æ", "±ø", "±ø", "±ø", "±ø" };
 		for (int k = 0; k < name.length; k++) {
 			person[k] = new Person(k, name[k]);
 			person[k].addMouseListener(this);

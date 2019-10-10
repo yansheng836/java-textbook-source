@@ -1,7 +1,7 @@
-package ch7.ä¾‹å­8;
+package ch7.Àı×Ó8;
 
 enum Fruit {
-	è‹¹æœ, æ¢¨, é¦™è•‰, è¥¿ç“œ, èŠ’æœ
+	Æ»¹û, Àæ, Ïã½¶, Î÷¹Ï, Ã¢¹û
 }
 
 public class Example7_8 {
@@ -10,15 +10,15 @@ public class Example7_8 {
 		boolean show = false;
 		for (Fruit fruit : Fruit.values()) {
 			switch (fruit) {
-			case è‹¹æœ:
+			case Æ»¹û:
 				price = 1.5;
 				show = true;
 				break;
-			case èŠ’æœ:
+			case Ã¢¹û:
 				price = 6.8;
 				show = true;
 				break;
-			case é¦™è•‰:
+			case Ïã½¶:
 				price = 2.8;
 				show = true;
 				break;
@@ -26,7 +26,7 @@ public class Example7_8 {
 				show = false;
 			}
 			if (show) {
-				System.out.println(fruit + "500å…‹çš„ä»·æ ¼ï¼š" + price + "å…ƒ");
+				System.out.println(fruit + "500¿ËµÄ¼Û¸ñ£º" + price + "Ôª");
 			}
 		}
 	}

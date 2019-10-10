@@ -1,7 +1,7 @@
-package ch12.渚嬪瓙1;
+package ch12.例子1;
 
 public class Cat {
 	public String toString() {
-		return "涓�鍙皬鑺辩尗";
+		return "一只小花猫";
 	}
 }

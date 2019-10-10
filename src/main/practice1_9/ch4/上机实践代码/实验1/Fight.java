@@ -1,4 +1,4 @@
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ1;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 public class Fight {
 	public static void main(String args[]) {
@@ -7,22 +7,22 @@ public class Fight {
 		tank2 = new Tank();
 		tank1.setBulletAmount(10);
 		tank2.setBulletAmount(10);
-		System.out.println("tank1çš„ç‚®å¼¹æ•°é‡ï¼š" + tank1.getBulletAmount());
-		System.out.println("tank2çš„ç‚®å¼¹æ•°é‡ï¼š" + tank2.getBulletAmount());
+		System.out.println("tank1µÄÅÚµ¯ÊıÁ¿£º" + tank1.getBulletAmount());
+		System.out.println("tank2µÄÅÚµ¯ÊıÁ¿£º" + tank2.getBulletAmount());
 		tank1.speedUp(80);
 		tank2.speedUp(90);
-		System.out.println("tank1ç›®å‰çš„é€Ÿåº¦ï¼š" + tank1.getSpeed());
-		System.out.println("tank2ç›®å‰çš„é€Ÿåº¦ï¼š" + tank2.getSpeed());
+		System.out.println("tank1Ä¿Ç°µÄËÙ¶È£º" + tank1.getSpeed());
+		System.out.println("tank2Ä¿Ç°µÄËÙ¶È£º" + tank2.getSpeed());
 		tank1.speedDown(15);
 		tank2.speedDown(30);
-		System.out.println("tank1ç›®å‰çš„é€Ÿåº¦ï¼š" + tank1.getSpeed());
-		System.out.println("tank2ç›®å‰çš„é€Ÿåº¦ï¼š" + tank2.getSpeed());
-		System.out.println("tank1å¼€ç«ï¼š");
+		System.out.println("tank1Ä¿Ç°µÄËÙ¶È£º" + tank1.getSpeed());
+		System.out.println("tank2Ä¿Ç°µÄËÙ¶È£º" + tank2.getSpeed());
+		System.out.println("tank1¿ª»ğ£º");
 		tank1.fire();
-		System.out.println("tank2å¼€ç«ï¼š");
+		System.out.println("tank2¿ª»ğ£º");
 		tank2.fire();
 		tank2.fire();
-		System.out.println("tank1çš„ç‚®å¼¹æ•°é‡ï¼š" + tank1.getBulletAmount());
-		System.out.println("tank2çš„ç‚®å¼¹æ•°é‡ï¼š" + tank2.getBulletAmount());
+		System.out.println("tank1µÄÅÚµ¯ÊıÁ¿£º" + tank1.getBulletAmount());
+		System.out.println("tank2µÄÅÚµ¯ÊıÁ¿£º" + tank2.getBulletAmount());
 	}
 }

@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙11;
+package ch15.例子11;
 
 import java.awt.FlowLayout;
 
@@ -16,11 +16,11 @@ public class Win extends JFrame {
 		police = new Police();
 		for (int i = 0; i < 3; i++) {
 			text[i] = new JTextField(7);
-			text[i].addKeyListener(police);  // 鐩戣閿洏浜嬩欢
+			text[i].addKeyListener(police);  // 监视键盘事件
 			text[i].addFocusListener(police);
 			add(text[i]);
 		}
-		b = new JButton("纭畾");
+		b = new JButton("确定");
 		add(b);
 		text[0].requestFocusInWindow();
 		setVisible(true);

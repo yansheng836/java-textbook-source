@@ -1,12 +1,12 @@
-package ch10.渚嬪瓙5;
+package ch10.例子5;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Example10_5 {
 	public static void main(String args[]) {
-		byte[] a = "鍥藉簡60鍛ㄥ勾".getBytes();
-		byte[] b = "鍗佷竴蹇箰".getBytes();
+		byte[] a = "国庆60周年".getBytes();
+		byte[] b = "十一快乐".getBytes();
 		try {
 			FileOutputStream out = new FileOutputStream("happy.txt");
 			out.write(a);

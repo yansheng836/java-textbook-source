@@ -1,13 +1,13 @@
-package ch6.渚嬪瓙5;
+package ch6.例子5;
 
-public class WhiteCloudCorp implements Advertisement { // PhilipsCorp瀹炵幇Avertisement鎺ュ彛
+public class WhiteCloudCorp implements Advertisement { // PhilipsCorp实现Avertisement接口
 	public void showAdvertisement() {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@");
-		System.out.printf("椋炴満涓殑鎴樻枟鏈猴紝鍝巠es!\n");
+		System.out.printf("飞机中的战斗机，哎yes!\n");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@");
 	}
 
 	public String getCorpName() {
-		return "鐧戒簯鏈夐檺鍏徃";
+		return "白云有限公司";
 	}
 }

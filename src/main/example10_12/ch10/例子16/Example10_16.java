@@ -1,4 +1,4 @@
-package ch10.渚嬪瓙16;
+package ch10.例子16;
 
 import java.io.File;
 import java.util.Scanner;
@@ -20,7 +20,7 @@ public class Example10_16 {
 				System.out.println(score);
 			}
 			double aver = sum / count;
-			System.out.println("骞冲潎鎴愮哗:" + aver);
+			System.out.println("平均成绩:" + aver);
 		} catch (Exception exp) {
 			System.out.println(exp);
 		}

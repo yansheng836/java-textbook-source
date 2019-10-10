@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­7;
+package ch15.Àı×Ó7;
 
 import java.awt.FlowLayout;
 import java.io.File;
@@ -23,7 +23,7 @@ public class WindowItemEvent extends JFrame {
 	void init() {
 		setLayout(new FlowLayout());
 		choice = new JComboBox();
-		choice.addItem("è¯·é€‰æ‹©æ–‡ä»¶:");
+		choice.addItem("ÇëÑ¡ÔñÎÄ¼ş:");
 		File dir = new File(".");
 		FileAccept fileAccept = new FileAccept();
 		fileAccept.setExtendName("java");
@@ -35,12 +35,12 @@ public class WindowItemEvent extends JFrame {
 		listener = new PoliceListen();
 		listener.setJComboBox(choice);
 		listener.setJTextArea(textShow);
-		choice.addItemListener(listener);   // choiceæ˜¯äº‹ä»¶æº,listeneræ˜¯ç›‘è§†å™¨
+		choice.addItemListener(listener);   // choiceÊÇÊÂ¼şÔ´,listenerÊÇ¼àÊÓÆ÷
 		add(choice);
 		add(new JScrollPane(textShow));
 	}
 
-	class FileAccept implements FilenameFilter { // å†…éƒ¨ç±»
+	class FileAccept implements FilenameFilter { // ÄÚ²¿Àà
 		private String extendName;
 
 		public void setExtendName(String s) {

@@ -1,13 +1,13 @@
-package ch2.ä¾‹å­5;
+package ch2.Àı×Ó5;
 
 public class Machine {
 	public void estimate(int height, double weight) {
 		double number = (height - 100) / weight;
 		if (number >= 1.1)
-			System.out.println("åç˜¦");
+			System.out.println("Æ«Êİ");
 		else if (number < 1.1 && number >= 0.96)
-			System.out.println("æ­£å¸¸");
+			System.out.println("Õı³£");
 		else if (number < 0.96)
-			System.out.println("åèƒ–");
+			System.out.println("Æ«ÅÖ");
 	}
 }

@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­12;
+package ch15.Àı×Ó12;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -21,10 +21,10 @@ public class WindowPolice extends JFrame implements ActionListener {
 		setLayout(new FlowLayout());
 		text1 = new JTextField(10);
 		text2 = new JTextField(10);
-		text1.addActionListener(this); // WindowPoliceç±»çš„å®ä¾‹ï¼ˆå½“å‰çª—å£ï¼‰åšç›‘è§†å™¨
+		text1.addActionListener(this); // WindowPoliceÀàµÄÊµÀı£¨µ±Ç°´°¿Ú£©×ö¼àÊÓÆ÷
 		add(text1);
 		add(text2);
-		text1.addActionListener(new ActionListener() {  // åŒ¿åç±»å®ä¾‹åšç›‘è§†å™¨
+		text1.addActionListener(new ActionListener() {  // ÄäÃûÀàÊµÀı×ö¼àÊÓÆ÷
 			public void actionPerformed(ActionEvent e) {
 				String str = text1.getText();
 				if (str.equalsIgnoreCase("Exit"))
@@ -34,7 +34,7 @@ public class WindowPolice extends JFrame implements ActionListener {
 
 	}
 
-	public void actionPerformed(ActionEvent e) {  // é‡å†™æ¥å£ä¸­çš„æ–¹æ³•
+	public void actionPerformed(ActionEvent e) {  // ÖØĞ´½Ó¿ÚÖĞµÄ·½·¨
 		String str = text1.getText();
 		int n = 0, m = 0;
 		try {
@@ -42,7 +42,7 @@ public class WindowPolice extends JFrame implements ActionListener {
 			m = n * n * n;
 			text2.setText("" + m);
 		} catch (Exception ee) {
-			text2.setText("è¯·è¾“å…¥æ•°å­—å­—ç¬¦");
+			text2.setText("ÇëÊäÈëÊı×Ö×Ö·û");
 			text1.setText(null);
 		}
 	}

@@ -1,4 +1,4 @@
-package ch14.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ;
+package ch14.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -18,26 +18,26 @@ public class ClientGuess {
 		try {
 			mysocket = new Socket();
 			readNumber = new ReadNumber();
-			thread = new Thread(readNumber);   // è´Ÿè´£è¯»å–ä¿¡æ¯çš„çº¿ç¨‹
-			System.out.print("è¾“å…¥æœåŠ¡å™¨çš„IP:");
+			thread = new Thread(readNumber);   // ¸ºÔğ¶ÁÈ¡ĞÅÏ¢µÄÏß³Ì
+			System.out.print("ÊäÈë·şÎñÆ÷µÄIP:");
 			String IP = scanner.nextLine();
-			System.out.print("è¾“å…¥ç«¯å£å·:");
+			System.out.print("ÊäÈë¶Ë¿ÚºÅ:");
 			int port = scanner.nextInt();
 			if (mysocket.isConnected()) {
 			} else {
 				InetAddress address = InetAddress.getByName(IP);
 				InetSocketAddress socketAddress = new InetSocketAddress(address, port);
 				mysocket.connect(socketAddress);
-				// InputStream in=ã€ä»£ç 1ã€‘ //mysocketè°ƒç”¨getInputStream()è¿”å›è¾“å…¥æµ
-				// OutputStream out=ã€ä»£ç 2ã€‘//mysocketè°ƒç”¨getOutputStream()è¿”å›è¾“å‡ºæµ
+				// InputStream in=¡¾´úÂë1¡¿ //mysocketµ÷ÓÃgetInputStream()·µ»ØÊäÈëÁ÷
+				// OutputStream out=¡¾´úÂë2¡¿//mysocketµ÷ÓÃgetOutputStream()·µ»ØÊä³öÁ÷
 				inData = new DataInputStream(in);
 				outData = new DataOutputStream(out);
 				readNumber.setDataInputStream(inData);
 				readNumber.setDataOutputStream(outData);
-				thread.start();  // å¯åŠ¨è´Ÿè´£è¯»å–éšæœºæ•°çš„çº¿ç¨‹
+				thread.start();  // Æô¶¯¸ºÔğ¶ÁÈ¡Ëæ»úÊıµÄÏß³Ì
 			}
 		} catch (Exception e) {
-			System.out.println("æœåŠ¡å™¨å·²æ–­å¼€" + e);
+			System.out.println("·şÎñÆ÷ÒÑ¶Ï¿ª" + e);
 		}
 	}
 }
@@ -61,21 +61,21 @@ class ReadNumber implements Runnable {
 			while (true) {
 				String str = in.readUTF();
 				System.out.println(str);
-				if (!str.startsWith("è¯¢é—®")) {
-					if (str.startsWith("çŒœå¯¹äº†"))
+				if (!str.startsWith("Ñ¯ÎÊ")) {
+					if (str.startsWith("²Â¶ÔÁË"))
 						continue;
-					System.out.print("å¥½çš„ï¼Œæˆ‘è¾“å…¥çŒœæµ‹:");
+					System.out.print("ºÃµÄ£¬ÎÒÊäÈë²Â²â:");
 					int myGuess = scanner.nextInt();
-					String enter = scanner.nextLine(); // æ¶ˆè€—å¤šä½™çš„å›è½¦
+					String enter = scanner.nextLine(); // ÏûºÄ¶àÓàµÄ»Ø³µ
 					out.writeInt(myGuess);
 				} else {
-					System.out.print("å¥½çš„ï¼Œæˆ‘è¾“å…¥Yæˆ–N:");
+					System.out.print("ºÃµÄ£¬ÎÒÊäÈëY»òN:");
 					String myAnswer = scanner.nextLine();
 					out.writeUTF(myAnswer);
 				}
 			}
 		} catch (Exception e) {
-			System.out.println("ä¸æœåŠ¡å™¨å·²æ–­å¼€" + e);
+			System.out.println("Óë·şÎñÆ÷ÒÑ¶Ï¿ª" + e);
 			return;
 		}
 	}

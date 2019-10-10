@@ -1,4 +1,4 @@
-package ch9.渚嬪瓙3;
+package ch9.例子3;
 
 public class Example9_3 {
 	public static void main(String args[]) {
@@ -6,10 +6,10 @@ public class Example9_3 {
 		int index = path.indexOf("\\");
 		index = path.indexOf("\\", index);
 		String sub = path.substring(index);
-		System.out.println(sub);   // 杈撳嚭缁撴灉鏄細\book\javabook\Java Programmer.doc
+		System.out.println(sub);   // 输出结果是：\book\javabook\Java Programmer.doc
 		index = path.lastIndexOf("\\");
 		sub = path.substring(index + 1);
-		System.out.println(sub);   // 杈撳嚭缁撴灉鏄細Java Programmer.doc
-		System.out.println(sub.contains("Programmer"));// 杈撳嚭缁撴灉鏄細true
+		System.out.println(sub);   // 输出结果是：Java Programmer.doc
+		System.out.println(sub.contains("Programmer"));// 输出结果是：true
 	}
 }

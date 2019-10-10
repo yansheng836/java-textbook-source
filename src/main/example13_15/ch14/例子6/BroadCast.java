@@ -1,21 +1,21 @@
-package ch14.ä¾‹å­6;
+package ch14.Àı×Ó6;
 
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
 public class BroadCast {
-	String s = "å›½åº†æ”¾å‡æ—¶é—´æ˜¯9æœˆ30æ—¥";
-	int port = 5858;                                    // ç»„æ’­çš„ç«¯å£
-	InetAddress group = null;                          // ç»„æ’­ç»„çš„åœ°å€
-	MulticastSocket socket = null;                     // å¤šç‚¹å¹¿æ’­å¥—æ¥å­—
+	String s = "¹úÇì·Å¼ÙÊ±¼äÊÇ9ÔÂ30ÈÕ";
+	int port = 5858;                                    // ×é²¥µÄ¶Ë¿Ú
+	InetAddress group = null;                          // ×é²¥×éµÄµØÖ·
+	MulticastSocket socket = null;                     // ¶àµã¹ã²¥Ì×½Ó×Ö
 
 	BroadCast() {
 		try {
-			group = InetAddress.getByName("239.255.8.0");// è®¾ç½®å¹¿æ’­ç»„çš„åœ°å€ä¸º239.255.8.0
-			socket = new MulticastSocket(port);         // å¤šç‚¹å¹¿æ’­å¥—æ¥å­—å°†åœ¨portç«¯å£å¹¿æ’­
-			socket.setTimeToLive(1); // å¤šç‚¹å¹¿æ’­å¥—æ¥å­—å‘é€æ•°æ®æŠ¥èŒƒå›´ä¸ºæœ¬åœ°ç½‘ç»œ
-			socket.joinGroup(group); // åŠ å…¥groupå,socketå‘é€çš„æ•°æ®æŠ¥è¢«groupä¸­çš„æˆå‘˜æ¥æ”¶åˆ°
+			group = InetAddress.getByName("239.255.8.0");// ÉèÖÃ¹ã²¥×éµÄµØÖ·Îª239.255.8.0
+			socket = new MulticastSocket(port);         // ¶àµã¹ã²¥Ì×½Ó×Ö½«ÔÚport¶Ë¿Ú¹ã²¥
+			socket.setTimeToLive(1); // ¶àµã¹ã²¥Ì×½Ó×Ö·¢ËÍÊı¾İ±¨·¶Î§Îª±¾µØÍøÂç
+			socket.joinGroup(group); // ¼ÓÈëgroupºó,socket·¢ËÍµÄÊı¾İ±¨±»groupÖĞµÄ³ÉÔ±½ÓÊÕµ½
 		} catch (Exception e) {
 			System.out.println("Error: " + e);
 		}
@@ -24,11 +24,11 @@ public class BroadCast {
 	public void play() {
 		while (true) {
 			try {
-				DatagramPacket packet = null;        // å¾…å¹¿æ’­çš„æ•°æ®åŒ…
+				DatagramPacket packet = null;        // ´ı¹ã²¥µÄÊı¾İ°ü
 				byte data[] = s.getBytes();
 				packet = new DatagramPacket(data, data.length, group, port);
 				System.out.println(new String(data));
-				socket.send(packet);             // å¹¿æ’­æ•°æ®åŒ…
+				socket.send(packet);             // ¹ã²¥Êı¾İ°ü
 				Thread.sleep(2000);
 			} catch (Exception e) {
 				System.out.println("Error: " + e);

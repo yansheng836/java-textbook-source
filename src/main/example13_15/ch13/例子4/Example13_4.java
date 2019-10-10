@@ -1,4 +1,4 @@
-package ch13.ä¾‹å­4;
+package ch13.Àı×Ó4;
 
 public class Example13_4 {
 	public static void main(String args[]) {
@@ -6,10 +6,10 @@ public class Example13_4 {
 		house.setCake(10);
 		Thread antOne, antTwo;
 		antOne = new Thread(house);
-		antOne.setName("çº¢èš‚èš");
-		antTwo = new Thread(house);  // antTwoå’ŒantOneçš„ç›®æ ‡å¯¹è±¡ç›¸åŒ
-		antTwo.setName("é»‘èš‚èš");
+		antOne.setName("ºìÂìÒÏ");
+		antTwo = new Thread(house);  // antTwoºÍantOneµÄÄ¿±ê¶ÔÏóÏàÍ¬
+		antTwo.setName("ºÚÂìÒÏ");
 		house.setAttachThread(antTwo);
-		antOne.start();  // çº¢èš‚èšå…ˆåƒ
+		antOne.start();  // ºìÂìÒÏÏÈ³Ô
 	}
 }

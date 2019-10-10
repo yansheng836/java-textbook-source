@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­5;
+package ch4.Àı×Ó5;
 
 public class Chineses {
 	TV homeTV;
@@ -13,6 +13,6 @@ public class Chineses {
 
 	void seeTV() {
 		homeTV.showProgram();
-		System.out.println("ç”¨æˆ·ä¹°å›çš„ç”µè§†æ˜¯åœ¨" + homeTV.getChannel() + "é¢‘é“");
+		System.out.println("ÓÃ»§Âò»ØµÄµçÊÓÊÇÔÚ" + homeTV.getChannel() + "ÆµµÀ");
 	}
 }

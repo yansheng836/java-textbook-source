@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­3;
+package ch14.Àı×Ó3;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Client {
 	public static void main(String args[]) {
-		String[] mess = { "1+1åœ¨ä»€ä¹ˆæƒ…å†µä¸‹ä¸ç­‰äº2", "ç‹—ä¸ºä»€ä¸ç”Ÿè·³èš¤", "ä»€ä¹ˆä¸œè¥¿èƒ½çœ‹ã€èƒ½åƒã€èƒ½å" };
+		String[] mess = { "1+1ÔÚÊ²Ã´Çé¿öÏÂ²»µÈÓÚ2", "¹·ÎªÊ²²»ÉúÌøÔé", "Ê²Ã´¶«Î÷ÄÜ¿´¡¢ÄÜ³Ô¡¢ÄÜ×ø" };
 		Socket mysocket;
 		DataInputStream in = null;
 		DataOutputStream out = null;
@@ -16,12 +16,12 @@ public class Client {
 			out = new DataOutputStream(mysocket.getOutputStream());
 			for (int i = 0; i < mess.length; i++) {
 				out.writeUTF(mess[i]);
-				String s = in.readUTF();   // inè¯»å–ä¿¡æ¯ï¼Œå µå¡çŠ¶æ€
-				System.out.println("å®¢æˆ·æ”¶åˆ°æœåŠ¡å™¨çš„å›ç­”:" + s);
+				String s = in.readUTF();   // in¶ÁÈ¡ĞÅÏ¢£¬¶ÂÈû×´Ì¬
+				System.out.println("¿Í»§ÊÕµ½·şÎñÆ÷µÄ»Ø´ğ:" + s);
 				Thread.sleep(500);
 			}
 		} catch (Exception e) {
-			System.out.println("æœåŠ¡å™¨å·²æ–­å¼€" + e);
+			System.out.println("·şÎñÆ÷ÒÑ¶Ï¿ª" + e);
 		}
 	}
 }

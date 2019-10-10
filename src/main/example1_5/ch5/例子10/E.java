@@ -1,4 +1,4 @@
-package ch5.ä¾‹å­10;
+package ch5.Àı×Ó10;
 
 class People {
 	String name;
@@ -10,13 +10,13 @@ class People {
 
 class American extends People {
 	void showName() {
-		System.out.println("ç¾å›½äººå§“åæ˜¯ååœ¨å‰å§“åœ¨å:" + name);
+		System.out.println("ÃÀ¹úÈËĞÕÃûÊÇÃûÔÚÇ°ĞÕÔÚºó:" + name);
 	}
 }
 
 class Chinese extends People {
 	void showName() {
-		System.out.println("ä¸­å›½äººå§“åæ˜¯å§“åœ¨å‰ååœ¨å:" + name);
+		System.out.println("ÖĞ¹úÈËĞÕÃûÊÇĞÕÔÚÇ°ÃûÔÚºó:" + name);
 	}
 }
 
@@ -24,12 +24,12 @@ public class E {
 	public static void main(String args[]) {
 		People people = null;
 		American american = new American();
-		people = american;      // peopleæ˜¯americanå¯¹è±¡çš„ä¸Šè½¬å‹å¯¹è±¡ã€‚
-		people.name = "MadingSun.Lee"; // ç­‰åŒäºamerican.name="MadingSun.Lee";
-		people.showName();  // ç­‰åŒäºamericanè°ƒç”¨é‡å†™çš„showName()æ–¹æ³•
+		people = american;      // peopleÊÇamerican¶ÔÏóµÄÉÏ×ªĞÍ¶ÔÏó¡£
+		people.name = "MadingSun.Lee"; // µÈÍ¬ÓÚamerican.name="MadingSun.Lee";
+		people.showName();  // µÈÍ¬ÓÚamericanµ÷ÓÃÖØĞ´µÄshowName()·½·¨
 		Chinese chinese = new Chinese();
-		people = chinese;       // peopleæ˜¯chineseå¯¹è±¡çš„ä¸Šè½¬å‹å¯¹è±¡ã€‚
-		people.name = "å¼ ä¸‰æ—";  // ç­‰åŒäºchinese.name=""å¼ ä¸‰æ—";
-		people.showBodyMess();  // ç­‰åŒäºchineseè°ƒç”¨é‡å†™çš„showName()æ–¹æ³•
+		people = chinese;       // peopleÊÇchinese¶ÔÏóµÄÉÏ×ªĞÍ¶ÔÏó¡£
+		people.name = "ÕÅÈıÁÖ";  // µÈÍ¬ÓÚchinese.name=""ÕÅÈıÁÖ";
+		people.showBodyMess();  // µÈÍ¬ÓÚchineseµ÷ÓÃÖØĞ´µÄshowName()·½·¨
 	}
 }

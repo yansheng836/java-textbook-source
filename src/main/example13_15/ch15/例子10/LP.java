@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙10;
+package ch15.例子10;
 
 import java.awt.Component;
 import java.awt.FlowLayout;
@@ -15,7 +15,7 @@ public class LP extends JLayeredPane implements MouseListener, MouseMotionListen
 	int x, y, a, b, x0, y0;
 
 	LP() {
-		button = new JButton("鐢ㄩ紶鏍囨嫋鍔ㄦ垜");
+		button = new JButton("用鼠标拖动我");
 		button.addMouseListener(this);
 		button.addMouseMotionListener(this);
 		setLayout(new FlowLayout());
@@ -28,7 +28,7 @@ public class LP extends JLayeredPane implements MouseListener, MouseMotionListen
 		setLayer(com, JLayeredPane.DRAG_LAYER);
 		a = com.getBounds().x;
 		b = com.getBounds().y;
-		x0 = e.getX();     // 鑾峰彇榧犳爣鍦ㄤ簨浠舵簮涓殑浣嶇疆鍧愭爣
+		x0 = e.getX();     // 获取鼠标在事件源中的位置坐标
 		y0 = e.getY();
 	}
 
@@ -56,7 +56,7 @@ public class LP extends JLayeredPane implements MouseListener, MouseMotionListen
 			com = (Component) e.getSource();
 			a = com.getBounds().x;
 			b = com.getBounds().y;
-			x = e.getX();     // 鑾峰彇榧犳爣鍦ㄤ簨浠舵簮涓殑浣嶇疆鍧愭爣
+			x = e.getX();     // 获取鼠标在事件源中的位置坐标
 			y = e.getY();
 			a = a + x;
 			b = b + y;

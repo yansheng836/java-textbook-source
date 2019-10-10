@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­11;
+package ch4.Àı×Ó11;
 
 public class Example4_11 {
 	public static void main(String args[]) {
@@ -6,10 +6,10 @@ public class Example4_11 {
 		circle.setRadius(196.87);
 		Tixing lader = new Tixing(3, 21, 9);
 		People zhang = new People();
-		System.out.println("zhangè®¡ç®—åœ†çš„é¢ç§¯ï¼š");
+		System.out.println("zhang¼ÆËãÔ²µÄÃæ»ı£º");
 		double result = zhang.computerArea(circle);
 		System.out.println(result);
-		System.out.println("zhangè®¡ç®—æ¢¯å½¢çš„é¢ç§¯ï¼š");
+		System.out.println("zhang¼ÆËãÌİĞÎµÄÃæ»ı£º");
 		result = zhang.computerArea(lader);
 		System.out.println(result);
 	}

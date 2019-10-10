@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­11;
+package ch10.Àı×Ó11;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -23,13 +23,13 @@ public class Example10_11 {
        try{
           FileInputStream fis=new FileInputStream(file);
           DataInputStream inData=new DataInputStream(fis);
-          System.out.println(inData.readInt());    //è¯»å–intæ•°æ®
-          System.out.println(inData.readLong());   //è¯»å–longæ•°æ® 
-          System.out.println(+inData.readFloat()); //è¯»å–floatæ•°æ®
-          System.out.println(inData.readDouble()); //è¯»å–doubleæ•°æ®
-          System.out.println(inData.readBoolean());//è¯»å–booleanæ•°æ®
+          System.out.println(inData.readInt());    //¶ÁÈ¡intÊı¾İ
+          System.out.println(inData.readLong());   //¶ÁÈ¡longÊı¾İ 
+          System.out.println(+inData.readFloat()); //¶ÁÈ¡floatÊı¾İ
+          System.out.println(inData.readDouble()); //¶ÁÈ¡doubleÊı¾İ
+          System.out.println(inData.readBoolean());//¶ÁÈ¡booleanÊı¾İ
           char c;
-          while((c=inData.readChar())!='\0') {       //'\0'è¡¨ç¤ºç©ºå­—ç¬¦ã€‚
+          while((c=inData.readChar())!='\0') {       //'\0'±íÊ¾¿Õ×Ö·û¡£
               System.out.print(c);
           } 
         }

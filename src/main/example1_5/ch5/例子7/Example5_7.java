@@ -1,4 +1,4 @@
-package ch5.渚嬪瓙7;
+package ch5.例子7;
 
 public class Example5_7 {
 	public static void main(String args[]) {
@@ -11,6 +11,6 @@ public class Example5_7 {
 		bank2.savedMoney = amount;
 		bank2.year = 5.216;
 		double interest2 = bank2.computerInterest();
-		System.out.printf("涓や釜閾惰鍒╂伅鐩稿樊%f\n", interest2 - interest1);
+		System.out.printf("两个银行利息相差%f\n", interest2 - interest1);
 	}
 }

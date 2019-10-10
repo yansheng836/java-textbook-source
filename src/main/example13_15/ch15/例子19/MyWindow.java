@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­19;
+package ch15.Àı×Ó19;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -18,11 +18,11 @@ public class MyWindow extends JFrame implements ActionListener {
 	}
 
 	void init() {
-		button = new JButton("æ‰“å¼€å¯¹è¯æ¡†");
+		button = new JButton("´ò¿ª¶Ô»°¿ò");
 		button.addActionListener(this);
 		add(button, BorderLayout.NORTH);
-		dialog = new MyDialog(this, "æˆ‘æ˜¯å¯¹è¯æ¡†");  // å¯¹è¯æ¡†ä¾èµ–äºMyWindowåˆ›å»ºçš„çª—å£
-		dialog.setModal(true);   // æœ‰æ¨¡å¼å¯¹è¯æ¡†
+		dialog = new MyDialog(this, "ÎÒÊÇ¶Ô»°¿ò");  // ¶Ô»°¿òÒÀÀµÓÚMyWindow´´½¨µÄ´°¿Ú
+		dialog.setModal(true);   // ÓĞÄ£Ê½¶Ô»°¿ò
 	}
 
 	public void actionPerformed(ActionEvent e) {

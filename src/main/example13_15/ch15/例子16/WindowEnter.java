@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­16;
+package ch15.Àı×Ó16;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -26,7 +26,7 @@ public class WindowEnter extends JFrame implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		String s = inputName.getText();
-		int n = JOptionPane.showConfirmDialog(this, "ç¡®è®¤æ˜¯å¦æ­£ç¡®", "ç¡®è®¤å¯¹è¯æ¡†", JOptionPane.YES_NO_OPTION);
+		int n = JOptionPane.showConfirmDialog(this, "È·ÈÏÊÇ·ñÕıÈ·", "È·ÈÏ¶Ô»°¿ò", JOptionPane.YES_NO_OPTION);
 		if (n == JOptionPane.YES_OPTION) {
 			save.append("\n" + s);
 		} else if (n == JOptionPane.NO_OPTION) {

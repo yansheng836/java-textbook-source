@@ -1,4 +1,4 @@
-package ch8.ä¾‹å­6;
+package ch8.Àı×Ó6;
 
 public class Example8_6 {
 	public static void main(String args[]) {
@@ -7,13 +7,13 @@ public class Example8_6 {
 			bank.income(200, -100);
 			bank.income(300, -100);
 			bank.income(400, -100);
-			System.out.printf("é“¶è¡Œç›®å‰æœ‰%då…ƒ\n", bank.money);
+			System.out.printf("ÒøĞĞÄ¿Ç°ÓĞ%dÔª\n", bank.money);
 			bank.income(200, 100);
 			bank.income(99999, -100);
 		} catch (BankException e) {
-			System.out.println("è®¡ç®—æ”¶ç›Šçš„è¿‡ç¨‹å‡ºç°å¦‚ä¸‹é—®é¢˜:");
+			System.out.println("¼ÆËãÊÕÒæµÄ¹ı³Ì³öÏÖÈçÏÂÎÊÌâ:");
 			System.out.println(e.warnMess());
 		}
-		System.out.printf("é“¶è¡Œç›®å‰æœ‰%då…ƒ\n", bank.money);
+		System.out.printf("ÒøĞĞÄ¿Ç°ÓĞ%dÔª\n", bank.money);
 	}
 }

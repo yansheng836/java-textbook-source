@@ -1,4 +1,4 @@
-package ch8.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ2;
+package ch8.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé2;
 
 class Goods {
 	boolean isDanger;
@@ -25,7 +25,7 @@ class DangerException extends Exception {
 	String message;
 
 	public DangerException() {
-		message = "å±é™©å“!";
+		message = "Î£ÏÕÆ·!";
 	}
 
 	public void toShow() {
@@ -37,7 +37,7 @@ class Machine {
 	public void checkBag(Goods goods) throws DangerException {
 	      if(goods.isDanger()) { 
 	         DangerException  danger=new DangerException() ;
-	         ã€ä»£ç 1ã€‘ //æŠ›å‡ºdanger
+	         ¡¾´úÂë1¡¿ //Å×³ödanger
 	      }
 	   }
 }
@@ -45,25 +45,25 @@ class Machine {
 public class Check {
 	public static void main(String args[]) {
 	      Machine machine = new Machine();
-	      Goods apple = new Goods("è‹¹æœ"); 
+	      Goods apple = new Goods("Æ»¹û"); 
 	      apple.setIsDanger(false);  
-	      Goods explosive = new Goods("ç‚¸è¯"); 
+	      Goods explosive = new Goods("Õ¨Ò©"); 
 	      explosive.setIsDanger(true);
 	      try { 
 	         machine.checkBag(explosive);
-	         System.out.println(explosive.getName()+"æ£€æŸ¥é€šè¿‡");
+	         System.out.println(explosive.getName()+"¼ì²éÍ¨¹ı");
 	      }
 	      catch(DangerException e) {
-	         ã€ä»£ç 2ã€‘ //eè°ƒç”¨toShow()æ–¹æ³•
-	          System.out.println(explosive.getName()+"è¢«ç¦æ­¢!"); 
+	         ¡¾´úÂë2¡¿ //eµ÷ÓÃtoShow()·½·¨
+	          System.out.println(explosive.getName()+"±»½ûÖ¹!"); 
 	      }
 	      try { 
 	         machine.checkBag(apple);
-	         System.out.println(apple.getName()+"æ£€æŸ¥é€šè¿‡");
+	         System.out.println(apple.getName()+"¼ì²éÍ¨¹ı");
 	      }
 	      catch(DangerException e) {
 	         e.toShow();
-	         System.out.println(apple.getName()+"è¢«ç¦æ­¢!"); 
+	         System.out.println(apple.getName()+"±»½ûÖ¹!"); 
 	      }
 	   }
 }

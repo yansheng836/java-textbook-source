@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­15;
+package ch15.Àı×Ó15;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -17,7 +17,7 @@ public class WindowInput extends JFrame implements ActionListener {
 	JButton openInput;
 
 	WindowInput() {
-		openInput = new JButton("å¼¹å‡ºè¾“å…¥å¯¹è¯æ¡†");
+		openInput = new JButton("µ¯³öÊäÈë¶Ô»°¿ò");
 		showResult = new JTextArea();
 		add(openInput, BorderLayout.NORTH);
 		add(new JScrollPane(showResult), BorderLayout.CENTER);
@@ -27,7 +27,7 @@ public class WindowInput extends JFrame implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		String str = JOptionPane.showInputDialog(this, "è¾“å…¥æ•°å­—,ç”¨ç©ºæ ¼åˆ†éš”", "è¾“å…¥å¯¹è¯æ¡†", JOptionPane.PLAIN_MESSAGE);
+		String str = JOptionPane.showInputDialog(this, "ÊäÈëÊı×Ö,ÓÃ¿Õ¸ñ·Ö¸ô", "ÊäÈë¶Ô»°¿ò", JOptionPane.PLAIN_MESSAGE);
 		if (str != null) {
 			Scanner scanner = new Scanner(str);
 			double sum = 0;

@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­8;
+package ch15.Àı×Ó8;
 
 import java.awt.FlowLayout;
 
@@ -25,6 +25,6 @@ public class WindowDocument extends JFrame {
 		listen = new PoliceListen();
 		listen.setInputText(inputText);
 		listen.setShowText(showText);
-		(inputText.getDocument()).addDocumentListener(listen);// å‘æ–‡æ¡£æ³¨å†Œç›‘è§†å™¨
+		(inputText.getDocument()).addDocumentListener(listen);// ÏòÎÄµµ×¢²á¼àÊÓÆ÷
 	}
 }

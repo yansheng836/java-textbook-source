@@ -1,4 +1,4 @@
-package ch6.ä¾‹å­4;
+package ch6.Àı×Ó4;
 
 interface CompurerAverage {
 	public double average(double... x);
@@ -45,9 +45,9 @@ public class Example6_4 {
 		CompurerAverage computer;
 		computer = new Gymnastics();
 		double result = computer.average(9.87, 9.76, 9.99, 9.12, 9.67, 9.73);
-		System.out.printf("ä½“æ“é€‰æ‰‹æœ€åå¾—åˆ†%5.3f\n", result);
+		System.out.printf("Ìå²ÙÑ¡ÊÖ×îºóµÃ·Ö%5.3f\n", result);
 		computer = new School();
 		result = computer.average(65, 89, 76, 56, 88, 90, 98, 46);
-		System.out.println("ç­çº§è€ƒè¯•å¹³å‡åˆ†æ•°:" + result);
+		System.out.println("°à¼¶¿¼ÊÔÆ½¾ù·ÖÊı:" + result);
 	}
 }

@@ -1,11 +1,11 @@
-package ch5.ä¾‹å­13;
+package ch5.Àı×Ó13;
 
 public class Dog extends Animal {
 	public void cry() {
-		System.out.println("æ±ªæ±ª...æ±ªæ±ª");
+		System.out.println("ÍôÍô...ÍôÍô");
 	}
 
 	public String getAnimalName() {
-		return "ç‹—";
+		return "¹·";
 	}
 }

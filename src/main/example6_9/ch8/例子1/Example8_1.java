@@ -1,8 +1,8 @@
-package ch8.ä¾‹å­1;
+package ch8.Àı×Ó1;
 
 public class Example8_1 {
 	public static void main(String args[]) {
-		RedCowForm form = new RedCowForm("çº¢ç‰›å†œåœº");
+		RedCowForm form = new RedCowForm("ºìÅ£Å©³¡");
 		form.showCowMess();
 	}
 }

@@ -1,9 +1,9 @@
-package ch15.ä¾‹å­17;
+package ch15.Àı×Ó17;
 
 public class Example15_17 {
 	public static void main(String args[]) {
 		WindowColor win = new WindowColor();
-		win.setTitle("å¸¦é¢œè‰²å¯¹è¯æ¡†çš„çª—å£");
+		win.setTitle("´øÑÕÉ«¶Ô»°¿òµÄ´°¿Ú");
 		win.setBounds(80, 90, 200, 300);
 	}
 }

@@ -1,4 +1,4 @@
-package ch11.渚嬪瓙10;
+package ch11.例子10;
 
 public class Example11_10 {
    public static void main(String args[]) {
@@ -8,7 +8,7 @@ public class Example11_10 {
      insertRecord.setDatabaseName(database);
      insertRecord.setTableName(tableName);
      insertRecord.setNumber("D001");
-     insertRecord.setName("鑱旀兂鐢佃剳");
+     insertRecord.setName("联想电脑");
      insertRecord.setMadeTime("2015-12-10");
      insertRecord.setPrice(5600);
      String backMess=insertRecord.addRecord();

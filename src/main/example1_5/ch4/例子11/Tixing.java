@@ -1,4 +1,4 @@
-package ch4.ä¾‹å­11;
+package ch4.Àı×Ó11;
 
 public class Tixing {
 	double above, bottom, height;

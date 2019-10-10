@@ -1,4 +1,4 @@
-package ch15.涓婃満瀹炶返妯℃澘浠ｇ爜.瀹為獙2;
+package ch15.上机实践模板代码.实验2;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -10,7 +10,7 @@ import javax.swing.JButton;
 public class Person extends JButton implements FocusListener {
 	int number;
 	Color c = new Color(255, 245, 170);
-	Font font = new Font("瀹嬩綋", Font.BOLD, 12);
+	Font font = new Font("宋体", Font.BOLD, 12);
 
 	Person(int number, String s) {
 		super(s);

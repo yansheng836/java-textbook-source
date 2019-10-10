@@ -1,4 +1,4 @@
-package ch12.ä¸Šæœºå®è·µæ¨¡æ¿ä»£ç .å®éªŒ1;
+package ch12.ÉÏ»úÊµ¼ùÄ£°å´úÂë.ÊµÑé1;
 
 public class ComputerAver extends DoThing {
 	DoThing nextDoThing;
@@ -12,6 +12,6 @@ public class ComputerAver extends DoThing {
 		for (int i = 0; i < a.length; i++)
 			sum = sum + a[i];
 		double aver = sum / a.length;
-		System.out.print("é€‰æ‰‹æœ€åå¾—åˆ†" + aver);
+		System.out.print("Ñ¡ÊÖ×îºóµÃ·Ö" + aver);
 	}
 }

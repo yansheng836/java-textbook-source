@@ -1,11 +1,11 @@
-package ch5.ä¾‹å­3;
+package ch5.Àı×Ó3;
 
 public class Goods {
 	public double weight;
 
 	public void oldSetWeight(double w) {
 		weight = w;
-		System.out.println("doubleå‹çš„weight=" + weight);
+		System.out.println("doubleĞÍµÄweight=" + weight);
 	}
 
 	public double oldGetPrice() {

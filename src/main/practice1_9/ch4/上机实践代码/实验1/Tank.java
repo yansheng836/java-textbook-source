@@ -1,17 +1,17 @@
 
-package ch4.ä¸Šæœºå®è·µä»£ç .å®éªŒ1;
+package ch4.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 public class
 public class Tank {
-	// ã€ä»£ç 1ã€‘// å£°æ˜doubleå‹å˜é‡speed,åˆ»ç”»é€Ÿåº¦
-	// ã€ä»£ç 2ã€‘// å£°æ˜intå‹å˜é‡bulletAmount,åˆ»ç”»ç‚®å¼¹æ•°é‡
+	// ¡¾´úÂë1¡¿// ÉùÃ÷doubleĞÍ±äÁ¿speed,¿Ì»­ËÙ¶È
+	// ¡¾´úÂë2¡¿// ÉùÃ÷intĞÍ±äÁ¿bulletAmount,¿Ì»­ÅÚµ¯ÊıÁ¿
 	void speedUp(int s) {
-		// ã€ä»£ç 3ã€‘ //å°†s+speedèµ‹å€¼ç»™speed
+		// ¡¾´úÂë3¡¿ //½«s+speed¸³Öµ¸øspeed
 	}
 
 	void speedDown(int d) {  
 	       if(speed-d>=0) 
-//	         ã€ä»£ç 4ã€‘  //å°†speed-dèµ‹å€¼ç»™speed
+//	         ¡¾´úÂë4¡¿  //½«speed-d¸³Öµ¸øspeed
 	       else 
 	         speed = 0;
 	    }
@@ -30,10 +30,10 @@ public class Tank {
 
 	void fire() {
 		if (bulletAmount >= 1) {
-			// ã€ä»£ç 5ã€‘ //å°†bulletAmount-1èµ‹å€¼ç»™bulletAmount
-			System.out.println("æ‰“å‡ºä¸€å‘ç‚®å¼¹");
+			// ¡¾´úÂë5¡¿ //½«bulletAmount-1¸³Öµ¸øbulletAmount
+			System.out.println("´ò³öÒ»·¢ÅÚµ¯");
 		} else {
-			System.out.println("æ²¡æœ‰ç‚®å¼¹äº†,æ— æ³•å¼€ç«");
+			System.out.println("Ã»ÓĞÅÚµ¯ÁË,ÎŞ·¨¿ª»ğ");
 		}
 	}
 }{

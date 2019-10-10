@@ -1,13 +1,13 @@
-package ch5.ä¸Šæœºå®žè·µä»£ç .å®žéªŒ1;
+package ch5.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 public class Dog extends Animal {
 	Dog(String s) {
 		name = s;
 	}
 
-	// ã€ä»£ç 1ã€‘ //é‡å†™çˆ¶ç±»çš„cryæ–¹æ³•ï¼Œåœ¨å‘½ä»¤è¡Œè¾“å‡ºæ¨¡æ‹Ÿç‹—å«çš„æ–‡å­—
+	// ¡¾´úÂë1¡¿ //ÖØÐ´¸¸ÀàµÄcry·½·¨£¬ÔÚÃüÁîÐÐÊä³öÄ£Äâ¹·½ÐµÄÎÄ×Ö
 	public void swimming() {
-		// ã€ä»£ç 2ã€‘//åœ¨å‘½ä»¤è¡Œè¾“å‡ºç±»ä¼¼â€œç‹—ä¼šæ¸¸æ³³...â€çš„æ–‡å­—
+		// ¡¾´úÂë2¡¿//ÔÚÃüÁîÐÐÊä³öÀàËÆ¡°¹·»áÓÎÓ¾...¡±µÄÎÄ×Ö
 	}
 
 }

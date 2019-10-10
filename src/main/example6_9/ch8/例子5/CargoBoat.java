@@ -1,8 +1,8 @@
-package ch8.ä¾‹å­5;
+package ch8.Àı×Ó5;
 
 public class CargoBoat {
-	int realContent;  // è£…è½½çš„é‡é‡
-	int maxContent;   // æœ€å¤§è£…è½½é‡
+	int realContent;  // ×°ÔØµÄÖØÁ¿
+	int maxContent;   // ×î´ó×°ÔØÁ¿
 
 	public void setMaxContent(int c) {
 		maxContent = c;
@@ -13,6 +13,6 @@ public class CargoBoat {
 		if (realContent > maxContent) {
 			throw new DangerException();
 		}
-		System.out.println("ç›®å‰è£…è½½äº†" + realContent + "å¨è´§ç‰©");
+		System.out.println("Ä¿Ç°×°ÔØÁË" + realContent + "¶Ö»õÎï");
 	}
 }

@@ -1,4 +1,4 @@
-package ch15.ä¾‹å­14;
+package ch15.Àı×Ó14;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -29,8 +29,8 @@ public class WindowMess extends JFrame implements ActionListener {
 			String str = inputEnglish.getText();
 			if (str.matches(regex)) {
 				show.append(str + ",");
-			} else { // å¼¹å‡ºâ€œè­¦å‘Šâ€æ¶ˆæ¯å¯¹è¯æ¡†ã€‚
-				JOptionPane.showMessageDialog(this, "æ‚¨è¾“å…¥äº†éæ³•å­—ç¬¦", "æ¶ˆæ¯å¯¹è¯æ¡†", JOptionPane.WARNING_MESSAGE);
+			} else { // µ¯³ö¡°¾¯¸æ¡±ÏûÏ¢¶Ô»°¿ò¡£
+				JOptionPane.showMessageDialog(this, "ÄúÊäÈëÁË·Ç·¨×Ö·û", "ÏûÏ¢¶Ô»°¿ò", JOptionPane.WARNING_MESSAGE);
 				inputEnglish.setText(null);
 			}
 		}

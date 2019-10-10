@@ -1,9 +1,9 @@
-package ch5.ä¸Šæœºå®è·µä»£ç .å®éªŒ1;
+package ch5.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 public class MainClass {
 	public static void main(String args[]) {
-		Dog dog = new Dog("å°é»„ç‹—");
-		Cat cat = new Cat("å°èŠ±çŒ«");
+		Dog dog = new Dog("Ğ¡»Æ¹·");
+		Cat cat = new Cat("Ğ¡»¨Ã¨");
 		dog.showName();
 		dog.cry();
 		dog.swimming();

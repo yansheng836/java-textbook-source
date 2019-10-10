@@ -1,21 +1,21 @@
-package ch5.ä¾‹å­9;
+package ch5.Àı×Ó9;
 
 class A {
-	final double PI = 3.1415926;// PIæ˜¯å¸¸é‡
+	final double PI = 3.1415926;// PIÊÇ³£Á¿
 
 	public double getArea(final double r) {
 		return PI * r * r;
 	}
 
 	public final void speak() {
-		System.out.println("æ‚¨å¥½ï¼ŒHow's everything here ?");
+		System.out.println("ÄúºÃ£¬How's everything here ?");
 	}
 }
 
 public class Example5_9 {
 	public static void main(String args[]) {
 		A a = new A();
-		System.out.println("é¢ç§¯ï¼š" + a.getArea(100));
+		System.out.println("Ãæ»ı£º" + a.getArea(100));
 		a.speak();
 	}
 }

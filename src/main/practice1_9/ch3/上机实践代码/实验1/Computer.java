@@ -1,23 +1,23 @@
-package ch3.ä¸Šæœºå®è·µä»£ç .å®éªŒ1;
+package ch3.ÉÏ»úÊµ¼ù´úÂë.ÊµÑé1;
 
 import java.util.Scanner;
 
 public class Computer {
 	public static void main(String args[]) {
 		Scanner reader = new Scanner(System.in);
-		double amount = 0;  // å­˜æ”¾ç”µé‡
-		double price = 0;   // ç”¨æˆ·éœ€è¦äº¤çº³çš„ç”µè´¹
-		System.out.print("è¾“å…¥ç”µé‡:");
+		double amount = 0;  // ´æ·ÅµçÁ¿
+		double price = 0;   // ÓÃ»§ĞèÒª½»ÄÉµÄµç·Ñ
+		System.out.print("ÊäÈëµçÁ¿:");
 		amount = reader.nextDouble();
 		if (amount <= 90 && amount >= 1) {
-			// ã€ä»£ç 1ã€‘//è®¡ç®—priceçš„å€¼
+			// ¡¾´úÂë1¡¿//¼ÆËãpriceµÄÖµ
 		} else if (amount <= 150 && amount >= 91) {
-			// ã€ä»£ç 2ã€‘//è®¡ç®—priceçš„å€¼
+			// ¡¾´úÂë2¡¿//¼ÆËãpriceµÄÖµ
 		} else if (amount > 150) {
-			// ã€ä»£ç 3ã€‘//è®¡ç®—priceçš„å€¼
+			// ¡¾´úÂë3¡¿//¼ÆËãpriceµÄÖµ
 		} else {
-			System.out.println("è¾“å…¥ç”µé‡:" + amount + "ä¸åˆç†");
+			System.out.println("ÊäÈëµçÁ¿:" + amount + "²»ºÏÀí");
 		}
-		System.out.printf("ç”µè´¹:%5.2f", price);
+		System.out.printf("µç·Ñ:%5.2f", price);
 	}
 }

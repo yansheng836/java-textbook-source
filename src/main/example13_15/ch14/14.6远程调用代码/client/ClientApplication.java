@@ -7,7 +7,7 @@ public class ClientApplication{
          remoteSubject.setWidth(129);
          remoteSubject.setHeight(528);
          double area=remoteSubject.getArea(); 
-         System.out.println("é¢ç§¯:"+area);
+         System.out.println("Ãæ»ı:"+area);
       }
       catch(Exception exp){
          System.out.println(exp.toString());

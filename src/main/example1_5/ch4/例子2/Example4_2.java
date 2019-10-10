@@ -1,21 +1,21 @@
-package ch4.ä¾‹å­2;
+package ch4.Àı×Ó2;
 
 public class Example4_2 {
 	public static void main(String args[]) {
-		Vehicle car1, car2;       // å£°æ˜2ä¸ªå¯¹è±¡
-		car1 = new Vehicle(); // ä¸ºå¯¹è±¡car1åˆ†é…å˜é‡ï¼Œä½¿ç”¨new è¿ç®—ç¬¦å’Œé»˜è®¤çš„æ„é€ æ–¹æ³•
-		car2 = new Vehicle(); // ä¸ºå¯¹è±¡car2åˆ†é…å˜é‡ï¼Œä½¿ç”¨new è¿ç®—ç¬¦å’Œé»˜è®¤çš„æ„é€ æ–¹æ³•
+		Vehicle car1, car2;       // ÉùÃ÷2¸ö¶ÔÏó
+		car1 = new Vehicle(); // Îª¶ÔÏócar1·ÖÅä±äÁ¿£¬Ê¹ÓÃnew ÔËËã·ûºÍÄ¬ÈÏµÄ¹¹Ôì·½·¨
+		car2 = new Vehicle(); // Îª¶ÔÏócar2·ÖÅä±äÁ¿£¬Ê¹ÓÃnew ÔËËã·ûºÍÄ¬ÈÏµÄ¹¹Ôì·½·¨
 		car1.setPower(128);
 		car2.setPower(76);
-		System.out.println("car1çš„åŠŸç‡æ˜¯ï¼š" + car1.getPower());
-		System.out.println("car2çš„åŠŸç‡æ˜¯ï¼š" + car2.getPower());
+		System.out.println("car1µÄ¹¦ÂÊÊÇ£º" + car1.getPower());
+		System.out.println("car2µÄ¹¦ÂÊÊÇ£º" + car2.getPower());
 		car1.speedUp(80);
 		car2.speedUp(100);
-		System.out.println("car1ç›®å‰çš„é€Ÿåº¦ï¼š" + car1.getSpeed());
-		System.out.println("car2ç›®å‰çš„é€Ÿåº¦ï¼š" + car2.getSpeed());
+		System.out.println("car1Ä¿Ç°µÄËÙ¶È£º" + car1.getSpeed());
+		System.out.println("car2Ä¿Ç°µÄËÙ¶È£º" + car2.getSpeed());
 		car1.speedDown(10);
 		car2.speedDown(20);
-		System.out.println("car1ç›®å‰çš„é€Ÿåº¦ï¼š" + car1.getSpeed());
-		System.out.println("car2ç›®å‰çš„é€Ÿåº¦ï¼š" + car2.getSpeed());
+		System.out.println("car1Ä¿Ç°µÄËÙ¶È£º" + car1.getSpeed());
+		System.out.println("car2Ä¿Ç°µÄËÙ¶È£º" + car2.getSpeed());
 	}
 }

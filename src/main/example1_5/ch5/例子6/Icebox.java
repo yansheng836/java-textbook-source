@@ -1,7 +1,7 @@
-package ch5.ä¾‹å­6;
+package ch5.Àı×Ó6;
 
 public class Icebox extends HomeEletricity {
 	public void showMess() {
-		System.out.println("æˆ‘æ˜¯å†°ç®±,é‡é‡æ˜¯" + weight + "kg");
+		System.out.println("ÎÒÊÇ±ùÏä,ÖØÁ¿ÊÇ" + weight + "kg");
 	}
 }

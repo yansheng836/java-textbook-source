@@ -1,4 +1,4 @@
-package ch12.ä¾‹å­5;
+package ch12.Àı×Ó5;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -19,7 +19,7 @@ public class Example12_5 {
 		}
 		int index = Collections.binarySearch(listString, "apple");
 		if (index >= 0)
-			System.out.println("é“¾è¡¨ä¸­å«æœ‰å’Œå¯¹è±¡appleç›¸ç­‰çš„æ•°æ®");
+			System.out.println("Á´±íÖĞº¬ÓĞºÍ¶ÔÏóappleÏàµÈµÄÊı¾İ");
 		List<People> listPeople = new LinkedList<People>();
 		listPeople.add(new People(176, 72));
 		listPeople.add(new People(170, 68));
@@ -29,11 +29,11 @@ public class Example12_5 {
 		Iterator<People> iterPeople = listPeople.iterator();
 		while (iterPeople.hasNext()) {
 			People p = iterPeople.next();
-			System.out.println("èº«é«˜:" + p.height + "cm ä½“é‡:" + p.weight);
+			System.out.println("Éí¸ß:" + p.height + "cm ÌåÖØ:" + p.weight);
 		}
 		People zhang = new People(170, 80);
 		index = Collections.binarySearch(listPeople, zhang);
 		if (index >= 0)
-			System.out.println("é“¾è¡¨ä¸­å«æœ‰å’Œå¯¹è±¡zhangç›¸ç­‰çš„æ•°æ®");
+			System.out.println("Á´±íÖĞº¬ÓĞºÍ¶ÔÏózhangÏàµÈµÄÊı¾İ");
 	}
 }

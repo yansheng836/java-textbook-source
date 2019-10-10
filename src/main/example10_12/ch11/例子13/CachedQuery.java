@@ -1,4 +1,4 @@
-package ch11.ä¾‹å­13;
+package ch11.Àı×Ó13;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,9 +10,9 @@ import java.sql.Statement;
 import com.sun.rowset.CachedRowSetImpl;
 
 public class CachedQuery {
-	String databaseName = "";  			// æ•°æ®åº“å
-	String SQL;                        		// SQLè¯­å¥
-	CachedRowSetImpl rowSet;        		// ç¼“å†²ç»“æœé›†
+	String databaseName = "";  			// Êı¾İ¿âÃû
+	String SQL;                        		// SQLÓï¾ä
+	CachedRowSetImpl rowSet;        		// »º³å½á¹û¼¯
 
 	public CachedQuery() {
 		try {
@@ -39,11 +39,11 @@ public class CachedQuery {
 			con = DriverManager.getConnection(uri);
 			sql = con.createStatement();
 			rs = sql.executeQuery(SQL);
-			ResultSetMetaData metaData = rs.getMetaData();// ç»“æœé›†çš„å…ƒæ•°æ®å¯¹è±¡
-			int columnCount = metaData.getColumnCount(); // ç»“æœé›†çš„æ€»åˆ—æ•°
+			ResultSetMetaData metaData = rs.getMetaData();// ½á¹û¼¯µÄÔªÊı¾İ¶ÔÏó
+			int columnCount = metaData.getColumnCount(); // ½á¹û¼¯µÄ×ÜÁĞÊı
 			rowSet = new CachedRowSetImpl();
 			rowSet.populate(rs);
-			con.close();              		// ç°åœ¨å°±å¯ä»¥å…³é—­è¿æ¥äº†
+			con.close();              		// ÏÖÔÚ¾Í¿ÉÒÔ¹Ø±ÕÁ¬½ÓÁË
 			while (rowSet.next()) {
 				for (int k = 1; k <= columnCount; k++) {
 					System.out.print(" " + rowSet.getString(k) + " ");
@@ -51,7 +51,7 @@ public class CachedQuery {
 				System.out.println("");
 			}
 		} catch (SQLException e) {
-			System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„è¡¨å" + e);
+			System.out.println("ÇëÊäÈëÕıÈ·µÄ±íÃû" + e);
 		}
 	}
 }

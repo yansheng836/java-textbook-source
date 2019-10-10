@@ -1,4 +1,4 @@
-package ch15.渚嬪瓙10;
+package ch15.例子10;
 
 import java.awt.FlowLayout;
 import java.awt.event.FocusListener;
@@ -16,11 +16,11 @@ public class WindowMove extends JFrame {
 		setLayout(new FlowLayout());
 		for (int i = 0; i < 3; i++) {
 			text[i] = new JTextField(7);
-			text[i].addKeyListener((KeyListener) this);  // 鐩戣閿洏浜嬩欢
+			text[i].addKeyListener((KeyListener) this);  // 监视键盘事件
 			text[i].addFocusListener((FocusListener) this);
 			add(text[i]);
 		}
-		b = new JButton("纭畾");
+		b = new JButton("确定");
 		add(b);
 		text[0].requestFocusInWindow();
 		setVisible(true);

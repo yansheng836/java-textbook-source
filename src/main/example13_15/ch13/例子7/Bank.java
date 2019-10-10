@@ -1,4 +1,4 @@
-package ch13.ä¾‹å­7;
+package ch13.Àı×Ó7;
 
 public class Bank implements Runnable {
 	int money = 200;
@@ -8,31 +8,31 @@ public class Bank implements Runnable {
 	}
 
 	public void run() {
-		if (Thread.currentThread().getName().equals("ä¼šè®¡"))
+		if (Thread.currentThread().getName().equals("»á¼Æ"))
 			saveOrTake(300);
-		else if (Thread.currentThread().getName().equals("å‡ºçº³"))
+		else if (Thread.currentThread().getName().equals("³öÄÉ"))
 			saveOrTake(150);
 		;
 	}
 
-	public synchronized void saveOrTake(int amount) { // å­˜å–æ–¹æ³•
-		if (Thread.currentThread().getName().equals("ä¼šè®¡")) {
+	public synchronized void saveOrTake(int amount) { // ´æÈ¡·½·¨
+		if (Thread.currentThread().getName().equals("»á¼Æ")) {
 			for (int i = 1; i <= 3; i++) {
-				money = money + amount / 3;      // æ¯å­˜å…¥amount/3ï¼Œç¨æ­‡ä¸€ä¸‹
+				money = money + amount / 3;      // Ã¿´æÈëamount/3£¬ÉÔĞªÒ»ÏÂ
 				System.out.println(
-						Thread.currentThread().getName() + "å­˜å…¥" + amount / 3 + ",å¸ä¸Šæœ‰" + money + "ä¸‡,ä¼‘æ¯ä¸€ä¼šå†å­˜");
+						Thread.currentThread().getName() + "´æÈë" + amount / 3 + ",ÕÊÉÏÓĞ" + money + "Íò,ĞİÏ¢Ò»»áÔÙ´æ");
 				try {
-					Thread.sleep(1000);  // è¿™æ—¶å‡ºçº³ä»ä¸èƒ½ä½¿ç”¨saveOrTakeæ–¹æ³•
+					Thread.sleep(1000);  // ÕâÊ±³öÄÉÈÔ²»ÄÜÊ¹ÓÃsaveOrTake·½·¨
 				} catch (InterruptedException e) {
 				}
 			}
-		} else if (Thread.currentThread().getName().equals("å‡ºçº³")) {
-			for (int i = 1; i <= 3; i++) { // å‡ºçº³ä½¿ç”¨å­˜å–æ–¹æ³•å–å‡º60
-				money = money - amount / 3;   // æ¯å–å‡ºamount/3ï¼Œç¨æ­‡ä¸€ä¸‹
+		} else if (Thread.currentThread().getName().equals("³öÄÉ")) {
+			for (int i = 1; i <= 3; i++) { // ³öÄÉÊ¹ÓÃ´æÈ¡·½·¨È¡³ö60
+				money = money - amount / 3;   // Ã¿È¡³öamount/3£¬ÉÔĞªÒ»ÏÂ
 				System.out.println(
-						Thread.currentThread().getName() + "å–å‡º" + amount / 3 + "å¸ä¸Šæœ‰" + money + "ä¸‡,ä¼‘æ¯ä¸€ä¼šå†å–");
+						Thread.currentThread().getName() + "È¡³ö" + amount / 3 + "ÕÊÉÏÓĞ" + money + "Íò,ĞİÏ¢Ò»»áÔÙÈ¡");
 				try {
-					Thread.sleep(1000);       // è¿™æ—¶ä¼šè®¡ä»ä¸èƒ½ä½¿ç”¨saveOrTakeæ–¹æ³•
+					Thread.sleep(1000);       // ÕâÊ±»á¼ÆÈÔ²»ÄÜÊ¹ÓÃsaveOrTake·½·¨
 				} catch (InterruptedException e) {
 				}
 			}

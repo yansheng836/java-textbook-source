@@ -1,4 +1,4 @@
-package ch10.ä¾‹å­9;
+package ch10.Àı×Ó9;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -6,9 +6,9 @@ public class Example10_9 {
    public static void main(String args[]) {
       RandomAccessFile in=null;
       try{ in=new RandomAccessFile("Example10_9.java","rw");
-           long length=in.length();  //è·å–æ–‡ä»¶çš„é•¿åº¦
+           long length=in.length();  //»ñÈ¡ÎÄ¼şµÄ³¤¶È
            long position=0;
-           in.seek(position);       //å°†è¯»å–ä½ç½®å®šä½åˆ°æ–‡ä»¶çš„èµ·å§‹ 
+           in.seek(position);       //½«¶ÁÈ¡Î»ÖÃ¶¨Î»µ½ÎÄ¼şµÄÆğÊ¼ 
            while(position<length) {
               String str=in.readLine();
               byte b[]=str.getBytes("iso-8859-1");

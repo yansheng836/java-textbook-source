@@ -1,22 +1,22 @@
-package ch4.ä¾‹å­9;
+package ch4.Àı×Ó9;
 
 public class Lader {
-	double ä¸Šåº•, é«˜;       // å®ä¾‹å˜é‡
-	static double ä¸‹åº•;     // ç±»å˜é‡
+	double ÉÏµ×, ¸ß;       // ÊµÀı±äÁ¿
+	static double ÏÂµ×;     // Àà±äÁ¿
 
-	void è®¾ç½®ä¸Šåº•(double a) {
-		ä¸Šåº• = a;
+	void ÉèÖÃÉÏµ×(double a) {
+		ÉÏµ× = a;
 	}
 
-	void è®¾ç½®ä¸‹åº•(double b) {
-		ä¸‹åº• = b;
+	void ÉèÖÃÏÂµ×(double b) {
+		ÏÂµ× = b;
 	}
 
-	double è·å–ä¸Šåº•() {
-		return ä¸Šåº•;
+	double »ñÈ¡ÉÏµ×() {
+		return ÉÏµ×;
 	}
 
-	double è·å–ä¸‹åº•() {
-		return ä¸‹åº•;
+	double »ñÈ¡ÏÂµ×() {
+		return ÏÂµ×;
 	}
 }

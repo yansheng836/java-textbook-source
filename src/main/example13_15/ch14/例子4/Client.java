@@ -1,4 +1,4 @@
-package ch14.ä¾‹å­4;
+package ch14.Àı×Ó4;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -20,9 +20,9 @@ public class Client {
 			mysocket = new Socket();
 			read = new Read();
 			readData = new Thread(read);
-			System.out.print("è¾“å…¥æœåŠ¡å™¨çš„IP:");
+			System.out.print("ÊäÈë·şÎñÆ÷µÄIP:");
 			String IP = scanner.nextLine();
-			System.out.print("è¾“å…¥ç«¯å£å·:");
+			System.out.print("ÊäÈë¶Ë¿ÚºÅ:");
 			int port = scanner.nextInt();
 			if (mysocket.isConnected()) {
 			} else {
@@ -35,9 +35,9 @@ public class Client {
 				readData.start();
 			}
 		} catch (Exception e) {
-			System.out.println("æœåŠ¡å™¨å·²æ–­å¼€" + e);
+			System.out.println("·şÎñÆ÷ÒÑ¶Ï¿ª" + e);
 		}
-		System.out.print("è¾“å…¥å›­çš„åŠå¾„(æ”¾å¼ƒè¯·è¾“å…¥N):");
+		System.out.print("ÊäÈëÔ°µÄ°ë¾¶(·ÅÆúÇëÊäÈëN):");
 		while (scanner.hasNext()) {
 			double radius = 0;
 			try {

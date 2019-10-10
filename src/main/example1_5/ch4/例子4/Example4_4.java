@@ -1,15 +1,15 @@
-package ch4.ä¾‹å­4;
+package ch4.Àı×Ó4;
 
 public class Example4_4 {
 	public static void main(String args[]) {
 		Circle circle = new Circle();
 		double w = 12.76;
 		circle.setRadius(w);
-		System.out.println("åœ†çš„åŠå¾„ï¼š" + circle.getRadius());
-		System.out.println("åœ†çš„é¢ç§¯ï¼š" + circle.getArea());
-		System.out.println("æ›´æ”¹å‘æ–¹æ³•å‚æ•°rä¼ é€’å€¼çš„wçš„å€¼ä¸º100");
+		System.out.println("Ô²µÄ°ë¾¶£º" + circle.getRadius());
+		System.out.println("Ô²µÄÃæ»ı£º" + circle.getArea());
+		System.out.println("¸ü¸ÄÏò·½·¨²ÎÊır´«µİÖµµÄwµÄÖµÎª100");
 		w = 100;
 		System.out.println("w=" + w);
-		System.out.println("åœ†çš„åŠå¾„ï¼š" + circle.getRadius());
+		System.out.println("Ô²µÄ°ë¾¶£º" + circle.getRadius());
 	}
 }
